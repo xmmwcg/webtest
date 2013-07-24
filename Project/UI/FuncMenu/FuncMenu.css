@@ -1,0 +1,45 @@
+﻿#FuncMenu{
+    position:absolute;
+    height: 27px;
+    width: 100%;
+    top: 99px;
+    left: 0;
+    padding-top: 8px;
+    border-bottom: 1px #bfbfbf solid;
+}
+#FuncMenu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+}
+#FuncMenu ul li{
+    display: block;
+    float: left;
+    height: 25px;
+    padding: 0 10px;
+    margin: 0;
+    background: url(right_line.png) no-repeat right 2px;
+}
+#FuncMenu ul li span{
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 25px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+#FuncMenu ul li.top_arrow {
+	position: absolute;
+	height: 4px;
+	top: 0;
+	padding: 0 5px 0 0;
+	margin: 0 10px;
+    background: url(globalheader_nav.png) repeat-x right bottom;
+}
+#FuncMenu ul li.top_arrow .in_arrow
+{
+	height: 4px;
+    background: url(globalheader_nav.png) repeat-x left top;
+}

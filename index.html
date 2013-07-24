@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>湖南抗旱设备管理系统</title>
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <link href="css/clearfix.css" type="text/css" rel="stylesheet">
+    <link href="css/head.css" type="text/css" rel="stylesheet">
+    <link href="css/frame.css" type="text/css" rel="stylesheet">
+
+    <script src="Project/build/kissy.js"></script>
+    <script src="js/Jquery/jquery-1.10.2.js"></script>
+</head>
+<body>
+<!-- Resize控制窗口最小高度和最小宽度 -->
+<div id="Resize">
+    <div id="Head">
+        <div id="HeadBar">
+            <div class="BarGroup">
+                <span id="UserInfo">欢迎您长沙市用户登录</span>
+                <!-- 后台生成用户信息 -->
+            </div>
+            <div class="BarGroup Right">
+                <a href="#"><span>退出</span></a>
+            </div>
+            <div class="BarGroup Right">
+                <!-- 时间由JS生成 -->
+                <span id="Clock">2013年7月19日 星期五 下午05:06</span>
+            </div>
+        </div>
+        <div id="Logo"><img src="images/logos/defulat.png"></div>
+        <!-- Logo根据登录单位自动切换,服务器端指向-->
+    </div>
+    <div id="FuncMenu">
+        <!-- 后台生成用户一级菜单 -->
+        <!-- rel属性为控制多级菜单的对应关系,必须和LeftMenu下面class为Menus的div的id对应,属性值可以自取 -->
+        <!-- class为MenuItem为必填项不能改 -->
+        <ul class="clearfix">
+            <li class="MenuItem" rel="EquipmentManager">
+                <span>设备管理</span>
+            </li>
+            <li class="MenuItem" rel="WorkManager">
+                <span>工作管理</span>
+            </li>
+            <li class="MenuItem" rel="AdministratorManager">
+                <span>单位管理</span>
+            </li>
+            <li class="MenuItem" rel="WorkAss">
+                <span>工作秘书</span>
+            </li>
+            <!-- <li class="top_arrow" style="width: 60px; left: 7px; overflow: hidden;">
+                <div class="in_arrow">
+                </div>
+            </li> 这部分JS生成-->
+        </ul>
+    </div>
+    <div id="LeftMenu">
+        <!-- 后台生成多级菜单 -->
+        <!-- id值要和上面一级菜单中MenuItem的rel值对应,可自取,不能重复 -->
+        <div id="EquipmentManager" class="Menus">
+            <ul>
+                <!-- subli是样式需要 -->
+                <li class="selected">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">查看设备资产</span>
+                    </div>
+                </li>
+                <!-- openico这个样式必填,样式需要,当他有下级菜单项目时不添加hidden样式 -->
+                <li id="summary">
+                    <div class="subli"><em class="openico"></em><span class="text">设备状态汇总</span></div>
+                </li>
+                <!-- 如果是下级菜单选项需添加children样式 -->
+                <!-- hidden样式控制显示或隐藏 -->
+                <li class="children hidden" rel="summary">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">抗旱设备汇总</span>
+                    </div>
+                </li>
+                <li class="children hidden" rel="summary">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">入账方式汇总</span>
+                    </div>
+                </li>
+                <li class="children hidden" rel="summary">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">投资来源汇总</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="WorkManager" class="Menus">
+            <ul>
+                <li class="selected">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">菜单一</span>
+                    </div>
+                </li>
+                <!-- openico这个样式必填,样式需要,当他有下级菜单项目时不添加hidden样式 -->
+                <li id="menu">
+                    <div class="subli"><em class="openico"></em><span class="text">菜单二</span></div>
+                </li>
+                <!-- 如果是下级菜单选项需添加children样式 -->
+                <!-- hidden样式控制显示或隐藏 -->
+                <li class="children hidden" rel="menu">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">二级菜单一</span>
+                    </div>
+                </li>
+                <li class="children hidden" rel="menu">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">二级菜单二</span>
+                    </div>
+                </li>
+                <li class="children hidden" rel="menu">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">二级菜单三</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="AdministratorManager" class="Menus">
+            <ul>
+
+            </ul>
+        </div>
+        <div id="WorkAss" class="Menus">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    <div id="MainFrameContainer">
+        <iframe onload="" src="" name="mainFrame" id="mainFrame" frameborder="no" scrolling="auto"
+                hidefocus=""></iframe>
+    </div>
+</div>
+<script>
+    //配置KISSY包路径
+    KISSY.config({
+        tag: new Date().toString(),
+        packages: {
+            Project: {
+                base: "./",
+                debug: true
+            }
+        }
+    });
+    //全局变量
+    //功能菜单实例（一级菜单）
+    var FuncM = null;
+    //模块菜单实例（多级菜单）
+    var LeftM = null;
+    //功能菜单事件配置
+    var FuncMCfg = {
+        goframe: function (Item) {
+            LeftM.SwitchTo(Item.GetName());
+        }
+    };
+    //模块菜单事件配置
+    var LeftMCfg = {
+        click: function (Item) {
+            //alert("这是click");
+        },
+        open: function (Item) {
+            //alert("这是open");
+        }
+    };
+    KISSY.ready(function (S) {
+        //Resize模块（控制窗口最小宽度高度和兼容性）
+        S.use("Project/UI/Resize", function (S, Resize) {
+            new Resize();
+        });
+        //时钟模块
+        S.use("Project/UI/Clock", function (S, Clock) {
+            Clock.Init();
+        });
+        //菜单模块
+        S.use("Project/UI/FuncMenu,Project/UI/LeftMenu", function (S, FuncMenu, LeftMenu) {
+            //需先初始化模块菜单,因为GoFirst调用了goframe事件,goframe事件中需要引用LeftM
+            LeftM = LeftMenu.Init(LeftMCfg);
+            FuncM = FuncMenu.Init(FuncMCfg).GoFirst();
+        });
+    });
+</script>
+</body>
+</html>

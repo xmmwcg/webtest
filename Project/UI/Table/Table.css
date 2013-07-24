@@ -1,0 +1,76 @@
+﻿.Line
+{
+	/*border-top:1px solid #c1c1c1;*/
+	border-left:1px solid #c1c1c1;
+	margin:0 auto;
+	}
+.Line.Head
+{
+	border-top:1px solid #c1c1c1;
+	}
+.FixedTitle .FixedTitleMove 
+{
+	z-index:2;
+	}
+.Line .Cell
+{
+	border-bottom:1px solid #c1c1c1;
+	border-right:1px solid #c1c1c1;
+	float:left;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	}
+.Line .SubCell
+{
+	border-top:1px solid #c1c1c1;
+	}
+.Line .SubCell .Cell
+{	
+	border-left:1px solid #c1c1c1;
+	border-bottom:none;
+	border-right:none;
+	}
+.Line .SubCell .Cell.First
+{
+	border-left:none;
+	}
+.Line .Cell span
+{
+
+	padding:0 10px;
+	display:block;
+	font-size:14px;
+	text-align:center;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	}
+.Line .Cell.Head
+{
+	background-color:#dddddd;
+
+	}
+.Line .Cell.Hide
+{
+	display:none;	
+	}
+.Line .Double
+{
+	background-color:#eeeeee;	
+	}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.Line .left span
+{
+	text-align:center;	
+	}

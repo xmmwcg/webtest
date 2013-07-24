@@ -1,0 +1,46 @@
+﻿.TopSadow
+{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	height:5px;
+	background-image:url(Shadows.png);
+	background-repeat:repeat-x;
+	background-position:top;
+	}
+.BottomSadow
+{
+	position:fixed;
+	bottom:0;
+	right:0;
+	left:0;
+	height:5px;
+	background-image:url(Shadows.png);
+	background-repeat:repeat-x;
+	background-position:bottom;	
+	}
+.TopSadow.OnTop
+{
+	display:none;
+	}
+.BottomSadow.OnBottom
+{
+	display:none;
+	}
+	
+.Scroll
+{
+	position:fixed;
+	width:8px;	
+	}
+.ScrollBar
+{
+	position:absolute;
+	width:4px;
+	top:0;
+	left:2px;
+	right:2px;
+	background-color:#666;
+	border-radius: 2px;
+	}

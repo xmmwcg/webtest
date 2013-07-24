@@ -1,0 +1,58 @@
+﻿.Menus
+{
+	position:absolute;
+	top:160px;
+	left:0;
+	right:0;
+	bottom:100px;
+}
+.Menu .MenuTitle
+{
+	height:40px;
+	font-size:16px;
+	font-weight:bold;
+	line-height:40px;
+	margin-top:10px;
+	color:#aaa;
+	}
+.Menu .MenuTitle span
+{
+	display:block;
+	height:40px;
+	padding-left:10px;	
+	}
+.Menu .MenuArea
+{
+	font-size:16px;
+	line-height:45px;
+	}
+.Menu .MenuArea .MenuLink
+{
+	padding-left:20px;
+	height:45px;
+	cursor:pointer;
+	}
+.Menu .MenuArea .MenuLink:hover,.Menu .MenuArea .MenuLink.Selected
+{
+	background-color:#333;
+	color:#999;
+	}
+.Menu .MenuArea .MenuLink.Selected
+{
+	cursor:auto;	
+	}
+.Menu .MenuArea .MenuLink .LeftSign
+{
+	display:block;
+	height:15px;
+	margin:15px 15px 15px 0;
+	padding:0 5px;
+	font-size:12px;
+	line-height: 15px;
+	text-decoration:none;
+	font-style:normal;
+	background-color:#8dca35;
+	color:#fff;
+	float:right;
+	border-radius: 3px;
+	}
