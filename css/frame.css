@@ -6,3 +6,7 @@
     bottom: 0;
     overflow: hidden;
 }
+#MainFrameContainer #mainFrame{
+    width: 100%;
+    height: 100%;
+}
