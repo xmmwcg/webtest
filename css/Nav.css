@@ -25,6 +25,9 @@
     padding: 0;
     float: left;
 }
+#Nav .NavLine #TypeSelect select{
+    margin: 4px;
+}
 /*可选信息*/
 #Tips{
     margin-left: 195px;
