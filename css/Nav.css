@@ -39,7 +39,7 @@
 #Tips .Tip.hidden{
      display: none;
 }
-#Tips .Tip ul.content{
+#Tips .Tip ul.content,#Tips .Tip .tcontent{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -53,6 +53,7 @@
 #Tips .Tip ul li.select{
 }
 #Tips .Tip ul li a{
+    white-space: nowrap;
     cursor: pointer;
 }
 /*已选信息*/
