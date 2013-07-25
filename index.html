@@ -60,7 +60,7 @@
         <div id="EquipmentManager" class="Menus">
             <ul>
                 <!-- subli是样式需要 -->
-                <li class="selected">
+                <li class="selected" url="Equipement/navigation.html">
                     <div class="subli"><em class="openico hidden"></em><span class="text">查看设备资产</span>
                     </div>
                 </li>
@@ -165,7 +165,8 @@
                     //alert("这是click");
                 },
                 open: function (Item) {
-                    //alert("这是open");
+                    var src = Item.GetElement().attr("url");
+                    S.one("#mainFrame").prop("src",src);
                 }
             };
             //需先初始化模块菜单,因为GoFirst调用了goframe事件,goframe事件中需要引用LeftM
