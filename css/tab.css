@@ -42,6 +42,7 @@
 {
     background-position:right -24px;
     border-right:none;
+    margin-left: -8px;
 }
 .tab-nav li.selected
 {
@@ -55,12 +56,4 @@
 .tab-nav li.selected.last
 {
     background-position:left -96px;
-}
-.tab-pannel.hidden
-{
-    display:none;
-}
-textarea.data-lazyload.hidden
-{
-    visibility:hidden;
 }
