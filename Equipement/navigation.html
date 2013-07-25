@@ -3,14 +3,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>导航栏</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/clearfix.css" rel="stylesheet" type="text/css">
     <link href="../css/Nav.css" rel="stylesheet" type="text/css">
 
     <script src="../Project/build/kissy.js"></script>
 </head>
 <body>
-<div id="Nav" class="clearfix">
+<div id="Nav">
     <!--选项栏-->
-    <div class="NavLine clearfix">
+    <div class="NavLine">
         <div class="Name">
             <span>请选择：</span>
         </div>
@@ -25,7 +27,7 @@
             </select>
         </div>
         <!--可选信息-->
-        <div id="Tips">
+        <div id="Tips" class="clearfix">
             <div class="Tip clearfix">
                 <div class="tcontent">
                     <input class="tx" type="text"/>
@@ -72,7 +74,7 @@
         </div>
     </div>
     <!--已选信息-->
-    <div class="NavLine clearfix">
+    <div class="NavLine">
         <div class="Name">
             <span>已选择：</span>
         </div>
