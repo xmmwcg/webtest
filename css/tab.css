@@ -1,0 +1,66 @@
+#AssetsList{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: #fff;
+    z-index: 100;
+}
+.tab-nav
+{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:block;
+    padding:10px 0;
+    margin:0;
+    height:24px;
+    line-height:24px;
+    width:100%;
+    text-align: center;
+    border-bottom:1px solid #eee;
+    background-image:url(../images/list/1px92percwhite.png);
+}
+.tab-nav li{
+    display:inline-block;
+    width:94px;
+    padding:0 3px;
+    font-size: 12px;
+    background-image:url(../images/list/tabs_bg.png);
+    background-repeat:repeat-x;
+    background-position: center -48px;
+    border-right:1px solid #c1c1c1;
+    cursor:pointer;
+}
+.tab-nav li.first
+{
+    background-position:left 0;
+}
+.tab-nav li.last
+{
+    background-position:right -24px;
+    border-right:none;
+}
+.tab-nav li.selected
+{
+    background-position:left -120px;
+    cursor:auto;
+}
+.tab-nav li.selected.first
+{
+    background-position:left -72px;
+}
+.tab-nav li.selected.last
+{
+    background-position:left -96px;
+}
+.tab-pannel.hidden
+{
+    display:none;
+}
+textarea.data-lazyload.hidden
+{
+    visibility:hidden;
+}
