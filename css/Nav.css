@@ -1,0 +1,111 @@
+#Nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#Nav .shadow{
+    height: 10px;
+    background-image: url("../images/Nav/shadow.png");
+    background-repeat: repeat-x;
+}
+#Nav .NavLine{
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #eee;
+}
+#Nav .NavLine .Name{
+    width: 86px;
+
+    padding-left: 8px;
+    text-align: right;
+    float: left;
+}
+#Nav .NavLine .Name span{
+    font-size: 13px;
+}
+#Nav .NavLine #TypeSelect{
+    width: 100px;
+    height: 22px;
+    padding: 5px 0 7px 8px;
+    float: left;
+}
+/*可选信息*/
+#Tips{
+    float: left;
+}
+#Tips #input_box{
+    display: block;
+}
+#Tips .Tip{
+    margin: 0 auto;
+    height: 32px;
+    line-height: 32px;
+}
+#Tips .Tip.hidden{
+     display: none;
+}
+#Tips .Tip ul.content{
+    margin: 0;
+    padding: 0;
+}
+#Tips .Tip ul li{
+    float: left;
+    margin-right: 10px;
+    font-size: 13px;
+}
+#Tips .Tip ul li.select{
+}
+#Tips .Tip ul li a{
+    cursor: pointer;
+}
+/*已选信息*/
+#Nav .NavLine #Selected{
+    height: 34px;
+    margin: -15px;
+}
+#Nav .NavLine #Selected li{
+    height: 16px;
+    line-height: 14px;
+    display: block;
+    float: left;
+    margin: 7px 10px;
+    border: 1px solid #6c8193;
+    background: white;
+}
+#Nav .NavLine #Selected li a{
+    font-size: 12px;
+    display: block;
+    padding: 1px 5px;
+    text-align: left;
+    float: left;
+}
+#Nav .NavLine #Selected li .cancel{
+    width: 15px;
+    height: 14px;
+    display: block;
+    float: right;
+    margin: 1px;
+    cursor: pointer;
+    background-color: #6c8193;
+    background-image: url("../images/Nav/cancel.png");
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

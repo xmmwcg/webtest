@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>导航栏</title>
+    <link href="../css/Nav.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="Nav" class="clearfix">
+        <!--选项栏-->
+        <div class="NavLine clearfix">
+            <div class="Name">
+                <span>请选择：</span>
+            </div>
+            <!--下拉框-->
+            <div id="TypeSelect">
+                <select id="Type">
+                    <option >设备名称</option>
+                    <option >设备类别</option>
+                    <option>设备来源</option>
+                    <option >入账方式</option>
+                    <option >管理人员</option>
+                </select>
+            </div>
+            <!--可选信息-->
+            <div id="Tips">
+                <div id="input_box" class="Tip clearfix">
+                    <input  type="text" />
+                    <input  type="button" value="查询"/>
+                </div>
+                <div class="Tip clearfix hidden">
+                    <ul class="content clearfix">
+                        <li><a ><span>应急拉水车</span></a></li>
+                        <li><a ><span>打井洗井设备</span></a></li>
+                        <li><a ><span>移动灌溉设备</span></a></li>
+                        <li><a ><span>移动喷滴灌节水设备</span></a></li>
+                        <li><a ><span>输水软管</span></a></li>
+                        <li><a ><span>简易净水设备</span></a></li>
+                        <li><a ><span>清淤设备</span></a></li>
+                        <li><a ><span>发电和动力设备</span></a></li>
+                        <li><a ><span>其他设备</span></a></li>
+                    </ul>
+                </div>
+                <div class="Tip clearfix hidden">
+                    <ul class="content clearfix">
+                        <li><a><span>中央投资</span></a></li>
+                        <li><a ><span>省级投资</span></a></li>
+                        <li><a ><span>市级投资</span></a></li>
+                        <li><a ><span>县级投资</span></a></li>
+                        <li><a ><span>自有资金</span></a></li>
+                        <li><a ><span>其他</span></a></li>
+                    </ul>
+                </div>
+                <div class="Tip clearfix hidden">
+                    <ul class="content clearfix">
+                        <li><a ><span>购入</span></a></li>
+                        <li><a ><span>调拨</span></a></li>
+                        <li><a ><span>接收捐赠</span></a></li>
+                        <li><a ><span>其他</span></a></li>
+                    </ul>
+                </div>
+                <div class="Tip clearfix hidden">
+                    <input  type="text" />
+                    <input  type="button" value="查询"/>
+                </div>
+            </div>
+        </div>
+        <!--已选信息-->
+        <div class="NavLine clearfix">
+            <div class="Name">
+                <span>已选择：</span>
+            </div>
+            <div id="Selected">
+                <ul><li ><a >天心区</a></li></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
