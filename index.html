@@ -168,8 +168,8 @@
                 }
             };
             //需先初始化模块菜单,因为GoFirst调用了goframe事件,goframe事件中需要引用LeftM
-            LeftM = LeftMenu.Init(LeftMCfg).GoFirst();
-            FuncM = FuncMenu.Init(FuncMCfg);
+            LeftM = LeftMenu.Init(LeftMCfg);
+            FuncM = FuncMenu.Init(FuncMCfg).GoFirst();
         });
     });
 </script>
