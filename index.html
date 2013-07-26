@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>湖南抗旱设备管理系统</title>
     <link href="css/global.css" type="text/css" rel="stylesheet">
     <link href="css/clearfix.css" type="text/css" rel="stylesheet">
@@ -149,7 +149,7 @@
     });
     //全局变量
     //功能菜单实例（一级菜单）//模块菜单实例（多级菜单）
-    var FuncM,LeftM,Display,Resizer;
+    var FuncM, LeftM, TimeClock, Display, Resizer;
 
     KISSY.ready(function (S) {
         //Resize模块（控制窗口最小宽度高度和兼容性）
@@ -158,7 +158,7 @@
         });
         //时钟模块
         S.use("Project/UI/Clock", function (S, Clock) {
-            Clock.Init();
+            TimeClock = Clock.Init();
         });
         //菜单模块
         S.use("Project/UI/FuncMenu,Project/UI/LeftMenu", function (S, FuncMenu, LeftMenu) {
@@ -175,7 +175,7 @@
                 },
                 open: function (Item) {
                     var src = Item.GetElement().attr("url");
-                    S.one("#mainFrame").prop("src",src);
+                    S.one("#mainFrame").prop("src", src);
                 }
             };
             //需先初始化模块菜单,因为GoFirst调用了goframe事件,goframe事件中需要引用LeftM
@@ -183,7 +183,7 @@
             FuncM = FuncMenu.Init(FuncMCfg).GoFirst();
         });
         //浮动显示卡
-        S.use("Project/UI/OverDisplay",function(S,OverDisplay){
+        S.use("Project/UI/OverDisplay", function (S, OverDisplay) {
             Display = new OverDisplay();
         })
     });
