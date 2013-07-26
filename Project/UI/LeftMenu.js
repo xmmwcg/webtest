@@ -13,8 +13,9 @@ KISSY.add("Project/UI/LeftMenu", function (S, Menu) {
         };
         //显示菜单（动画效果）
         var MenuShow = function (name) {
+            var WillShow;
             if (SelectMenu == null || SelectMenu.GetName() != name) {
-                var WillShow = LeftMenu.GetMenuByName(name);
+                WillShow = LeftMenu.GetMenuByName(name);
                 if (WillShow) {
                     var WillShowElement = $(WillShow.GetDomElement());
                     var WillShowWidth = WillShowElement.width();
@@ -37,6 +38,7 @@ KISSY.add("Project/UI/LeftMenu", function (S, Menu) {
                         }});
                 }
             }
+            return WillShow;
         };
         ///*公有属性*/
 
@@ -71,8 +73,7 @@ KISSY.add("Project/UI/LeftMenu", function (S, Menu) {
         };
         //切换至相应名称的菜单（调用动画效果）
         LeftMenu.SwitchTo = function (name) {
-            MenuShow(name);
-            return LeftMenu;
+            return MenuShow(name);
         };
         return LeftMenu;
     }();
@@ -102,6 +103,9 @@ KISSY.add("Project/UI/LeftMenu/Menus", function (S, Item) {
         Menus.GetDomElement = function () {
             return element.getDOMNode();
         };
+        Menus.GoFirst = function(){
+
+        }
         //选项集合（数组）
         var Items = function () {
             var ItemsArray = [];
