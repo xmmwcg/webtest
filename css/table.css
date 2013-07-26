@@ -84,20 +84,8 @@
 #List table tbody tr{
     height: 27px;
 }
-#List table tbody tr.a1 td{
-    background-color: #dddddd;
-}
-#List table tbody tr.a2 td{
-    background-color: #dddddd;
-}
-#List table tbody tr.a3 td{
-    background-color: #dddddd;
-}
-#List table tbody tr.a4 td{
-    background-color: #dddddd;
-}
-#List table tbody tr.a5 td{
-    background-color: #dddddd;
+#List table tbody tr.t_color td{
+    background-color: #f0f0f0;
 }
 #List table tbody tr td span:not(.slide):not(.exist)
 {
