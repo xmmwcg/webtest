@@ -1,0 +1,17 @@
+body{
+    font-family: tahoma, 'Microsoft Yahei';
+}
+.year{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+.year span{
+    top: 100px;
+    font-size: 18px;
+}

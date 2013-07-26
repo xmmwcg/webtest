@@ -41,6 +41,7 @@
     background-position:right -24px;
     border-right:none;
     margin-left: -8px;
+    border-left: 1px solid #c1c1c1;
 }
 .tab-nav li.selected
 {

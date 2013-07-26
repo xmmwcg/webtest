@@ -1,5 +1,10 @@
-body{
-    font-family: tahoma, 'Microsoft Yahei';
+#SummaryTitle{
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    padding: 20px 0;
+    font-size: 18px;
 }
 #List
 {
@@ -54,13 +59,41 @@ body{
     text-overflow: ellipsis;
     white-space: nowrap;
     display:inline-block;
+    text-decoration: none;
+    color: #000000;
 }
+#List table td a:visited{
+    color: #676767;
+}
+#List table td a:hover{
+    color: #0000FF;
+}
+
 #List table thead td
 {
     text-align:center;
-    height:24px;
+    width: 100px;
+    height:30px;
     background-color:#dddddd;
     white-space: nowrap;
+}
+#List table tbody tr{
+    height: 27px;
+}
+#List table tbody tr.a1 td{
+    background-color: #dddddd;
+}
+#List table tbody tr.a2 td{
+    background-color: #dddddd;
+}
+#List table tbody tr.a3 td{
+    background-color: #dddddd;
+}
+#List table tbody tr.a4 td{
+    background-color: #dddddd;
+}
+#List table tbody tr.a5 td{
+    background-color: #dddddd;
 }
 #List table tbody tr td span:not(.slide):not(.exist)
 {
