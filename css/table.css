@@ -76,7 +76,7 @@
 #List table tbody tr{
     height: 27px;
 }
-#List table tbody tr td span:not(.slide):not(.exist)
+#List table tbody tr td em:not(.slide):not(.exist)
 {
     display: inline-block;
     border-color:transparent transparent transparent #333;
@@ -89,7 +89,7 @@
     vertical-align: middle;
     margin: -2px 8px 0 5px;
 }
-#List table tbody tr.open td span:not(.slide):not(.exist)
+#List table tbody tr.open td em:not(.slide):not(.exist)
 {
     border-color:#333 transparent transparent transparent;
     border-style:solid dashed dashed dashed;
