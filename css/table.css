@@ -1,0 +1,100 @@
+body{
+    font-family: tahoma, 'Microsoft Yahei';
+}
+#List
+{
+    overflow-x:auto;
+    overflow-y:auto;
+    padding:0px 35px;
+    margin:0;
+}
+#List table{
+    border: 1px solid #c1c1c1;
+    border-right: none;
+    border-bottom: none;
+    font-size: 13px;
+}
+#List table td
+{
+    border-right:1px solid #c1c1c1;
+    border-bottom:1px solid #c1c1c1;
+    width: 80px;
+    height:22px;
+    line-height:22px;
+    vertical-align:middle;
+    padding:0 5px;
+    background-color:#fff;
+    white-space:nowrap;
+}
+#List table td.left
+{
+    text-align:left;
+}
+#List table td.center
+{
+    text-align:center;
+}
+#List table td.right
+{
+    text-align:right;
+}
+#List table .double td
+{
+    background-color:#f0f0f0;
+}
+#List table .sub td
+{
+    background-color:#ddd;
+}
+#List table td a
+{
+    padding:0;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display:inline-block;
+}
+#List table thead td
+{
+    text-align:center;
+    height:24px;
+    background-color:#dddddd;
+    white-space: nowrap;
+}
+#List table tbody tr td span:not(.slide):not(.exist)
+{
+    display: inline-block;
+    border-color:transparent transparent transparent #333;
+    border-style:dashed dashed dashed solid;
+    border-width: 4px 0 4px 4px;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    margin: -2px 8px 0 5px;
+}
+#List table tbody tr.open td span:not(.slide):not(.exist)
+{
+    border-color:#333 transparent transparent transparent;
+    border-style:solid dashed dashed dashed;
+    border-width: 4px 4px 0 4px;
+}
+#List table tr.highlight td
+{
+    background-color:#AAA;
+}
+.tab_hide
+{
+    /*display:none;*/
+}
+.red
+{
+    color:Red;
+
+}
+.green
+{
+    color:Green;
+}

@@ -9,6 +9,7 @@
     position: relative;
     line-height: 34px;
     border-bottom: 1px solid #eee;
+    background-image:url(../images/list/1px92percwhite.png);
 }
 #Nav .NavLine .Name{
     width: 86px;
