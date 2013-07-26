@@ -45,6 +45,11 @@ border-collapse: collapse;
 border-spacing: 0; 
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 #Resize{
     position: relative;
+    overflow: hidden;
 }

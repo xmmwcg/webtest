@@ -50,7 +50,7 @@ KISSY.add("Project/UI/LeftMenu", function (S, Menu) {
             if (selector == undefined || typeof(selector) == "string") {
                 selector = selector || "#LeftMenu .Menus";
             }
-            S.all(selector).each(function (e, i) {
+            S.all(selector).removeClass("hidden").each(function (e, i) {
                 AddMenus(i, e, callback);
             });
             return LeftMenu;

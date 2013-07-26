@@ -5,7 +5,7 @@
     <title>信息显示</title>
     <link href="../css/global.css" rel="stylesheet" type="text/css">
     <link href="../css/clearfix.css" rel="stylesheet" type="text/css">
-    <link href="../css/Nav.css" rel="stylesheet" type="text/css">
+    <link href="../css/nav.css" rel="stylesheet" type="text/css">
     <link href="../css/tab.css" rel="stylesheet" type="text/css">
     <link href="../css/table.css" rel="stylesheet" type="text/css">
 
@@ -151,7 +151,7 @@
             <td class="center">修改</td>
             <td class="center">删除</td>
         </tr>
-        <tr class="a1">
+        <tr>
             <td class="center">皮卡车</td>
             <td class="center tab_hide">拉水车</td>
             <td class="center tab_hide">中央投资</td>
@@ -187,8 +187,8 @@
             }
         }
     });
-    KISSY.ready(function () {
-        KISSY.use("Project/UI/TipSwitch", function (S, TipSwitch) {
+    KISSY.ready(function (S) {
+        S.use("Project/UI/TipSwitch", function (S, TipSwitch) {
             var SelectCallBack = {
                 select: function (Select) {
                     if (Select) {
