@@ -47,4 +47,5 @@ border-spacing: 0;
 
 #Resize{
     position: relative;
+    overflow: hidden;
 }

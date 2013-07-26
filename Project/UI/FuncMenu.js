@@ -15,12 +15,12 @@ KISSY.add("Project/UI/FuncMenu", function(S, FuncMenuItem) {
         //让指针悬浮于某一位置，参数为坐标集
         var ArrowGoto = function(Pos) {
             ArrowLi.stop().animate({left: Pos.left + "px",width: Pos.width}, {duration: 0.25});
-        }
+        };
         //增加菜单按钮，i是序号，e是元素，callback是回调事件
         var AddMenuItem = function(i,e,callback){
             MenuItems[i] = new FuncMenuItem(i,e,FuncMenu,callback);
             return MenuItems[i];
-        }
+        };
         //公共方法
         //初始化
         FuncMenu.Init = function(selector,callback) {
@@ -36,17 +36,17 @@ KISSY.add("Project/UI/FuncMenu", function(S, FuncMenuItem) {
                 AddMenuItem(i,e,callback);
             }).parent().append(ArrowLi);
             return FuncMenu;
-        }
+        };
         //得到当前被选中的按钮实例
         FuncMenu.GetSelectItem = function(){
             return SelectItem;
-        }
+        };
         //让指针悬浮到i按钮上方（不同于GoFrame，只是让指针去一下不改变当前被选按钮）
         FuncMenu.FloatTo = function(i){
             if(MenuItems[i]){
                 ArrowGoto(MenuItems[i].GetPos());
             }
-        }
+        };
         //选择i按钮，指针会去i按钮上方，并且记录当前被选按钮为i按钮
         FuncMenu.GoFrame = function(i) {
             if(MenuItems[i]){
@@ -57,12 +57,12 @@ KISSY.add("Project/UI/FuncMenu", function(S, FuncMenuItem) {
                 }
             }
             return FuncMenu;
-        }
+        };
         //去第一个按钮
         FuncMenu.GoFirst = function(){
             FuncMenu.GoFrame(0);
             return FuncMenu;
-        }
+        };
         return FuncMenu;
     }();
 }, {

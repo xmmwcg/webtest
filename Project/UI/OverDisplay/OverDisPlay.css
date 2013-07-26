@@ -1,0 +1,42 @@
+#OverDisplay{
+    position: absolute;
+    top: 99px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+}
+#OverDisplay .Bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 133px;
+    padding-top: 15px;
+    background: url(bar_bg.png) repeat-y;
+}
+#OverDisplay .Bar .Bt{
+    width: 63px;
+    height: 37px;
+    line-height: 35px;
+    display: block;
+    font-size: 16px;
+    color: #f0f0f0;
+    padding-left: 10px;
+    margin-left: 10px;
+    text-align: center;
+    background: url(bt.png);
+    cursor: pointer;
+}
+#OverDisplay .Bar .Bt:hover{
+    background-position: bottom;
+}
+#OverDisplay .Display{
+    position: absolute;
+    top: 0;
+    left: 133px;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+}
