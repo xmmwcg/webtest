@@ -34,7 +34,7 @@ KISSY.add("Project/UI/FuncMenu", function(S, FuncMenuItem) {
             CallBack = callback;
             S.all(selector).each(function(e,i){
                 AddMenuItem(i,e,callback);
-            }).parent().append(ArrowLi);
+            }).parent().removeClass("hidden").append(ArrowLi);
             return FuncMenu;
         };
         //得到当前被选中的按钮实例

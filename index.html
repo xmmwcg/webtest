@@ -35,7 +35,7 @@
         <!-- 后台生成用户一级菜单 -->
         <!-- rel属性为控制多级菜单的对应关系,必须和LeftMenu下面class为Menus的div的id对应,属性值可以自取 -->
         <!-- class为MenuItem为必填项不能改 -->
-        <ul class="clearfix">
+        <ul class="hidden clearfix">
             <li class="MenuItem" rel="EquipmentManager">
                 <span>设备管理</span>
             </li>
@@ -57,7 +57,7 @@
     <div id="LeftMenu">
         <!-- 后台生成多级菜单 -->
         <!-- id值要和上面一级菜单中MenuItem的rel值对应,可自取,不能重复 -->
-        <div id="EquipmentManager" class="Menus">
+        <div id="EquipmentManager" class="Menus hidden">
             <ul>
                 <!-- subli是样式需要 -->
                 <li class="selected" url="Equipement/navigation.html">
@@ -84,7 +84,7 @@
                 </li>
             </ul>
         </div>
-        <div id="WorkManager" class="Menus">
+        <div id="WorkManager" class="Menus hidden">
             <ul>
                 <li class="selected">
                     <div class="subli"><em class="openico hidden"></em><span class="text">菜单一</span>
@@ -110,12 +110,12 @@
                 </li>
             </ul>
         </div>
-        <div id="AdministratorManager" class="Menus">
+        <div id="AdministratorManager" class="Menus hidden">
             <ul>
 
             </ul>
         </div>
-        <div id="WorkAss" class="Menus">
+        <div id="WorkAss" class="Menus hidden">
             <ul>
 
             </ul>
