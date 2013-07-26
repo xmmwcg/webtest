@@ -125,7 +125,15 @@
         <iframe onload="" src="" name="mainFrame" id="mainFrame" frameborder="no" scrolling="auto"
                 hidefocus=""></iframe>
     </div>
+    <div id="OverDisplay">
+        <div class="Bar"></div>
+        <div class="Display">
+            <iframe onload="" src="" name="DisplayFrame" id="DisplayFrame" frameborder="no" scrolling="auto"
+                    hidefocus=""></iframe>
+        </div>
+    </div>
 </div>
+
 <script>
     //配置KISSY包路径
     KISSY.config({
@@ -173,6 +181,7 @@
             LeftM = LeftMenu.Init(LeftMCfg);
             FuncM = FuncMenu.Init(FuncMCfg).GoFirst();
         });
+        S.use("Project/UI/OverDisplay");
     });
 </script>
 </body>
