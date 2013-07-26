@@ -29,6 +29,11 @@ KISSY.add("Project/UI/OverDisplay",function(S){
                 }});
             }
         }
+        //绑定事件
+        S.one(window).on("resize",function(){
+            SetWidth();
+        })
+        //
         var SetWidth = function(){
             var PWidth = ParentCon.width();
             var OLeft = isOpen ? 0 : PWidth;
