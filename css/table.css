@@ -52,18 +52,25 @@
 }
 #List table td span , #List table td a
 {
-    width: 100px;
+    display: block;
     padding:0 5px;
+    text-decoration: none;
+}
+#List table td span.fixwidth, #List table td a.fixwidth {
+    width: 100px;
     overflow: hidden;    /*超出隐藏*/
     text-overflow: ellipsis; /*省略号显示超出文本*/
     white-space: nowrap;   /*不会换行*/
-    text-decoration: none;
+}
+#List table td a{
+    cursor: pointer;
 }
 #List table td a:visited{
     color: #676767;
 }
 #List table td a:hover{
     color: #0000FF;
+    text-decoration: underline;
 }
 #List table thead td
 {
