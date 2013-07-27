@@ -3,6 +3,11 @@ h1{
     position: relative;
     top: 12px;
 }
+h2{
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+}
 span{
     color: red;
     position: relative;
@@ -14,4 +19,27 @@ span{
     padding: 5px 35px;
     position: relative;
     top: 35px;
+}
+.report_table table td.title {
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e0e0e0;
+}
+.report_table table td select {
+    border: none;
+    height: 24px;
+    line-height: 24px;
+}
+.report_table table td.showtd{
+    border-right-style: none;
+    text-align: right;
+    color: red;
+    display: table-cell;
+}
+.report_table table td input[type='text'] {
+    border: none;
+    display: block;
+    line-height: 24px;
+    height: 24px;
 }

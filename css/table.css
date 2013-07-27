@@ -67,10 +67,7 @@
     cursor: pointer;
 }
 #List table td a:visited{
-    color: #333;
-}
-#List table td a:link{
-    color: #333;
+    color: #000;
 }
 #List table td a:hover{
     color: #0000FF;
