@@ -108,7 +108,7 @@ KISSY.add('gallery/slide/1.1/slide-util',function(S){
 },{
 	requires:[
 		'node',
-		'sizzle',
+		//'sizzle',
 		'json',
 		'event'
 	]	

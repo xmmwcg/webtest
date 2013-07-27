@@ -7,10 +7,12 @@
     <link href="../css/tab.css" rel="stylesheet" type="text/css">
     <link href="../css/regulation_collect.css" rel="stylesheet" type="text/css">
     <link href="../css/table.css" rel="stylesheet" type="text/css">
+
+    <script src="../Project/build/kissy.js"></script>
 </head>
 <body>
 <div id="SummaryList">
-    <ul class="tab-nav clearfix" style="position: fixed;top: 0;z-index: 100;">
+    <ul class="tab-nav clearfix">
         <li class="first selected">
             <span>年度增减情况</span>
         </li><li class><span>年度增加情况</span></li><li  class="last" >
@@ -229,5 +231,22 @@
         </table>
     </div>
 </div>
+<script>
+    //配置KISSY包路径
+    KISSY.config({
+        tag: new Date().toString(),
+        packages: {
+            Project: {
+                base: "../",
+                debug: true
+            }
+        }
+    });
+    KISSY.ready(function (S) {
+        S.use("gallery/slide/1.1/",function(S,Slide){
+            var Slider = new Slide("#SummaryList");
+        })
+    })
+</script>
 </body>
 </html>
