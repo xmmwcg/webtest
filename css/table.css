@@ -6,24 +6,24 @@
     padding: 20px 0;
     font-size: 18px;
 }
-#List
+.List
 {
     position: relative;
     padding: 0;
     margin:0;
     text-align: center;
 }
-#List .ListSpace{
+.List .ListSpace{
     display: inline-block;
     margin: 0 35px;
 }
-#List table{
+.List table{
     border: 1px solid #c1c1c1;
     border-right: none;
     border-bottom: none;
     font-size: 13px;
 }
-#List table td
+.List table td
 {
     border-right:1px solid #c1c1c1;
     border-bottom:1px solid #c1c1c1;
@@ -34,49 +34,49 @@
     margin: 0;
     background-color:#fff;
 }
-#List table td.left
+.List table td.left
 {
     text-align:left;
 }
-#List table td.center
+.List table td.center
 {
     text-align:center;
 }
-#List table td.right
+.List table td.right
 {
     text-align:right;
 }
-#List table .double td
+.List table .double td
 {
     background-color:#f0f0f0;
 }
-#List table td span , #List table td a
+.List table td span , .List table td a
 {
     display: block;
     padding:0 5px;
     text-decoration: none;
     white-space: nowrap;   /*不会换行*/
 }
-#List table td span.fixwidth, #List table td a.fixwidth {
+.List table td span.fixwidth, .List table td a.fixwidth {
     width: 100px;
     overflow: hidden;    /*超出隐藏*/
     text-overflow: ellipsis; /*省略号显示超出文本*/
     white-space: nowrap;   /*不会换行*/
 }
-#List table td a{
+.List table td a{
     cursor: pointer;
 }
-#List table td a:visited{
+.List table td a:visited{
     color: #333;
 }
-#List table td a:link{
+.List table td a:link{
     color: #333;
 }
-#List table td a:hover{
+.List table td a:hover{
     color: #0000FF;
     text-decoration: underline;
 }
-#List table thead td
+.List table thead td
 {
     text-align:center;
     width: 100px;
@@ -84,13 +84,13 @@
     background-color:#dddddd;
     white-space: nowrap;
 }
-#List table tbody tr{
+.List table tbody tr{
     height: 27px;
 }
-#List table tbody tr.t_color td{
+.List table tbody tr.t_color td{
     background-color: #f0f0f0;
 }
-#List table tbody tr td em:not(.slide):not(.exist)
+.List table tbody tr td em:not(.slide):not(.exist)
 {
     display: inline-block;
     border-color:transparent transparent transparent #333;
@@ -103,13 +103,13 @@
     vertical-align: middle;
     margin: -2px 8px 0 5px;
 }
-#List table tbody tr.open td em:not(.slide):not(.exist)
+.List table tbody tr.open td em:not(.slide):not(.exist)
 {
     border-color:#333 transparent transparent transparent;
     border-style:solid dashed dashed dashed;
     border-width: 4px 4px 0 4px;
 }
-#List table tr.highlight td
+.List table tr.highlight td
 {
     background-color:#AAA;
 }
