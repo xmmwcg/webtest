@@ -6,5 +6,12 @@ h1{
 span{
     color: red;
     position: relative;
-    top: 20px;
+    top: 25px;
+}
+.report_table {
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 5px 35px;
+    position: relative;
+    top: 35px;
 }
