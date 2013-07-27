@@ -10,58 +10,185 @@
     <link href="../css/add.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="List">
-        <div class="ListSpace">
-            <h1>抗旱设备资产卡片</h1>
-            <span>（*代表必填，#代表提交后不能修改，请认真填写！）</span>
-            <div class="report_table">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td class="tittle">设备类别<em>#</em></td>
-                            <td>
-                                <select id="EquipmentClass" name="EquipmentClass">
-                                    <option value="">应急拉水车</option>
-                                    <option value="">打井洗井设备</option>
-                                    <option value="">移动灌溉设备</option>
-                                    <option value="">移动喷滴灌节水设备</option>
-                                    <option value="">输水软管</option>
-                                    <option value="">简易净水设备</option>
-                                    <option value="">清淤设备</option>
-                                    <option value="">发电和动力设备</option>
-                                    <option value="">其他设备</option>
-                                </select>
-                            </td>
-                            <td class="tittle">设备名称<em>#</em></td>
-                            <td>
-                                <select id="EquipmentName" name="EquipmentName">
-                                    <option>皮卡车</option>
-                                    <option>送水车</option>
-                                    <option>其他</option>
-                                </select>
-                            </td>
-                            <td class="tittle">设备类别<em>#</em></td>
-                            <td>
-                                <select id="EquipmentUnit" name="EquipmentUnit">
-                                    <option>辆</option>
-                                    <option>台/套</option>
-                                    <option>个</option>
-                                    <option>卷</option>
-                                    <option>根</option>
-                                </select>
-                            </td>
-                            <td id="unit_head" class="showtd">每卷</td>
-                            <td class="showtd">
-                                <input type="text" id="mi_length" value="多少">
-                            </td>
-                            <td class="showtd">米</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <h2>基本信息</h2>
 
+<h1>抗旱设备资产卡片</h1>
+<div class="note">
+    <span>（*代表必填，#代表提交后不能修改，请认真填写！）</span>
+</div>
+<div id="List">
+    <div class="ListSpace">
+        <div class="report_table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="tittle">设备类别<em>#</em></td>
+                        <td>
+                            <select id="EquipmentClass" name="EquipmentClass">
+                                <option value="">应急拉水车</option>
+                                <option value="">打井洗井设备</option>
+                                <option value="">移动灌溉设备</option>
+                                <option value="">移动喷滴灌节水设备</option>
+                                <option value="">输水软管</option>
+                                <option value="">简易净水设备</option>
+                                <option value="">清淤设备</option>
+                                <option value="">发电和动力设备</option>
+                                <option value="">其他设备</option>
+                            </select>
+                        </td>
+                        <td class="tittle">设备名称<em>#</em></td>
+                        <td>
+                            <select id="EquipmentName" name="EquipmentName">
+                                <option>皮卡车</option>
+                                <option>送水车</option>
+                                <option>其他</option>
+                            </select>
+                        </td>
+                        <td class="tittle">设备类别<em>#</em></td>
+                        <td>
+                            <select id="EquipmentUnit" name="EquipmentUnit">
+                                <option>辆</option>
+                                <option>台/套</option>
+                                <option>个</option>
+                                <option>卷</option>
+                                <option>根</option>
+                            </select>
+                        </td>
+                        <td id="unit_head" class="showtd">每卷</td>
+                        <td class="showtd"><input type="text" id="mi_length" value="多少"></td>
+                        <td class="showtd">米</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+</div>
+<h2>基本信息</h2>
+<div id="List" style="top: 30px">
+    <div class="ListSpace">
+        <div class="report_table">
+            <table cellspacing="0">
+                <tbody>
+                <tr>
+                    <td class="title">设备来源 <em>#</em></td>
+                    <td>
+                        <select id="Investment" name="Investment">
+                            <option value="1">中央投资</option>
+                            <option value="2">省级投资</option>
+                            <option value="3">市级投资</option>
+                            <option value="4">县级投资</option>
+                            <option value="5">自有资金</option>
+                            <option value="6">其他</option>
+                        </select>
+                    </td>
+                    <td class="title">规格型号</td>
+                    <td><input type="text" id="EquipmentType" name="EquipmentType"></td>
+                    <td class="title">设备厂家 <em>*</em></td>
+                    <td><input type="text" id="EquipmentFactory" name="EquipmentFactory"></td>
+                    <td class="title">入账方式</td>
+                    <td>
+                        <select id="BuyInMode" name="BuyInMode">
+                            <option value="1">购入</option>
+                            <option value="2">调拨</option>
+                            <option value="3">接受捐赠</option>
+                            <option value="4">其他</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title" id="price_head" style="color: red;">购置单价（卷/元）</td>
+                    <td><input type="text" id="Price" name="Price" onchange="getTotal()"></td>
+                    <td class="title" id="buycount_head" style="color: red;">购置卷数</td>
+                    <td><input id="buycount" name="buycount" type="text" onchange="getTotal()"></td>
+                    <td class="title">入账金额（万元）</td>
+                    <td><input type="text" id="BuyInPrice" name="BuyInPrice" readonly="readonly"></td>
+                    <td class="title">出厂日期 <em>*</em> </td>
+                    <td><input type="text" id="ProduceDate" name="ProduceDate"></td>
+                </tr>
+                <tr>
+                    <td class="title">购买日期 <em>* #</em></td>
+                    <td><input type="text" id="BuyDate" name="BuyDate"></td>
+                    <td class="title"> 预计使用年限</td>
+                    <td>
+                        <select style="width: 70px;" id="year1" name="year1">
+                            <option value="0">0年</option>
+                            <option value="1">1年</option>
+                            <option value="2">2年</option>
+                            <option value="3">3年</option>
+                            <option value="4">4年</option>
+                            <option value="5">5年</option>
+                            <option value="6">6年</option>
+                            <option value="7">7年</option>
+                            <option value="8">8年</option>
+                            <option value="9">9年</option>
+                            <option value="10">10年</option>
+                            <option value="11">11年</option>
+                            <option value="12">12年</option>
+                            <option value="13">13年</option>
+                            <option value="14">14年</option>
+                            <option value="15">15年</option>
+                            <option value="16">16年</option>
+                            <option value="17">17年</option>
+                            <option value="18">18年</option>
+                            <option value="19">19年</option>
+                            <option value="20">20年</option>
+                        </select>
+                        <select style="width: 70px;" id="month1" name="month1">
+                            <option value="0">0月</option>
+                            <option value="1">1月</option>
+                            <option value="2">2月</option>
+                            <option value="3">3月</option>
+                            <option value="4">4月</option>
+                            <option value="5">5月</option>
+                            <option value="6">6月</option>
+                            <option value="7">7月</option>
+                            <option value="8">8月</option>
+                            <option value="9">9月</option>
+                            <option value="10">10月</option>
+                            <option value="11">11月</option>
+                        </select>
+                    </td>
+                    <td class="title">管理部门 <em>*</em></td>
+                    <td><input type="text" id="ManagerDepartment" name="ManagerDepartment"></td>
+                    <td class="title">管理员 <em>*</em> </td>
+                    <td><input type="text" id="Manager" name="Manager"></td>
+                </tr>
+                <tr>
+                    <td class="title">联系电话 <em>*</em></td>
+                    <td><input type="text" id="PhoneNumber" name="PhoneNumber"></td>
+                    <td class="title">存放地点 <em>*</em></td>
+                    <td colspan="5"><input type="text" id="SaveAddress" name="SaveAddress"></td>
+                </tr>
+                <tr>
+                    <td class="title">上传设备照片</td>
+                    <td colspan="7"><input type="file" id="Photo" value="上传" name="fileUp"></td>
+                </tr>
+                <tr>
+                    <td class="title">备注</td>
+                    <td colspan="7"><input type="text" id="Remark" name="Remark"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="List">
+    <div class="ListSpace">
+        <div class="report_table" style="top: 80px">
+            <table>
+                <tbody>
+                <tr>
+                    <td class="title">操作员 <em>*</em></td>
+                    <td><input type="text" id="operater" name="operater"></td>
+                    <td class="title">操作时间 <em>*</em></td>
+                    <td><input type="text" id="opttime" name="opttime"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="button_box">
+    <input id="ok_button" type="button" onclick="ClickImg();" value="提交">
+</div>
 </body>
 </html>

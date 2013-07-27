@@ -2,11 +2,18 @@ h1{
     font-size: 20px;
     position: relative;
     top: 12px;
+    text-align: center;
+    font-weight: normal;
 }
 h2{
     font-size: 20px;
     position: relative;
     top: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+.note{
+    text-align: center;
 }
 span{
     color: red;
@@ -21,7 +28,6 @@ span{
     top: 35px;
 }
 .report_table table td.title {
-    font-weight: bold;
     text-align: center;
     white-space: nowrap;
     background-color: #e0e0e0;
@@ -42,4 +48,29 @@ span{
     display: block;
     line-height: 24px;
     height: 24px;
+}
+#button_box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+    background-color: #fff;
+    border-top: 1px solid #bfbfbf;
+    text-align: center;
+}
+#button_box input {
+    border: none;
+    background-color: Transparent;
+    background-image: url(../images/nav/button_bg.png);
+    height: 52px;
+    width: 114px;
+    margin: 0;
+    padding: 0;
+    color: #2d516e;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: white 1px 1px 1px;
+    margin: 5px auto;
+    cursor: pointer;
 }
