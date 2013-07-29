@@ -6,6 +6,7 @@
     <title>查看</title>
     <link href="../css/global.css" rel="stylesheet" type="text/css">
     <link href="../css/regulation_collect.css" rel="stylesheet" type="text/css">
+    <link href="../css/list.css" rel="stylesheet" type="text/css">
     <link href="../css/table.css" rel="stylesheet" type="text/css">
     <link href="../css/submit.css" rel="stylesheet" type="text/css">
     <link href="../css/check.css" rel="stylesheet" type="text/css">
@@ -87,22 +88,20 @@
         </div>
     </div>
     <div  class="w960">
-        <h2>设备检测提醒</h2>
-        <p style="text-align:center;">无检测提醒相关信息！</p>
-        <h2>设备折旧</h2>
-        <p style="text-align:center;">无设备折旧相关信息！</p>
         <h2>设备状态</h2>
-        <div class="table">
-            <div class="tablespace">
+        <div class="List">
+            <div class="ListSpace">
                 <table>
                     <thead>
                     <tr>
-                        <td class="title" rowspan="2"><span></span>选择</span></td>
+                        <td class="title" rowspan="2"><span>选择</span></td>
                         <td class="title" rowspan="2"><span>设备编号</span></td>
                         <td class="title" rowspan="2"><span>出厂编号</span></td>
                         <td class="title" rowspan="2"><span>状态变更时间</span></td>
                         <td class="title" rowspan="2"><span>当前状态</span></td>
                         <td class="title" rowspan="1" colspan="3"><span>使用率</span></td>
+                        <td class="title" rowspan="2"><span>设备检测提醒</span></td>
+                        <td class="title" rowspan="2"><span>设备折旧</span></td>
                         <td class="title" rowspan="2"><span>查看使用记录</span></td>
                         <td class="title" rowspan="2"><span>查看GPS</span></td>
                     </tr>
@@ -122,6 +121,8 @@
                         <td><span></span></td>
                         <td><span></span></td>
                         <td><span></span></td>
+                        <td><span>无</span></td>
+                        <td><span>无</span></td>
                         <td><a href="#" onclick="">查看</a></td>
                         <td><a href="#" onclick="">查看</a></td>
                     </tr>
@@ -137,9 +138,20 @@
             <input type="button" value="不选" onclick="">
         </div>
     </div>
-    <div>
+    <div class="w960">
         <div id="button_box">
-            <input id="ok_button" type="button" onclick="ClickImg();" value="提交">
+            <ul class="select">
+                <li index=""><a href="#">填写利用率</a></li>
+                <li index=""><a href="#" title="本单位人员使用">使用</a></li>
+                <li index=""><a href="#">检修</a></li>
+                <li index=""><a href="#" title="外单位人员使用，且收取租金">租赁</a></li>
+                <li index=""><a href="#" title="外单位人员使用，不收租金">借用</a></li>
+                <li index=""><a href="#" title="设备失去使用价值，但仍放在本单位">报废</a></li>
+                <li index=""><a href="#" title="设备失去使用价值，且不在本单位（如：销毁、出售等）">清理</a></li>
+                <li index=""><a href="#">库存</a></li>
+                <li index=""><a href="#">检测提醒</a></li>
+                <li index=""><a href="#">设备折旧</a></li>
+            </ul>
         </div>
     </div>
 </body>

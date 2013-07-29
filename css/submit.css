@@ -23,3 +23,10 @@
     margin: 5px auto;
     cursor: pointer;
 }
+#button_box ul{
+    height: 26px;
+    margin: 14px 10px 0;
+    padding: 0;
+    display: block;
+    float: right;
+}
