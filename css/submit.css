@@ -30,3 +30,27 @@
     display: block;
     float: right;
 }
+#button_box ul li {
+    float: left;
+    margin: 0 5px;
+    padding: 0;
+    display: block;
+    list-style: none;
+    border: 1px solid #ccc;
+    height: 28px;
+    line-height: 28px;
+    width: 80px;
+}
+#button_box ul li a{
+    cursor: pointer;
+}
+#button_box ul li a:visited{
+    color: #333;
+}
+#button_box ul li a:link{
+    color: #333;
+    text-decoration: none;
+}
+#button_box ul li a:hover{
+    color: #0000FF;
+}
