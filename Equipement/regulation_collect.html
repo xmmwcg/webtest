@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>抗旱设备增减汇总</title>
@@ -14,238 +13,461 @@
 <body>
 <div id="SummaryList">
     <ul class="tab-nav clearfix">
-        <li class="first selected">
-            <span>年度增减情况</span>
-        </li><li class><span>年度增加情况</span></li><li class="last">
-            <span>年度减少情况</span>
-        </li>
+        <li class="first selected"><span>年度增减情况</span></li><li class><span>年度增加情况</span></li><li class="last"><span>年度减少情况</span></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pannel">
             <div class="year">
-                <select>
-                    <option value="">2013</option>
-                    <option value="">2012</option>
-                </select>
+                <label>
+                    <select>
+                        <option value="">2013</option>
+                        <option value="">2012</option>
+                    </select>
+                </label>
                 <span>年度增减情况</span>
             </div>
-            <div id="List" style="top: 80px;">
+            <div class="List" style="top: 125px;">
                 <div class="ListSpace">
-                <table cellspacing="0" id="EquipmentList">
-                    <thead style="white-space: nowrap">
-                    <tr>
-                        <td rowspan="2"><span></span>2013年</span></td>
-                        <td><span>应急拉水车</span></td>
-                        <td><span>打井洗井设备</span></td>
-                        <td><span>移动灌溉设备</span></td>
-                        <td><span>移动喷滴灌节水设备</span></td>
-                        <td><span>输水软管</span></td>
-                        <td><span>简易净水设备</span></td>
-                        <td><span>清淤设备</span></td>
-                        <td><span>发电和动力设备</span></td>
-                        <td><span>其他设备</span></td>
-                        <td rowspan="2"><span>合计</span></td>
-                    </tr>
-                    <tr>
-                        <td><span>辆</span></td>
-                        <td><span>台</span></td>
-                        <td><span>台</span></td>
-                        <td><span>台</span></td>
-                        <td><span>根</span></td>
-                        <td><span>台</span></td>
-                        <td><span>台</span></td>
-                        <td><span>台</span></td>
-                        <td><span>台</span></td>
-                    </tr>
-                    </thead>
-                    <!--tbody中偶数行带颜色-->
-                    <tbody>
-                    <tr>
-                        <td class="center"><span>合计</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr class="t_color">
-                        <td class="center"><span>1</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="center"><span>2</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr class="t_color">
-                        <td class="center"><span>3</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="center"><span>4</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr class="t_color">
-                        <td class="center"><span>5</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="center"><span>6</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr class="t_color">
-                        <td class="center"><span>7</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="center"><span>8</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr class="t_color">
-                        <td class="center"><span>9</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="center"><span>10</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr class="t_color">
-                        <td class="center"><span>11</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="center"><span>12</span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                        <td class="center "><span></span></td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <table cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td rowspan="2"><span>2013年</span></td>
+                            <td><span>应急拉水车</span></td>
+                            <td><span>打井洗井设备</span></td>
+                            <td><span>移动灌溉设备</span></td>
+                            <td><span>移动喷滴灌节水设备</span></td>
+                            <td><span>输水软管</span></td>
+                            <td><span>简易净水设备</span></td>
+                            <td><span>清淤设备</span></td>
+                            <td><span>发电和动力设备</span></td>
+                            <td><span>其他设备</span></td>
+                            <td rowspan="2"><span>合计</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>辆</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>根</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                        </tr>
+                        </thead>
+                        <!--tbody中偶数行带颜色-->
+                        <tbody>
+                        <tr>
+                            <td class="center"><span>合计</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>1</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>2</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>3</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>4</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>5</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>6</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>7</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="tab-pannel">
-
+        <div class="tab-pannel hidden">
+            <div class="year">
+                <label>
+                    <select>
+                        <option value="">2013</option>
+                        <option value="">2012</option>
+                    </select>
+                </label>
+                <span>年度增加情况</span>
+            </div>
+            <div class="List" style="top: 125px;">
+                <div class="ListSpace">
+                    <table cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td rowspan="2"><span>2013年</span></td>
+                            <td><span>应急拉水车</span></td>
+                            <td><span>打井洗井设备</span></td>
+                            <td><span>移动灌溉设备</span></td>
+                            <td><span>移动喷滴灌节水设备</span></td>
+                            <td><span>输水软管</span></td>
+                            <td><span>简易净水设备</span></td>
+                            <td><span>清淤设备</span></td>
+                            <td><span>发电和动力设备</span></td>
+                            <td><span>其他设备</span></td>
+                            <td rowspan="2"><span>合计</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>辆</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>根</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                        </tr>
+                        </thead>
+                        <!--tbody中偶数行带颜色-->
+                        <tbody>
+                        <tr>
+                            <td class="center"><span>合计</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>1</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>2</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>3</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>4</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>5</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>6</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>7</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <div class="tab-pannel">
-
+        <div class="tab-pannel hidden">
+            <div class="year">
+                <label>
+                    <select>
+                        <option value="">2013</option>
+                        <option value="">2012</option>
+                    </select>
+                </label>
+                <span>年度减少情况</span>
+            </div>
+            <div class="List" style="top: 125px;">
+                <div class="ListSpace">
+                    <table cellspacing="0">
+                        <thead>
+                        <tr>
+                            <td rowspan="2"><span>2013年</span></td>
+                            <td><span>应急拉水车</span></td>
+                            <td><span>打井洗井设备</span></td>
+                            <td><span>移动灌溉设备</span></td>
+                            <td><span>移动喷滴灌节水设备</span></td>
+                            <td><span>输水软管</span></td>
+                            <td><span>简易净水设备</span></td>
+                            <td><span>清淤设备</span></td>
+                            <td><span>发电和动力设备</span></td>
+                            <td><span>其他设备</span></td>
+                            <td rowspan="2"><span>合计</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>辆</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>根</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                            <td><span>台</span></td>
+                        </tr>
+                        </thead>
+                        <!--tbody中偶数行带颜色-->
+                        <tbody>
+                        <tr>
+                            <td class="center"><span>合计</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>1</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>2</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>3</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>4</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>5</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="center"><span>6</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        <tr class="t_color">
+                            <td class="center"><span>7</span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                            <td class="center"><span></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-
     </div>
-
 </div>
-
-
 <script>
     //配置KISSY包路径
     KISSY.config({

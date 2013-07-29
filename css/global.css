@@ -56,7 +56,7 @@ table {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 #Resize {
