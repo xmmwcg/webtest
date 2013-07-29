@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/tab.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>弹窗</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/regulation_collect.css" rel="stylesheet" type="text/css">
+    <link href="../css/list.css" rel="stylesheet" type="text/css">
+    <link href="../css/table.css" rel="stylesheet" type="text/css">
+    <link href="../css/submit.css" rel="stylesheet" type="text/css">
+    <link href="../css/check.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div>
+    <div id="detail" index="">
+        <h2>设备使用记录</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td class="title"><span>设备编号</span></td>
+                        <td class="title"><span>状态</span></td>
+                        <td class="title"><span>开始时间</span></td>
+                        <td class="title"><span>结束时间</span></td>
+                    </tr>
+                    <tr>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GPS" index="">
+        <h2>GPS</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <thead>
+                    <tr style="text-align: cetent;">
+                        <td class="title"><span>单位名称</span></td>
+                        <td class="title"><span>设备编号</span></td>
+                        <td class="title"><span>出厂号码</span></td>
+                        <td class="title"><span>SIM卡号</span></td>
+                        <td class="title"><span>管理人</span></td>
+                        <td class="title"><span>上次工作日期</span></td>
+                        <td class="title"><span>上次工作时间</span></td>
+                        <td class="title"><span>总工作时间</span></td>
+                        <td class="title"><span>更新日期</span></td>
+                        <td class="title"><span>工作地址</span></td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><span>岳阳县</span></td>
+                        <td><span>430621002011107001001001</span></td>
+                        <td><span>ZL030010100565</span></td>
+                        <td><span>无权查看</span></td>
+                        <td><span>XXX</span></td>
+                        <td><span>2013-07-26</span></td>
+                        <td><span>289</span></td>
+                        <td><span>1994</span></td>
+                        <td><span>2013-07-26</span></td>
+                        <td><span>中国湖南省湘潭市岳塘区107国道</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="liyonglv" index="">
+        <h2>按月份填写利用率</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td colspan="2">
+                            <input type="text" id="" readonly="readonly">
+                        </td>
+                        <td class="title"><span>使用日期</span></td>
+                        <td colspan="2">
+                            <input type="text" id="l_date" class="dropdate">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>使用时间（小时）</span></td>
+                        <td>
+                            <input type="text" id="l_time">
+                        </td>
+                        <td class="title"> <span>送水量（吨）</span></td>
+                        <td>
+                            <input type="text" id="l_water">
+                        </td>
+                        <td class="title"><span>灌溉面积（亩）</span></td>
+                        <td>
+                            <input type="text" id="l_mj">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="zhuangtai" index="">
+        <h2>设备使用情况</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td>
+                            <input type="text" id="EquipmentName1" readonly="readonly">
+                        </td>
+                        <td class="title"><span>使用用途</span></td>
+                        <td>
+                            <input type="text" id="HowToUse">
+                        </td>
+                        <td class="title"><span>使用部门</span></td>
+                        <td>
+                            <input type="text" id="UsedDepartment">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>使用人员</span></td>
+                        <td>
+                            <input type="text" id="UsedPerson">
+                        </td>
+                        <td class="title"><span>出库人</span></td>
+                        <td>
+                            <input type="text" id="OutPerson">
+                        </td>
+                        <td class="title"><span>使用地点</span></td>
+                        <td colspan="5">
+                            <input type="text" id="UsedAddress">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>使用日期</span></td>
+                        <td colspan="2">
+                            <input type="text" id="UsedTime" class="dropdate">
+                        </td>
+                        <td class="title"><span>归还日期</span></td>
+                        <td colspan="2">
+                            <input type="text" id="BackTime" class="dropdate">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="zhuangtai" index="">
+            <h2>设备使用情况</h2>
+            <div class="table">
+                <div class="tablespace">
+                    <table cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td class="title"><span>设备名称</span></td>
+                            <td>
+                                <input type="text" id="EquipmentName1" readonly="readonly">
+                            </td>
+                            <td class="title"><span>使用用途</td>
+                            <td>
+                                <input type="text" id="HowToUse">
+                            </td>
+                            <td class="title"><span>使用部门</span></td>
+                            <td>
+                                <input type="text" id="UsedDepartment">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title"><span>使用人员</span></td>
+                            <td>
+                                <input type="text" id="UsedPerson">
+                            </td>
+                            <td class="title"><span>出库人</span></td>
+                            <td>
+                                <input type="text" id="OutPerson">
+                            </td>
+                            <td class="title"><span>使用地点</span></td>
+                            <td colspan="5">
+                                <input type="text" id="UsedAddress">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="title"><span>使用日期</span></td>
+                            <td colspan="2">
+                                <input type="text" id="UsedTime" class="dropdate">
+                            </td>
+                            <td class="title"><span>归还日期</span></td>
+                            <td colspan="2">
+                                <input type="text" id="BackTime" class="dropdate">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="t10">
+                        <input type="button" value="提交" id="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="jianxiu" index="">
+        <h2>设备检修情况</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td>
+                            <input type="text" id="EquipmentName2" readonly="readonly">
+                        </td>
+                        <td class="title"><span>检修类型</span></td>
+                        <td>
+                            <select id="Text2">
+                                <option>经常检修</option>
+                                <option>大修</option>
+                            </select>
+                        </td>
+                        <td class="title"><span>责任部门</span></td>
+                        <td>
+                            <input type="text" id="Text3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>检修方</span></td>
+                        <td>
+                            <input type="text" id="Text4">
+                        </td>
+                        <td class="title"><span>联系电话</span></td>
+                        <td>
+                            <input type="text" id="Text5">
+                        </td>
+                        <td class="title"><span>责任员工</span></td>
+                        <td>
+                            <input type="text" id="Text6">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>检修原因</span></td>
+                        <td colspan="5">
+                            <input type="text" id="Text_6">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>检修开始时间</span></td>
+                        <td colspan="2">
+                            <input type="text" id="checkStart" class="dropdate">
+                        </td>
+                        <td class="title"><span>检修结束时间</span></td>
+                        <td colspan="2">
+                            <input type="text" id="checkEnd" class="dropdate">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="zuling" index="">
+        <h2>设备租赁情况</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td>
+                            <input type="text" id="EquipmentName3" readonly="readonly">
+                        </td>
+                        <td class="title"><span>租借性质</span></td>
+                        <td>
+                            <select id="Text_9">
+                                <option>短期(1年内)</option>
+                                <option>长期(1年以上)</option>
+                            </select>
+                        </td>
+                        <td class="title"><span>租借期限(月)</span></td>
+                        <td>
+                            <input type="text" id="Text10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>租借方</span></td>
+                        <td>
+                            <input type="text" id="Text11">
+                        </td>
+                        <td class="title"><span>承租方</span></td>
+                        <td>
+                            <input type="text" id="Text17">
+                        </td>
+                        <td class="title"><span>承租方联系人</span></td>
+                        <td>
+                            <input type="text" id="Text13">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>承租方联系电话</span></td>
+                        <td>
+                            <input type="text" id="Text12">
+                        </td>
+                        <td class="title"><span>租金(元/月)</span></td>
+                        <td>
+                            <input type="text" id="Text1">
+                        </td>
+                        <td class="title"><span>租借用途</span></td>
+                        <td>
+                            <input type="text" id="Text14">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>租借时间</span></td>
+                        <td colspan="2">
+                            <input type="text" id="startTime" class="dropdate">
+                        </td>
+                        <td class="title"><span>归还时间</span></td>
+                        <td colspan="2">
+                            <input type="text" id="endTime" class="dropdate">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="zhuanyi" index="">
+        <h2>设备借用情况</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td>
+                            <input type="text" id="EquipmentName4" readonly="readonly">
+                        </td>
+                        <td class="title"><span>借用类型</span></td>
+                        <td>
+                            <select id="Text_18">
+                                <option>公益性</option>
+                                <option>经营性</option>
+                            </select>
+                        </td>
+                        <td class="title"><span>批准人</span></td>
+                        <td>
+                            <input type="text" id="Text19">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>借用原因</span></td>
+                        <td>
+                            <input type="text" id="Text25">
+                        </td>
+                        <td class="title"><span>借用日期</span></td>
+                        <td>
+                            <input type="text" id="date" class="dropdate">
+                        </td>
+                        <td class="title"><span>归还日期</span></td>
+                        <td>
+                            <input type="text" id="backDate" class="dropdate">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>原存放位置</span></td>
+                        <td>
+                            <input type="text" id="Text20">
+                        </td>
+                        <td class="title"><span>原管理部门</span></td>
+                        <td>
+                            <input type="text" id="Text21">
+                        </td>
+                        <td class="title"><span>原管理员工</span></td>
+                        <td>
+                            <input type="text" id="Text22">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>新存放位置</span></td>
+                        <td>
+                            <input type="text" id="Text23">
+                        </td>
+                        <td class="title"><span>新管理部门</span></td>
+                        <td>
+                            <input type="text" id="Text24">
+                        </td>
+                        <td class="title"><span>新管理员工</span></td>
+                        <td>
+                            <input type="text" id="Text27">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="baofei" index="">
+        <h2>设备报废情况</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td>
+                            <input type="text" id="EquipmentName5" readonly="readonly">
+                        </td>
+                        <td class="title"><span>报废日期</span></td>
+                        <td>
+                            <input type="text" id="Text30" class="dropdate">
+                        </td>
+                        <td class="title"><span>批准文号</span></td>
+                        <td>
+                            <input type="text" id="Text29">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>报废原因</span></td>
+                        <td colspan="3">
+                            <input type="text" id="uselessReason">
+                        </td>
+                        <td class="title"><span>负责人</span></td>
+                        <td>
+                            <input type="text" id="uselessPerson">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="qingli" index="">
+        <h2>设备清理情况</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>清理日期</span></td>
+                        <td>
+                            <input type="text" id="clearTime" class="dropdate">
+                        </td>
+                        <td class="title"><span>清理方式</span></td>
+                        <td>
+                            <input type="text" id="Text31">
+                        </td>
+                        <td class="title"><span>清理费用(元)</span></td>
+                        <td>
+                            <input type="text" id="Text33">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>清理收入(元)</span></td>
+                        <td>
+                            <input type="text" id="Text32">
+                        </td>
+                        <td class="title"><span>批准人/文号</span></td>
+                        <td>
+                            <input type="text" id="q_wenhao">
+                        </td>
+                        <td class="title"><span>清理责任人</span></td>
+                        <td>
+                            <input type="text" id="q_person">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>清理原因</span></td>
+                        <td colspan="5">
+                            <input type="text" id="Text34">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="kucun" index="">
+        <h2>设备库存情况</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td>
+                            <input type="text" id="EquipmentName7" readonly="readonly">
+                        </td>
+                        <td class="title"><span>库存日期</span></td>
+                        <td>
+                            <input type="text" id="k_date" class="dropdate">
+                        </td>
+                        <td class="title"><span>库存原因</span></td>
+                        <td colspan="3">
+                            <input type="text" id="k_reason">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>库存地址</span></td>
+                        <td colspan="3">
+                            <input type="text" id="k_address">
+                        </td>
+                        <td class="title"><span>负责人</span></td>
+                        <td>
+                            <input type="text" id="k_person">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="btn_7">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tixin" index="">
+        <h2>设备检测提醒</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>设备名称</span></td>
+                        <td>
+                            <input type="text" id="EquipmentName8" readonly="readonly">
+                        </td>
+                        <td class="title"><span>管理部门</span></td>
+                        <td>
+                            <input type="text" id="managerDe">
+                        </td>
+                        <td class="title"><span>管理员工</span></td>
+                        <td>
+                            <input type="text" id="manager">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>上次检测日期</span></td>
+                        <td colspan="2">
+                            <input type="text" id="lastTestData" class="dropdate">
+                        </td>
+                        <td class="title"><span>下次检测日期</span></td>
+                        <td colspan="2">
+                            <input type="text" id="nextTestData" class="dropdate">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>备注</span></td>
+                        <td colspan="8">
+                            <input type="text" id="remark_8">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="zhejiu" index="">
+        <h2>设备折旧</h2>
+        <div class="table">
+            <div class="tablespace">
+                <table cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td class="title"><span>账面价值(元)</span></td>
+                        <td>
+                            <input type="text" id="isWorth">
+                        </td>
+                        <td class="title"><span>残值率</span></td>
+                        <td style="width: 50px;">
+                            <input type="text" id="brokenProbability" style="width: 44px; float: left;">%
+                        </td>
+                        <td class="title"><span>净残值</span></td>
+                        <td>
+                            <input type="text" id="broken">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>预计使用月份(月)</span></td>
+                        <td>
+                            <input type="text" id="mayUseMounth">
+                        </td>
+                        <td class="title"><span>已折旧月份(月)</span></td>
+                        <td>
+                            <input type="text" id="depreciationMounth">
+                        </td>
+                        <td class="title"><span>本次折旧月份(月)</span></td>
+                        <td>
+                            <input type="text" id="thisDepreciationMounth">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>本次折旧金额(元)</span></td>
+                        <td>
+                            <input type="text" id="thisDepreciationMoney">
+                        </td>
+                        <td class="title"><span>累计折旧金额(元)</span></td>
+                        <td>
+                            <input type="text" id="totalDepreciation">
+                        </td>
+                        <td class="title"><span>结余金额(元)</span></td>
+                        <td>
+                            <input type="text" id="remainMoney">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>市场价值(元)</span></td>
+                        <td>
+                            <input type="text" id="marketPrice">
+                        </td>
+                        <td class="title"><span>折旧方法</span></td>
+                        <td style="width: 50px;">
+                            <select id="depreciationMethod">
+                                <option value="0">不计折旧</option>
+                                <option value="1">平均年限法</option>
+                                <option value="2">工作量法</option>
+                                <option value="3">年数总和法</option>
+                                <option value="4">双倍余额递减法</option>
+                                <option value="5">其他</option>
+                            </select>
+                        </td>
+                        <td class="title"><span>备注</span></td>
+                        <td colspan="8">
+                            <input type="text" id="remark_9">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="t10">
+                    <input type="button" value="提交" id="btn_9">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
