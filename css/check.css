@@ -1,12 +1,8 @@
 .eqphoto {
-    width: 235px;
-    height: 176px;
+    width: 200px;
+    height: 250px;
     float: left;
-    margin: 40px 10px 0 35px;
-}
-.eqphoto img{
-    width: 280px;
-    height: 216px;
+    margin: 7px 10px 0 230px;
 }
 .table table td a{
     cursor: pointer;
@@ -24,5 +20,5 @@
 }
 .select_btn{
     margin-bottom: 80px;
-    margin-left: 58px;
+    margin-left: 225px;
 }
