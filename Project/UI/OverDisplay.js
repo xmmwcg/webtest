@@ -4,10 +4,10 @@ KISSY.add("Project/UI/OverDisplay",function(S){
 
         var OverDisplayElement = S.one("#OverDisplay");
         var ParentCon = OverDisplayElement.parent();
-        var CloseBt = OverDisplayElement.one(".Bt.close").on("click",function(){
+        var CloseBt = OverDisplayElement.one(".close").on("click",function(){
             Close();
         });
-        var BackBt = OverDisplayElement.one(".Bt.back").hide().on("click",function(){
+        var BackBt = OverDisplayElement.one(".back").hide().on("click",function(){
             History();
         });
         var frame = OverDisplayElement.one("#DisplayFrame");
