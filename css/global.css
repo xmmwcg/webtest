@@ -19,7 +19,6 @@ body {
     font-size: 12px;
     -webkit-user-select: none;
     color: #333;
-    overflow: hidden;
 }
 
 ol, ul {
