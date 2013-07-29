@@ -5,7 +5,7 @@ var GetTop = function () {
             w = window;
             f.t = w != parent ? (parent.GetTop ? parent.GetTop() : parent.parent.GetTop()) : w;
         } catch (e) {
-            f.t = parent;
+            f.t = w;
         }
     }
     return f.t;
