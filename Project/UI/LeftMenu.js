@@ -52,7 +52,7 @@ KISSY.add("Project/UI/LeftMenu", function (S, Menu) {
             if (selector == undefined || typeof(selector) == "string") {
                 selector = selector || "#LeftMenu .Menus";
             }
-            S.all(selector).removeClass("hidden").each(function (e, i) {
+            $(selector).removeClass("hidden").each(function (i, e) {
                 AddMenus(i, e, callback);
             });
             return LeftMenu;
@@ -85,7 +85,7 @@ KISSY.add("Project/UI/LeftMenu/Menus", function (S, Item) {
     return function (i, e, LeftMenu, callback) {
         var Menus = {};
         var index = i;//菜单序号
-        var element = e;//菜单元素
+        var element = $(e);//菜单元素
         var name = element.attr("id");//菜单名
         //得到菜单序号
         Menus.GetIndex = function () {
@@ -101,7 +101,8 @@ KISSY.add("Project/UI/LeftMenu/Menus", function (S, Item) {
         };
         //得到菜单dom元素
         Menus.GetDomElement = function () {
-            return element.getDOMNode();
+            //return element.getDOMNode();
+            return element[0];
         };
         Menus.GoFirst = function(){
 
@@ -109,7 +110,7 @@ KISSY.add("Project/UI/LeftMenu/Menus", function (S, Item) {
         //选项集合（数组）
         var Items = function () {
             var ItemsArray = [];
-            element.all("li:not(.children)").each(function (Itemele, Itemind) {
+            element.find("li").not(".children").each(function (Itemind, Itemele) {
                 var NewItem = new Item(Itemind, Itemele, Menus, undefined, callback);
                 ItemsArray.push(NewItem);
             });
@@ -124,7 +125,7 @@ KISSY.add("Project/UI/LeftMenu/Item", function (S) {
     var Items = function (Itemind, Itemele, Menus, Parent, callback) {
         var Item = {};
        ///*私有属性*/
-        var element = Itemele; //选项元素
+        var element = $(Itemele); //选项元素
         var index = Itemind; //选项序号
         var name = element.attr("id");//选项名称
         var menu = Menus;//所在菜单实例
@@ -135,7 +136,7 @@ KISSY.add("Project/UI/LeftMenu/Item", function (S) {
         var children = function () {
             var childrenArray = [];
             if (typeof(name) == "string") {
-                menu.GetElement().all("[rel=" + name + "]").each(function (e, i) {
+                menu.GetElement().find("[rel=" + name + "]").each(function (i, e) {
                     var NewChildrenItem = new Items(i, e, menu, Item, callback);
                     childrenArray.push(NewChildrenItem);
                 })
@@ -166,7 +167,7 @@ KISSY.add("Project/UI/LeftMenu/Item", function (S) {
         //打开选项所对应模块（没有下级选项才有作用）,打开的功能实现没有写在这里需要回调事件输入
         var Open = function () {
             if (!haschildren) {
-                menu.GetElement().all("li").removeClass("selected");
+                menu.GetElement().find("li").removeClass("selected");
                 element.addClass("selected");
                 if (callback && S.isFunction(callback.open)) {
                     callback.open(Item);
@@ -205,7 +206,8 @@ KISSY.add("Project/UI/LeftMenu/Item", function (S) {
         };
         //获得选项dom元素
         Item.GetDomElement = function () {
-            return element.getDOMNode();
+            //return element.getDOMNode();
+            return element[0];
         };
         //获得下级选项集合，如果没有返回空数组
         Item.GetChildren = function () {
