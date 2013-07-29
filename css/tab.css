@@ -7,7 +7,7 @@
 }
 .tab-nav
 {
-    position:relative;
+    position:fixed;
     top:0;
     left:0;
     right:0;
@@ -20,6 +20,7 @@
     text-align: center;
     border-bottom:1px solid #eee;
     background-image:url(../images/list/1px92percwhite.png);
+    z-index: 100;
 }
 .tab-nav li{
     display:inline-block;
