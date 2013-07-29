@@ -1,5 +1,4 @@
-.button_box{
-    utton_box {
+#button_box{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -9,7 +8,7 @@
     border-top: 1px solid #bfbfbf;
     text-align: center;
 }
-.button_box input{
+#button_box input{
     border: none;
     background-color: Transparent;
     background-image: url(../images/nav/button_bg.png);
