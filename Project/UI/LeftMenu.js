@@ -106,7 +106,7 @@ KISSY.add("Project/UI/LeftMenu/Menus", function (S, Item) {
         };
         Menus.GoFirst = function(){
 
-        }
+        };
         //选项集合（数组）
         var Items = function () {
             var ItemsArray = [];
@@ -156,7 +156,7 @@ KISSY.add("Project/UI/LeftMenu/Item", function (S) {
         //改变选项打开状态并显示下级菜单选项（拥有下级选项才有作用）
         var ChangeState = function () {
             if (haschildren) {
-                var opensign = element.one(".openico");
+                var opensign = element.find(".openico");
                 opensign.toggleClass("open");
                 ToggleChildren(!opensign.hasClass("open"));
                 if (callback && S.isFunction(callback.expend)) {
