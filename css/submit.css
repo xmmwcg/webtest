@@ -54,3 +54,6 @@
 #button_box ul li a:hover{
     color: #0000FF;
 }
+#fancydiv{
+    display: none;
+}
