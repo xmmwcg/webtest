@@ -1,3 +1,4 @@
+/*简祥表按钮切换样式*/
 #AssetsList{
     position: relative;
     top: 0;
@@ -56,4 +57,19 @@
 .tab-nav li.selected.last
 {
     background-position:left -96px;
+}
+/*增减表按钮切换样式*/
+.year{
+    position: relative;
+    top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+.year span{
+    top: 100px;
+    font-size: 18px;
 }
