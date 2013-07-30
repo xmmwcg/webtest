@@ -4,7 +4,7 @@ KISSY.add("Project/UI/Resize",function(S){
         var Resizer = S.one("#Resize");
         var Container = S.one(window);
         var MinWidth = 900;
-        var MinHeight = 600;
+        var MinHeight = 100;
         var ResizeUpdate = function(){
             var width = Container.width();
             var height = Container.height();
