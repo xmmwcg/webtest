@@ -75,8 +75,8 @@
     white-space: nowrap;   /*不会换行*/
 }
 .List table td a{
-    cursor: pointer;
-}
+     cursor: pointer;
+ }
 .List table td a:visited{
     color: #333;
 }

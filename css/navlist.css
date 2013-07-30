@@ -1,0 +1,165 @@
+button, input, select, textarea {
+    font-size: 100%;
+    resize: none;
+}
+a {
+    text-decoration: none;
+    outline: 0 none;
+}
+a:link{
+    color: #333;
+}
+a:visited{
+    color: #333;
+}
+ a:hover{
+    color: #333;
+}
+.c1{
+    width: 40px;
+    color: #EEEEEE;
+}
+.c2 {
+    width: 100px;
+    border-right: #dbdfe1 solid 1px;
+}
+.c3 {
+    padding-left: 15px;
+    border-right: #dbdfe1 solid 1px;
+    text-align: left;
+}
+.c4{
+    width: 110px;
+    padding: 0 5px;
+    border-right: #dbdfe1 solid 1px;
+}
+.main {
+    position: absolute;
+    left: 0px;
+    top: 111px;
+    bottom: 0px;
+    right: 0px;
+    overflow: auto;
+    z-index: 1;
+}
+.list_wrap {
+    min-height: 520px;
+    height: 520px;
+    position: absolute;
+    width: 100%;
+}
+.file_list {
+    min-height: 500px;
+    _height: 500px;
+    color: #909090;
+    padding-bottom: 50px;
+}
+.file_list table {
+    table-layout: fixed;
+    width: 100% ;
+    border: 0 ;
+    cellspacing: 0;
+    cellpadding: 0;
+}
+.file_list th {
+    background: #eeeeee;
+    font-weight: normal;
+    border-bottom: #dbdfe1 solid 1px;
+    height: 29px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+.file_list tr:visited{
+    background-color: #DDE6F1;
+    cursor: pointer;
+}
+.file_list tr:hover{
+    background-color: #e9eef4;
+    cursor: pointer;
+}
+.file_list td {
+    border-bottom: #f1f2f3 solid 1px;
+    text-align: center;
+}
+.file_list td .file_list .tr_sel td {
+    padding: 2px 0;
+}
+.file_list td .file_list .checkbox {
+    margin-right: 0;
+    margin-left: 7px;
+    display: none;
+}
+.file_list img{
+    width: 38px ;
+    height: 38px;
+    margin-top: 2px;
+}
+.file_list td .tl{
+    text-align: left;
+}
+.file_list .tr_sel .tl {
+    padding-left: 10px;
+}
+.file_list td .file_name {
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    margin-left: 8px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+    float: left;
+    word-break: break-all;
+    overflow: hidden;
+}
+.file_list td .file_name span.fixwidth {
+    display: inline-block;
+    width: 150px;
+    overflow: hidden;    /*超出隐藏*/
+    text-overflow: ellipsis; /*省略号显示超出文本*/
+    white-space: nowrap;   /*不会换行*/
+}
+.file_list td .edit_file {
+    margin-left: 8px;
+    clear: both;
+    text-align: left;
+}
+.file_list td .edit_file .rename_ip {
+    background: #ffffff;
+    box-shadow: inset 2px 2px 0 #e8e8e8;
+    width: 90%;
+    padding: 0 5px;
+    height: 19px;
+    color: #444444;
+    border: #bacede solid 1px;
+    overflow: hidden;
+    display:none;
+}
+.file_list td .edit_file .err_tip2 {
+    color: #f30000;
+    margin-top: 3px;
+}
+.file_list td .edit_file .err_area {
+    display: block;
+}
+.file_list td .edit_file .edit_area .edit_btn {
+    display: inline-block;
+    margin-right: 5px;
+    color: #444444;
+    background-position: 0 -60px;
+    width: 52px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    background-image: url("../images/nav/sp.png");
+}
+
+
+
+
+
+
+
+.checkbox {
+    vertical-align: middle;
+}
