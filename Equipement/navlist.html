@@ -8,79 +8,201 @@
 <link href="../css/tab.css" rel="stylesheet" type="text/css">
 <link href="../css/list.css" rel="stylesheet" type="text/css">
 <link href="../css/navlist.css" rel="stylesheet" type="text/css">
+<link href="../css/sift.css" rel="stylesheet" type="text/css">
 <body>
-<!--选项栏-->
-<div id="Nav">
-    <div class="NavLine">
-        <div class="Name">
-            <span>请选择：</span>
-        </div>
-        <!--下拉框-->
-        <div id="TypeSelect">
-            <select id="Type">
-                <option value="0">设备名称</option>
-                <option value="1">设备类别</option>
-                <option value="2">设备来源</option>
-                <option value="3">入账方式</option>
-                <option value="4">管理人员</option>
-            </select>
-        </div>
-        <!--可选信息-->
-        <div id="Tips" class="clearfix">
-            <div class="Tip clearfix">
-                <div class="tcontent">
-                    <input class="tx" type="text"/>
-                    <input tp="0" class="bt" type="button" value="查询"/>
+<!--导航-->
+<div class="tb-filter">
+    <div class="tb-filter-box narrow">
+        <from>
+            <div class="section">
+                <!--关键字查询-->
+                <div class="hd">
+                    <div class="min-search">
+                        <div class="submit">
+                            <button id="J_submit">查询</button>
+                            <b class="divide"></b>
+                        </div>
+                        <ul>
+                            <li class="exclude">
+                                <input placeholder="关键字" type="text" name="" value="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ft">
+                    <b class="divide"></b>
+                    <ul>
+                        <li>
+                            <div class="dropdown dropdown-custom">
+                                <a class="active dropdown-tgr-mouse"></a>
+                                <ul></ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--查看次数最多的设备-->
+                <div class="bd">
+                    <ul class="nav clearfix">
+                        <li><label><input type="checkbox">挖掘机</label></li>
+                        <li><label><input type="checkbox">电缆线</label></li>
+                        <li><label><input type="checkbox">柴油发电机</label></li>
+                        <li><label><input type="checkbox">汽油发电机</label></li>
+                        <li><label><input type="checkbox">皮卡车</label></li>
+                        <li><label><input type="checkbox">清淤机</label></li>
+                        <li><label><input type="checkbox">送水车</label></li>
+                    </ul>
                 </div>
             </div>
-            <div class="Tip clearfix hidden">
-                <ul class="content clearfix">
-                    <li tp="1" ti="0"><a><span>应急拉水车</span></a></li>
-                    <li tp="1" ti="1"><a><span>打井洗井设备</span></a></li>
-                    <li tp="1" ti="2"><a><span>移动灌溉设备</span></a></li>
-                    <li tp="1" ti="3"><a><span>移动喷滴灌节水设备</span></a></li>
-                    <li tp="1" ti="4"><a><span>输水软管</span></a></li>
-                    <li tp="1" ti="5"><a><span>简易净水设备</span></a></li>
-                    <li tp="1" ti="6"><a><span>清淤设备</span></a></li>
-                    <li tp="1" ti="7"><a><span>发电和动力设备</span></a></li>
-                    <li tp="1" ti="8"><a><span>其他设备</span></a></li>
-                </ul>
-            </div>
-            <div class="Tip clearfix hidden">
-                <ul class="content clearfix">
-                    <li tp="2" ti="0"><a><span>中央投资</span></a></li>
-                    <li tp="2" ti="1"><a><span>省级投资</span></a></li>
-                    <li tp="2" ti="2"><a><span>市级投资</span></a></li>
-                    <li tp="2" ti="3"><a><span>县级投资</span></a></li>
-                    <li tp="2" ti="4"><a><span>自有资金</span></a></li>
-                    <li tp="2" ti="5"><a><span>其他</span></a></li>
-                </ul>
-            </div>
-            <div class="Tip clearfix hidden">
-                <ul class="content clearfix">
-                    <li tp="3" ti="0"><a><span>购入</span></a></li>
-                    <li tp="3" ti="1"><a><span>调拨</span></a></li>
-                    <li tp="3" ti="2"><a><span>接收捐赠</span></a></li>
-                    <li tp="3" ti="3"><a><span>其他</span></a></li>
-                </ul>
-            </div>
-            <div class="Tip clearfix hidden">
-                <div class="tcontent">
-                    <input class="tx" type="text"/>
-                    <input tp="4" class="bt" type="button" value="查询"/>
-                </div>
-            </div>
-        </div>
+        </from>
     </div>
-    <!--已选信息-->
-    <div class="NavLine">
-        <div class="Name">
-            <span>已选择：</span>
-        </div>
-        <div id="Selected">
-            <ul>
-                <li><a>天心区</a></li>
+</div>
+<!--筛选-->
+<div class="tb-sortbar">
+    <div class="row sortbar">
+        <div class="col">
+            <ul class="nav nav-pills sorting-btns">
+                <li class="active">
+                    <a title="综合排序">综合</a>
+                </li>
             </ul>
+        </div>
+        <div class="col leibie">
+            <div class="lei_bie clearfix">
+                <p class="text">设备类别</p>
+                <i class="triangle"></i>
+            </div>
+            <div class="drop-popup loca-popup m-popup-shadow">
+                <div class="section inner">
+                    <a class="J_Ajax" href="#">所有类别</a>
+                </div>
+                <div class="section sep">
+                    <ul class="clearfix">
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">应急拉水车</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">打井洗井设备</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">移动灌溉设备</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">移动喷滴灌节水设备</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">输水软管</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">简易净水设备</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">清淤设备</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">发电和动力设备</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">其他设备</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col leibie">
+            <div class="lei_bie clearfix">
+                <p class="text">设备来源</p>
+                <i class="triangle"></i>
+            </div>
+            <div class="drop-popup loca-popup m-popup-shadow">
+                <div class="section inner">
+                    <a class="J_Ajax" href="#">所有来源</a>
+                </div>
+                <div class="section sep">
+                    <ul class="clearfix">
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">中央投资</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">省级投资</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">市级投资</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">县级投资</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">自有资金</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">其他</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col leibie">
+            <div class="lei_bie clearfix">
+                <p class="text">入账方式</p>
+                <i class="triangle"></i>
+            </div>
+            <div class="drop-popup loca-popup m-popup-shadow">
+                <div class="section inner">
+                    <a class="J_Ajax" href="#">所有方式</a>
+                </div>
+                <div class="section sep">
+                    <ul class="clearfix">
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">购入</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">调拨</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">接受捐赠</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">县级投资</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">其他</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col leibie">
+            <div class="lei_bie clearfix">
+                <p class="text">存放地点</p>
+                <i class="triangle"></i>
+            </div>
+            <div class="drop-popup loca-popup m-popup-shadow">
+                <div class="section inner">
+                    <a class="J_Ajax" href="#">所有地点</a>
+                </div>
+                <div class="section sep">
+                    <ul class="clearfix">
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">AAAAAAAAAAAAAA</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">BBBBBBBBBBBBBB</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">CCCCCCCCCCCCCCCCCC</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">DDDDDDDDDDDDDDDD</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">EEEEEEEEEEEEEEE</a>
+                        </li>
+                        <li class="classes">
+                            <a class="J_Ajax" href="#">其他</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -96,7 +218,6 @@
                         <th class="c3">设备名</th>
                         <th class="c4">设备性质</th>
                         <th class="c4">数量</th>
-                        <th class="c4">单位</th>
                         <th class="c4">存放地点</th>
                         <th class="c4">保管责任人</th>
                         <th class="c4">购置日期</th>
@@ -111,54 +232,30 @@
                             <img src="../images/nophoto/nophoto.png">
                         </td>
                         <td class="t1">
-                            <a class="file_name" name="openLink" href="#" onclick="">皮卡车(
-                            <span class="fixwidth" title="移动喷滴灌节水设备移动喷滴灌节水设备">移动喷滴灌节水设备移动喷滴灌节水设备</span>)
-                            </a>
-                            <div class="edit_file">
-                                <input class="rename_ip" name="rename" type="text" value="..." >
-                                <p class="err_tip2" name="rename_error"></p>
-                                <div class="edit_area">
-                                    <a name="check" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="" >查看</a>
-                                    <a name="update" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="">修改</a>
-                                    <a name="delete" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="">删除</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input class="checkbox" type="checkbox" name="" value="" checked="checked">
-                        </td>
-                        <td>
-                            <img src="../images/nophoto/nophoto.png">
-                        </td>
-                        <td class="t1">
-                            <a class="file_name" name="openLink" href="#" onclick="">皮卡车(
+                            <div class="tf no">
+                                <a class="file_name" name="openLink" href="#" onclick="">挖掘机(
                                 <span class="fixwidth" title="移动喷滴灌节水设备移动喷滴灌节水设备">移动喷滴灌节水设备移动喷滴灌节水设备</span>)
-                            </a>
-                            <div class="edit_file">
-                                <input class="rename_ip" name="rename" type="text" value="..." >
-                                <p class="err_tip2" name="rename_error"></p>
-                                <div class="edit_area">
-                                    <a name="check" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="" >查看</a>
-                                    <a name="update" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="">修改</a>
-                                    <a name="delete" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="">删除</a>
+                                </a>
+                                <div class="edit_file">
+                                    <input class="rename_ip" name="rename" type="text" value="..." >
+                                    <p class="err_tip2" name="rename_error"></p>
+                                    <div class="edit_area">
+                                        <a name="check" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="" >查看</a>
+                                        <a name="update" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="">修改</a>
+                                        <a name="delete" class="edit_btn nohover" href="#" title="皮卡车（阿达撒大声地说大大四大四大）" onclick="">删除</a>
+                                    </div>
                                 </div>
                             </div>
                         </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><span>中央投资</span></td>
+                        <td><span>1（辆）</span></td>
+                        <td>
+                            <span class="fixwidth" title="移动喷滴灌节水设备移动喷滴灌节水设备">移动喷滴灌节水设备移动喷滴灌节水设备</span>
+                        </td>
+                        <td><span>XXXX</span></td>
+                        <td><span>2013-3-8</span></td>
                     </tr>
+
                 </tbody>
             </table>
         </div>
