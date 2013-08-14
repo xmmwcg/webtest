@@ -4,12 +4,12 @@ KISSY.add("Project/UI/OverDisplay",function(S){
 
         var OverDisplayElement = S.one("#OverDisplay");
         var ParentCon = OverDisplayElement.parent();
-        var CloseBt = OverDisplayElement.one(".close").on("click",function(){
-            Close();
-        });
-        var BackBt = OverDisplayElement.one(".back").hide().on("click",function(){
-            History();
-        });
+        //var CloseBt = OverDisplayElement.one(".close").on("click",function(){
+        //    Close();
+        //});
+        //var BackBt = OverDisplayElement.one(".back").hide().on("click",function(){
+        //    History();
+        //});
         var frame = OverDisplayElement.one("#DisplayFrame");
         var histroylist = [];
         var isOpen = false;

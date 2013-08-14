@@ -5,37 +5,28 @@
     left: 0;
     right: 0;
     width: 0;
-    overflow: hidden;
 }
 #OverDisplay .Bar{
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    width: 133px;
-    padding-top: 15px;
-    background: url(bar_bg.png) repeat-y;
+    right: 0;
+    height: 30px;
+    background-color: #ffffff;
 }
-#OverDisplay .Bar .Bt{
-    width: 63px;
-    height: 37px;
-    line-height: 35px;
-    display: block;
-    font-size: 16px;
-    color: #f0f0f0;
-    padding-left: 10px;
-    margin-left: 10px;
-    text-align: center;
-    background: url(bt.png);
-    cursor: pointer;
+#OverDisplay .Bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-#OverDisplay .Bar .Bt:hover{
-    background-position: bottom;
+#OverDisplay .Bar ul li{
+
 }
 #OverDisplay .Display{
     position: absolute;
-    top: 0;
-    left: 133px;
+    top: 30px;
+    left: 0;
+    right:0;
     bottom: 0;
     right: 0;
     background-color: #fff;

@@ -64,6 +64,12 @@
     text-overflow: clip;
     overflow: hidden;
 }
+.list .listbody ul li.noover.one span{
+    margin-top: 18px;
+}
+.list .listbody ul li.two span{
+    margin-top: 12px;
+}
 .list .listbody ul li span.textup{
     line-height: 14px;
     margin: 8px 0 0 0;
@@ -83,6 +89,12 @@
 }
 .listbody ul li span.right{
     text-align: right;
+}
+.listbody ul li .photo{
+    width: 50px;
+    height: 40px;
+    margin: 5px 10px;
+    border: none;
 }
 
 .listbody ul li .button{
