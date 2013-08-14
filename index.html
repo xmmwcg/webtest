@@ -40,6 +40,9 @@
             <li class="MenuItem" rel="EquipmentManager">
                 <span>设备管理</span>
             </li>
+            <li class="MenuItem" rel="FundManager">
+                <span>资金管理</span>
+            </li>
             <li class="MenuItem" rel="WorkManager">
                 <span>工作管理</span>
             </li>
@@ -61,8 +64,20 @@
         <div id="EquipmentManager" class="Menus hidden">
             <ul>
                 <!-- subli是样式需要 -->
-                <li class="selected" url="Equipement/navigation.html">
+                <li url="Equipement/navigation.html" class="selected">
                     <div class="subli"><em class="openico hidden"></em><span class="text">查看设备资产</span>
+                    </div>
+                </li>
+                <li id="manageequipment">
+                    <div class="subli"><em class="openico"></em><span class="text">管理设备资产</span>
+                    </div>
+                </li>
+                <li class="children hidden" rel="manageequipment" url="Equipement/collect.html">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">修改设备资产</span>
+                    </div>
+                </li>
+                <li class="children hidden" rel="manageequipment" url="Equipement/collect.html">
+                    <div class="subli"><em class="openico hidden"></em><span class="text">变更设备状态</span>
                     </div>
                 </li>
                 <li url="Equipement/addEquipment.html">

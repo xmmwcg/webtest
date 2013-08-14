@@ -5,8 +5,9 @@
     <title>信息显示</title>
     <link href="../css/global.css" rel="stylesheet" type="text/css">
     <link href="../css/clearfix.css" rel="stylesheet" type="text/css">
-    <link href="../css/nav.css" rel="stylesheet" type="text/css">
-    <link href="../css/tab.css" rel="stylesheet" type="text/css">
+    <link href="../css/page.css" rel="stylesheet" type="text/css">
+    <link href="../css/searcher.css" rel="stylesheet" type="text/css">
+    <link href="../css/filter.css" rel="stylesheet" type="text/css">
     <link href="../css/list.css" rel="stylesheet" type="text/css">
 
     <script src="http://g.tbcdn.cn/kissy/k/1.3.1/kissy-min.js"></script>
@@ -14,171 +15,142 @@
     <script src="../js/frame.js"></script>
 </head>
 <body>
-<!--选项栏-->
-<div id="Nav">
-    <div class="NavLine">
-        <div class="Name">
-            <span>请选择：</span>
+<div class="width960 upspace">
+    <div class="width960 linespace clearfix">
+        <div id="searcher" class="searcher">
+            <div class="searchtext">
+                <input class="text" type="text"/>
+            </div>
+            <input class="dosearch" type="button" value="搜索"/>
         </div>
-        <!--下拉框-->
-        <div id="TypeSelect">
-            <select id="Type">
-                <option value="0">设备名称</option>
-                <option value="1">设备类别</option>
-                <option value="2">设备来源</option>
-                <option value="3">入账方式</option>
-                <option value="4">管理人员</option>
-            </select>
-        </div>
-        <!--可选信息-->
-        <div id="Tips" class="clearfix">
-            <div class="Tip clearfix">
-                <div class="tcontent">
-                    <input class="tx" type="text"/>
-                    <input tp="0" class="bt" type="button" value="查询"/>
-                </div>
-            </div>
-            <div class="Tip clearfix hidden">
-                <ul class="content clearfix">
-                    <li tp="1" ti="0"><a><span>应急拉水车</span></a></li>
-                    <li tp="1" ti="1"><a><span>打井洗井设备</span></a></li>
-                    <li tp="1" ti="2"><a><span>移动灌溉设备</span></a></li>
-                    <li tp="1" ti="3"><a><span>移动喷滴灌节水设备</span></a></li>
-                    <li tp="1" ti="4"><a><span>输水软管</span></a></li>
-                    <li tp="1" ti="5"><a><span>简易净水设备</span></a></li>
-                    <li tp="1" ti="6"><a><span>清淤设备</span></a></li>
-                    <li tp="1" ti="7"><a><span>发电和动力设备</span></a></li>
-                    <li tp="1" ti="8"><a><span>其他设备</span></a></li>
-                </ul>
-            </div>
-            <div class="Tip clearfix hidden">
-                <ul class="content clearfix">
-                    <li tp="2" ti="0"><a><span>中央投资</span></a></li>
-                    <li tp="2" ti="1"><a><span>省级投资</span></a></li>
-                    <li tp="2" ti="2"><a><span>市级投资</span></a></li>
-                    <li tp="2" ti="3"><a><span>县级投资</span></a></li>
-                    <li tp="2" ti="4"><a><span>自有资金</span></a></li>
-                    <li tp="2" ti="5"><a><span>其他</span></a></li>
-                </ul>
-            </div>
-            <div class="Tip clearfix hidden">
-                <ul class="content clearfix">
-                    <li tp="3" ti="0"><a><span>购入</span></a></li>
-                    <li tp="3" ti="1"><a><span>调拨</span></a></li>
-                    <li tp="3" ti="2"><a><span>接收捐赠</span></a></li>
-                    <li tp="3" ti="3"><a><span>其他</span></a></li>
-                </ul>
-            </div>
-            <div class="Tip clearfix hidden">
-                <div class="tcontent">
-                    <input class="tx" type="text"/>
-                    <input tp="4" class="bt" type="button" value="查询"/>
-                </div>
+    </div>
+    <div class="width960 linespace">
+        <div id="filter" class="filter width960bor clearfix">
+            <div class="ti"><span>设备筛选</span></div>
+            <ul class="clearfix">
+                <li class="clearfix">
+                    <span>设备类别</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>设备来源</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>入账方式</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>存放地点</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>资金年度</span><em class="arrowdown"></em>
+                </li>
+            </ul>
+            <div class="buttons clearfix">
+                <div class="button orange"><span>筛选</span></div>
             </div>
         </div>
     </div>
-    <!--已选信息-->
-    <div class="NavLine">
-        <div class="Name">
-            <span>已选择：</span>
+    <div id="menus" class="menus width960">
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>应急拉水车</span></li>
+                <li><em></em><span>打井洗井设备</span></li>
+                <li><em></em><span>移动灌溉设备</span></li>
+                <li><em></em><span>移动喷滴灌节水设备</span></li>
+                <li><em></em><span>输水软管</span></li>
+                <li><em></em><span>简易净水设备</span></li>
+                <li><em></em><span>清淤设备</span></li>
+                <li><em></em><span>发电和动力设备</span></li>
+                <li><em></em><span>其他设备</span></li>
+            </ul>
         </div>
-        <div id="Selected">
-            <ul>
-                <li><a>天心区</a></li>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>中央投资</span></li>
+                <li><em></em><span>省级投资</span></li>
+                <li><em></em><span>市级投资</span></li>
+                <li><em></em><span>县级投资</span></li>
+                <li><em></em><span>自有资金</span></li>
+                <li><em></em><span>其他</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>购入</span></li>
+                <li><em></em><span>调拨</span></li>
+                <li><em></em><span>接受捐赠</span></li>
+                <li><em></em><span>其他</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>岳麓区</span></li>
+                <li><em></em><span>开福区</span></li>
+                <li><em></em><span>天心区</span></li>
+                <li><em></em><span>芙蓉区</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>2013年</span></li>
+                <li><em></em><span>2012年</span></li>
+                <li><em></em><span>2011年</span></li>
+                <li><em></em><span>2010年</span></li>
+                <li><em></em><span>2009年</span></li>
+                <li><em></em><span>2008年</span></li>
+                <li><em></em><span>2007年</span></li>
+                <li><em></em><span>2006年</span></li>
+                <li><em></em><span>2005年</span></li>
             </ul>
         </div>
     </div>
-    <!--简祥表-->
-    <div id="AssetsList">
-        <ul class="tab-nav clearfix" style="position: relative;">
-            <li id="Hide" class="first selected">
-                <span>设备简表</span>
-            </li>
-            <li id="Show" class="last">
-                <span>设备详表</span>
-            </li>
-        </ul>
-    </div>
-</div>
-<!--表单-->
-<div class="List" style="top: 165px;">
-    <div class="ListSpace">
-        <table cellspacing="0" id="EquipmentList">
-            <thead style="white-space: nowrap">
-            <tr>
-                <td rowspan="2"><span>设备名称</span></td>
-                <td rowspan="2"  class="tab_hide"><span>设备类别</span></td>
-                <td rowspan="2" class="tab_hide"><span>设备性质</span></td>
-                <td rowspan="2"><span>规格型号</span></td>
-                <td rowspan="2"><span>购置日期</span></td>
-                <td rowspan="2" class="tab_hide"><span>生产厂家</span></td>
-                <td rowspan="2"><span>购置数量</span></td>
-                <td rowspan="2"><span>单位</span></td>
-                <td rowspan="2" class="tab_hide"><span>单位原值</span></td>
-                <td rowspan="2" class="tab_hide"><span>资产总值</span></td>
-                <td rowspan="2" class="tab_hide"><span>累计折旧</span></td>
-                <td rowspan="2" class="tab_hide"><span>当前价值</span></td>
-                <td colspan="3" class="tab_hide"><span>使用年限</span></td>
-                <td rowspan="2"><span>存放地点</span></td>
-                <td rowspan="2"><span>保管责任人</span></td>
-                <td rowspan="2"><span>查看</span></td>
-                <td rowspan="2"><span>修改</span></td>
-                <td rowspan="2"><span>删除</span></td>
-            </tr>
-            <tr>
-                <td class="tab_hide"><span>正常年限</span></td>
-                <td class="tab_hide"><span>已使用年限</span></td>
-                <td class="tab_hide"><span>尚可使用年限</span></td>
-            </tr>
-            </thead>
-            <!--tbody中偶数行带颜色-->
-            <tbody>
-            <tr>
-                <td class="center"><span>皮卡车</span></td>
-                <td class="left tab_hide"><span class="fixwidth" title="移动喷滴灌节水设备">移动喷滴灌节水设备</span></td>
-                <td class="center tab_hide"><span>中央投资</span></td>
-                <td class="left"><span class="fixwidth" title="阿里可接受的金坷垃上龙口到拉萨">阿里可接受的金坷垃上龙口到拉萨</span></td>
-                <td class="center"><span>2013/2/2</span></td>
-                <td class="left tab_hide"><span class="fixwidth" title="凯迪拉克集团有限公司">凯迪拉克集团有限公司</span></td>
-                <td class="center"><span>1</span></td>
-                <td class="center"><span>辆</span></td>
-                <td class="center tab_hide"><span>1000000</span></td>
-                <td class="center tab_hide"><span>1000000</span></td>
-                <td class="center tab_hide"><span>0</span></td>
-                <td class="center tab_hide"><span>1000000</span></td>
-                <td class="center tab_hide"><span>20年</span></td>
-                <td class="center tab_hide"><span>5年</span></td>
-                <td class="center tab_hide"><span>16年</span></td>
-                <td class="left"><span class="fixwidth" title="天心区不知道什么路几号房">天心区不知道什么路几号房</span></td>
-                <td class="center"><span>凯迪拉克</span></td>
-                <td class="center"><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/check.html')">查看</a></td>
-                <td class="center"><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/addEquipment.html')">修改</a></td>
-                <td class="center"><a>删除</a></td>
-            </tr>
-            <tr class=" t_color">
-                <td class="center"><span>皮卡车</span></td>
-                <td class="left tab_hide"><span class="fixwidth" title="移动喷滴灌节水设备">移动喷滴灌节水设备</span></td>
-                <td class="center tab_hide"><span>中央投资</span></td>
-                <td class="left"><span class="fixwidth" title="阿里可接受的金坷垃上龙口到拉萨">阿里可接受的金坷垃上龙口到拉萨</span></td>
-                <td class="center"><span>2013/2/2</span></td>
-                <td class="left tab_hide"><span class="fixwidth" title="凯迪拉克集团有限公司">凯迪拉克集团有限公司</span></td>
-                <td class="center"><span>1</span></td>
-                <td class="center"><span>辆</span></td>
-                <td class="center tab_hide"><span>1000000</span></td>
-                <td class="center tab_hide"><span>1000000</span></td>
-                <td class="center tab_hide"><span>0</span></td>
-                <td class="center tab_hide"><span>1000000</span></td>
-                <td class="center tab_hide"><span>20年</span></td>
-                <td class="center tab_hide"><span>5年</span></td>
-                <td class="center tab_hide"><span>16年</span></td>
-                <td class="left"><span class="fixwidth" title="天心区不知道什么路几号房">天心区不知道什么路几号房</span></td>
-                <td class="center"><span>凯迪拉克</span></td>
-                <td class="center"><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/check.html')">查看</a></td>
-                <td class="center"><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/addEquipment.html')">修改</a></td>
-                <td class="center"><a>删除</a></td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="list width960 linespace">
+        <div class="listhead clearfix">
+            <ul class="clearfix">
+                <li style="width:70px;"><span>设备照片</span></li>
+                <li style="width:200px;"><span>设备名称</span></li>
+                <li style="width:80px;"><span>设备类别</span></li>
+                <li style="width:150px;"><span>厂商品牌</span></li>
+                <li style="width:60px;"><span>数量</span></li>
+                <li style="width:80px;"><span>入账方式</span></li>
+                <li style="width:80px;"><span>资金来源</span></li>
+                <li style="width:90px;"><span>入库时间</span></li>
+                <li style="width:80px;"><span>入库人</span></li>
+                <li class="last" style="width:61px;"><span>查看</span></li>
+            </ul>
+        </div>
+        <div class="listbody clearfix">
+            <ul class="clearfix">
+                <li style="width:70px;"><img></li>
+                <li style="width:200px;">
+                    <span class="textup left">挖掘机</span>
+                    <span class="textdown left">ZE205E</span>
+                </li>
+                <li style="width:80px;">
+                    <span>清淤设备</span>
+                </li>
+                <li class="noover" style="width:150px;">
+                    <span>中联重科机械制造有限责任公司</span>
+                </li>
+                <li style="width:60px;">
+                    <span>10台</span>
+                </li>
+                <li style="width:80px;">
+                    <span>购入</span>
+                </li>
+                <li style="width:80px;">
+                    <span>中央投资</span>
+                </li>
+                <li style="width:90px;">
+                    <span>2012-02-03</span>
+                </li>
+                <li style="width:80px;">
+                    <span>张三</span>
+                </li>
+                <li style="width:60px;">
+                    <div class="button orange"><span>查看</span></div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 <script>
@@ -193,49 +165,56 @@
         }
     });
     KISSY.ready(function (S) {
-        S.all("#AssetsList li").on("click", function () {
-            var active = {};
-            var Toggle = function (sw) {
-                if (typeof(sw) == "boolean") {
-                    var hider = S.all(".tab_hide");
-                    if (sw) {
-                        hider.show();
-                    } else {
-                        hider.hide();
+        var PopMenu = function(){
+            var Pop = {};
+            var ShowPop = function(event){
+                var id = $("#filter ul li").index(this);
+                var TarPop = undefined;
+                if($.isNumeric(id)){
+                    TarPop = $("#menus .menu").eq(id);
+                    if(TarPop.length > 0){
+                        var left = $(this).offset().left - 1;
+                        var height = $(this).outerHeight();
+                        var top = $(this).offset().top + height;
+                        //var left = this.offsetLeft;
+                        //$(this).css("left").replace("px","");
+                        //var width = $(this).outerWidth();
+                        $(this).addClass("menuopen");
+                        TarPop.css({"left": left + "px","top": top + "px"});
+                        TarPop.show();
                     }
                 }
+                return TarPop;
             };
-            active.Hide = function () {
-                Toggle(false);
+            var HidePop = function(){
+                $("#filter ul li").removeClass("menuopen");
+                $(".menu").hide();
             };
-            active.Show = function () {
-                Toggle(true);
+            var BindMove = function(enterEvent,TarPop){
+                var enterElement = this;
+                if(TarPop && TarPop.length > 0){
+                    $(document).mousemove(function(event){
+                        if(enterElement != event.target &&
+                                !$.contains(enterElement,event.target) &&
+                                !$.contains(TarPop[0],event.target)){
+                            HidePop();
+                            UnBindMove(event);
+                        }else{
+                            ShowPop.call(enterElement,enterEvent);
+                        }
+                    })
+                }
             };
-            var activename = S.one(this).attr("id");
-            if (active[activename]) {
-                active[activename]();
-            }
-            S.all("#AssetsList li").removeClass("selected");
-            S.one(this).addClass("selected");
-        });
-        S.use("Project/UI/TipSwitch", function (S, TipSwitch) {
-            var SelectCallBack = {
-                select: function (Select) {
-                    if (Select) {
-                        alert(Select.tp + ":" + Select.ti);
-                    } else {
-                        alert("木有");
-                    }
-                },
-                cancel: function (Select) {
-                    if (Select) {
-                        alert(Select.tp + ":" + Select.ti);
-                    } else {
-                        alert("木有");
-                    }
-                }};
-            var Switch = new TipSwitch(SelectCallBack);
-        })
+            var UnBindMove = function(event){
+                $(document).unbind(event);
+            };
+            $("#filter ul li").mouseenter(function(event){
+                var TarPop = ShowPop.call(this,event);
+                BindMove.call(this,event,TarPop);
+            });
+            return Pop;
+        };
+        var pop = new PopMenu();
     })
 </script>
 </body>

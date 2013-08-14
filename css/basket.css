@@ -1,0 +1,45 @@
+.basket{
+    height: 26px;
+    background-color: #f7f7f7;
+    border: 1px solid #efefef;
+    padding: 0 4px;
+    float: right;
+}
+.basket .ico{
+    position: relative;
+    width: 26px;
+    height: 26px;
+    background: url(../images/basket/basket.png) no-repeat left top;
+    float: left;
+ }
+.basket .ico .counter{
+    position: absolute;
+    height: 24px;
+    top: -15px;
+    left: 15px;
+    padding-left: 5px;
+    background: url(../images/basket/basket.png) no-repeat -36px top;
+}
+.basket .ico .counter span{
+    display: block;
+    height: 24px;
+    line-height: 20px;
+    padding-right: 5px;
+    background: url(../images/basket/basket.png) repeat-x bottom right;
+    color: #ffffff;
+}
+.basket .text{
+    height: 26px;
+    float: left;
+}
+.basket .text span{
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 26px;
+}
+.basket .arrow{
+    width: 10px;
+    height: 26px;
+    background: url(../images/basket/basket.png) no-repeat -26px top;
+    float: left;
+}
