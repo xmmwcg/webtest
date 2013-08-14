@@ -1,115 +1,139 @@
-.list{
-    border: 1px solid #efefef;
-    border-bottom: none;
+.w10{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
 }
-.list .listhead{
+#SummaryTitle{
+    text-align: center;
+    font-size: 18px;
     height: 30px;
-    border-bottom: 1px solid #efefef;
-    background-color: #f7f7f7;
-}
-.list .listbody{
-    height: 50px;
-    border-bottom: 1px solid #efefef;
-    background-color: #ffffff;
-}
-.list ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.list .listhead ul li{
-    display: block;
-    float: left;
-    height: 30px;
-    background-color: #f7f7f7;
-    border-right: 1px dotted #d7d7d7;
-}
-.list .listhead ul li.last{
-    border-right: none;
-}
-.list .listhead ul li span{
-    margin: 0;
-    padding: 0 6px;
-    font-size: 12px;
     line-height: 30px;
-    display: block;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    padding: 20px 0;
+    font-size: 18px;
+}
+.List
+{
+    position: relative;
+    padding: 0;
+    margin:0;
     text-align: center;
 }
-.list .listbody ul li{
-    display: block;
-    float: left;
-    height: 50px;
-    background-color: #ffffff;
-    border-right:1px solid transparent;
-    overflow: hidden;
+.List .ListSpace{
+    display: inline-block;
+    margin: 0 35px;
 }
-.list .listbody ul li span{
-    margin: 0;
-    padding: 0 6px;
-    font-size: 12px;
-    line-height: 50px;
-    display: block;
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-.list .listbody ul li.noover span{
-    line-height: 14px;
-    margin-top: 12px;
-    white-space: normal;
-    text-overflow: clip;
-    overflow: hidden;
-}
-.list .listbody ul li span.textup{
-    line-height: 14px;
-    margin: 8px 0 0 0;
-    padding-left: 12px;
-}
-.list .listbody ul li span.textdown{
-    margin: 6px 0 0 0;
-    padding-left: 12px;
-    line-height: 14px;
-    color: #b6b6b6;
-}
-.listbody ul li span.left{
-    text-align: left;
+.List .ListSpace.fulltable{
+     width: 930px;
  }
-.listbody ul li span.center{
-    text-align: center;
+.List .ListSpace.fulltable table{
+    width: 100%
 }
-.listbody ul li span.right{
-    text-align: right;
+.List table{
+    border: 1px solid #c1c1c1;
+    border-right: none;
+    border-bottom: none;
+    font-size: 13px;
 }
-
-.listbody ul li .button{
-    height: 22px;
-    line-height: 22px;
-    color: #ffffff;
-    border: 1px solid #2a80ea;
-    background-color: #2a8cfa;
-    margin: 14px 5px 0;
-    padding: 0 6px;
-    float: left;
-    cursor: pointer;
+.List table td
+{
+    border-right:1px solid #c1c1c1;
+    border-bottom:1px solid #c1c1c1;
+    height:22px;
+    line-height:22px;
+    vertical-align:middle;
+    padding:0;
+    margin: 0;
+    background-color:#fff;
 }
-.listbody ul li .button:hover{
-    background-color: #2a80ea;
+.List table td.left
+{
+    text-align:left;
 }
-.listbody ul li .button span{
+.List table td.center
+{
+    text-align:center;
+}
+.List table td.right
+{
+    text-align:right;
+}
+.List table .double td
+{
+    background-color:#f0f0f0;
+}
+.List table td span , .List table td a
+{
     display: block;
-    text-align: center;
-    color: #ffffff;
-    font-size: 12px;
-    line-height: 22px;
+    padding:0 5px;
+    text-decoration: none;
+    white-space: nowrap;   /*不会换行*/
 }
-.listbody ul li .button.orange{
-    background-color: #f18e11;
-    border-color: #d77a11;
+.List table td span.fixwidth, .List table td a.fixwidth {
+    width: 100px;
+    overflow: hidden;    /*超出隐藏*/
+    text-overflow: ellipsis; /*省略号显示超出文本*/
+    white-space: nowrap;   /*不会换行*/
 }
-.listbody ul li .button.orange:hover{
-    background-color: #d77a11;
+.List table td a{
+     cursor: pointer;
+ }
+.List table td a:visited{
+    color: #333;
+}
+.List table td a:link{
+    color: #333;
+}
+.List table td a:hover{
+    color: #0000FF;
+    text-decoration: underline;
+}
+.List table thead td
+{
+    text-align:center;
+    width: 100px;
+    height:30px;
+    background-color:#dddddd;
+    white-space: nowrap;
+}
+.List table tbody tr{
+    height: 27px;
+}
+.List table tbody tr.t_color td{
+    background-color: #f0f0f0;
+}
+.List table tbody tr td em:not(.slide):not(.exist)
+{
+    display: inline-block;
+    border-color:transparent transparent transparent #333;
+    border-style:dashed dashed dashed solid;
+    border-width: 4px 0 4px 4px;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    margin: -2px 8px 0 5px;
+}
+.List table tbody tr.open td em:not(.slide):not(.exist)
+{
+    border-color:#333 transparent transparent transparent;
+    border-style:solid dashed dashed dashed;
+    border-width: 4px 4px 0 4px;
+}
+.List table tr.highlight td
+{
+    background-color:#AAA;
+}
+.tab_hide
+{
+    display:none;
+}
+.red
+{
+    color:Red;
+
+}
+.green
+{
+    color:Green;
 }

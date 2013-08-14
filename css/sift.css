@@ -1,0 +1,296 @@
+/*筛选*/
+.tb-filter {
+    position: relative;
+    z-index: 300;
+}
+.tb-filter-box {
+}
+.tb-filter-box {
+    position: relative;
+}
+.tb-filter-box {
+    height: 26px;
+    padding: 10px;
+    margin-top: -1px;
+    border: 1px solid #CCC;
+}
+.tb-filter-box form {
+    margin: 0;
+}
+.section{
+
+}
+.nav {
+    list-style: none;
+}
+.tb-filter-box .section .hd {
+    width: 220px;
+}
+.section .hd {
+    float: left;
+    display: inline;
+}
+.tb-filter-box .section .hd .min-search {
+    margin-right: 10px;
+}
+.tb-filter-box .section .hd .submit {
+    float: right;
+    display: inline;
+    vertical-align: middle;
+    font-size: 0;
+}
+.tb-filter-box .section .hd .submit #J_submit {
+    font-size: 12px;
+    width: 38px;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid #CCC;
+    vertical-align: middle;
+}
+.tb-filter-box.narrow .section .divide {
+    height: 25px!important;
+}
+.tb-filter-box .section .divide {
+    height: 56px;
+    width: 1px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: -moz-inline-stack;
+    display: inline-block;
+    margin: 0 10px;
+    border-right: 1px dotted #CCC;
+}
+.tb-filter-box .section ul {
+    padding-right: 65px;
+}
+.tb-filter-box .section .hd .min-search .exclude {
+    position: relative;
+}
+.tb-filter-box .section .hd .min-search .exclude input {
+    text-indent: 2px;
+    _width: 98px;
+    _padding-left: 38px;
+}
+.tb-filter-box.narrow .hd .min-search .exclude input {
+    height: 24px!important;
+    line-height: 24px;
+    margin-top: 0;
+}
+.tb-filter-box .section .hd .min-search .exclude input {
+    padding: 0 2px;
+    border: 1px solid #a6a6a6;
+    width: 95%;
+    vertical-align: baseline;
+    _width: 134px;
+    height: 20px;
+}
+
+.tb-filter-box .section .ft {
+    width: 150px;
+}
+.section .ft {
+    float: right;
+    display: inline;
+}
+.tb-filter-box .section .ft .fineness {
+    margin-top: -2px;
+}
+.tb-filter-box .fineness .dropdown {
+}
+.tb-filter-box .ft .dropdown {
+    margin: 4px 0;
+    width: 70px;
+    background: white;
+}
+form .dropdown-custom {
+    display: inline-block;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    line-height: 18px;
+}
+.tb-filter-box .section .bd {
+    margin: 0 150px 0 220px;
+}
+.tb-filter-box .bd .nav li {
+    width: 85px;
+    white-space: nowrap;
+    height: 30px;
+    line-height: 30px;
+}
+.nav li {
+    float: left;
+    line-height: 20px;
+}
+.tb-filter-box .bd .nav label {
+    display: block;
+    margin-left: 4px;
+    cursor: pointer;
+    line-height: 24px;
+    font-size: 12px;
+}
+form label {
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    cursor: pointer;
+    margin-bottom: 9px;
+    margin: 0 auto;
+}
+.tb-filter-box .bd .nav input {
+    vertical-align: middle;
+}
+
+.tb-sortbar {
+    height: 30px;
+}
+.sortbar {
+    height: 28px;
+    border: 1px solid #CCC;
+    margin-top: -1px;
+    background-color: #EEE;
+}
+.sortbar {
+    position: relative;
+    z-index: 250;
+}
+.row {
+    height: 30px;
+    line-height: 30px;
+}
+.row .col {
+    float: left;
+    min-height: 1px;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+ .leibie {
+    height: 31px;
+    width: 100px;
+    overflow: hidden;
+}
+.row .leibie .lei_bie {
+    padding: 0 10px;
+}
+.row .leibie .lei_bie .text {
+    float: left;
+    width: 65px;
+    text-align: center;
+    line-height: 30px;
+}
+.row .leibie .triangle {
+    margin-top: 13px;
+}
+.row .triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-style: dashed;
+    border-color: transparent;
+    border-width: 4px;
+    font-size: 0;
+    border-top-style: solid;
+    border-top-color: #656565;
+    float: left;
+    _display: inline;
+}
+.row .leibie .loca-popup {
+    display: none;
+    position: absolute;
+    left: -1px;
+    top: 32px;
+    width: 200px;
+    border: 1px solid #d5d5d5;
+    border-top: 0;
+    z-index: 1;
+    background: #fff;
+}
+.row .drop-popup {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.row .leibie .loca-popup .inner {
+    padding-left: 5px;
+}
+.row .leibie .loca-popup .section {
+    padding: 5px 5px 5px 0;
+    line-height: 22px;
+}
+.row .leibie .loca-popup .set{
+    border-top: 1px solid #ddd;
+}
+.row .leibie .loca-popup a {
+    padding: 2px;
+    color: #212121;
+}
+.row .leibie .loca-popup .classes {
+    float: left;
+    padding-left: 4px;
+    white-space: nowrap;
+}
+
+
+.m-popup-shadow {
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+.sortbar .switch-btns a, .sortbar .sorting-btns, .sortbar .switch-btns {
+    _display: inline;
+    _zoom: 1;
+}
+.sortbar .sorting-btns {
+    border-radius: 0;
+    border: 0 none;
+}
+.nav-pills {
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+}
+
+.sortbar .sorting-btns .active a, .sortbar .sorting-btns .dropdown-list .selected a {
+    color: #f60;
+}
+.wRange4 .sortbar .sorting-btns a {
+    padding: 5px 8px;
+}
+.sortbar .sorting-btns a {
+    box-shadow: none;
+    padding: 5px 8px;
+    color: #404040;
+}
+.nav-pills .active a {
+    padding-left: 10px;
+    border-right-color: #DDD;
+    border-left: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+    -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+}
+.nav li a:hover, .nav .active a {
+    text-decoration: none;
+    background-color: #eee;
+}
+.nav-pills li a {
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-left: 1px solid whiteSmoke;
+    border-right: 1px solid #e5e5e5;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+.nav li a {
+    display: block;
+    padding: 0 8px;
+}
+a {
+    text-decoration: none;
+}
+a {
+    color: #0063dc;
+    text-decoration: none;
+    cursor: pointer;
+}
