@@ -20,6 +20,9 @@
     padding: 0;
 }
 #OverDisplay .Bar ul li{
+    background-image: url(bararrow.png);
+    background-repeat: no-repeat;
+    background-position: left top;
 
 }
 #OverDisplay .Display{
