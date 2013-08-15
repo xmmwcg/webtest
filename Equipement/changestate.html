@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>修改设备状态</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/clearfix.css" rel="stylesheet" type="text/css">
+    <link href="../css/page.css" rel="stylesheet" type="text/css">
+    <link href="../css/searcher.css" rel="stylesheet" type="text/css">
+    <link href="../css/basket.css" rel="stylesheet" type="text/css">
+    <link href="../css/filter.css" rel="stylesheet" type="text/css">
+    <link href="../css/list.css" rel="stylesheet" type="text/css">
+
+    <script src="http://g.tbcdn.cn/kissy/k/1.3.1/kissy-min.js"></script>
+    <script src="../js/Jquery/jquery-1.10.2.js"></script>
+    <script src="../js/frame.js"></script>
+</head>
+<body>
+<div class="width960 upspace">
+    <div class="width960 linespace clearfix">
+        <div id="searcher" class="searcher">
+            <div class="searchtext">
+                <input class="text" type="text"/>
+            </div>
+            <input class="dosearch" type="button" value="搜索"/>
+        </div>
+        <div class="basket">
+            <div class="ico">
+                <div class="counter">
+                    <span>0</span>
+                </div>
+            </div>
+            <div class="text"><span>提交设备清单</span></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+    <div class="width960 linespace">
+        <div id="filter" class="filter width960bor clearfix">
+            <div class="ti"><span>设备筛选</span></div>
+            <ul class="clearfix">
+                <li class="clearfix">
+                    <span>当前状态</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>设备类别</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>设备来源</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>入账方式</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>资金年度</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>规格型号</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>存放地点</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>管理员</span><em class="arrowdown"></em>
+                </li>
+            </ul>
+            <div class="buttons clearfix">
+                <div class="button orange"><span>筛选</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="menus" class="menus width960">
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>库存</span></li>
+                <li><em></em><span>使用</span></li>
+                <li><em></em><span>租赁</span></li>
+                <li><em></em><span>转移</span></li>
+                <li><em></em><span>检修</span></li>
+                <li><em></em><span>清理</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>应急拉水车</span></li>
+                <li><em></em><span>打井洗井设备</span></li>
+                <li><em></em><span>移动灌溉设备</span></li>
+                <li><em></em><span>移动喷滴灌节水设备</span></li>
+                <li><em></em><span>输水软管</span></li>
+                <li><em></em><span>简易净水设备</span></li>
+                <li><em></em><span>清淤设备</span></li>
+                <li><em></em><span>发电和动力设备</span></li>
+                <li><em></em><span>其他设备</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>中央投资</span></li>
+                <li><em></em><span>省级投资</span></li>
+                <li><em></em><span>市级投资</span></li>
+                <li><em></em><span>县级投资</span></li>
+                <li><em></em><span>自有资金</span></li>
+                <li><em></em><span>其他</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>购入</span></li>
+                <li><em></em><span>调拨</span></li>
+                <li><em></em><span>接受捐赠</span></li>
+                <li><em></em><span>其他</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>2013年</span></li>
+                <li><em></em><span>2012年</span></li>
+                <li><em></em><span>2011年</span></li>
+                <li><em></em><span>2010年</span></li>
+                <li><em></em><span>2009年</span></li>
+                <li><em></em><span>2008年</span></li>
+                <li><em></em><span>2007年</span></li>
+                <li><em></em><span>2006年</span></li>
+                <li><em></em><span>2005年</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>ZE205E</span></li>
+                <li><em></em><span>AE76</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>岳麓区</span></li>
+                <li><em></em><span>开福区</span></li>
+                <li><em></em><span>天心区</span></li>
+                <li><em></em><span>芙蓉区</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>张三</span></li>
+                <li><em></em><span>李四</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="list width960 linespace">
+        <div class="listhead clearfix">
+            <ul class="clearfix">
+                <li style="width:70px;"><span>设备照片</span></li>
+                <li style="width:170px;"><span>设备名称</span></li>
+                <li style="width:80px;"><span>设备类别</span></li>
+                <li style="width:120px;"><span>厂商品牌</span></li>
+                <li style="width:60px;"><span>数量</span></li>
+                <li style="width:80px;"><span>入账方式</span></li>
+                <li style="width:80px;"><span>资金来源</span></li>
+                <li style="width:90px;"><span>入库时间</span></li>
+                <li style="width:80px;"><span>入库人</span></li>
+                <li style="width:60px;"><span>删除</span></li>
+                <li class="last" style="width:60px;"><span>查看</span></li>
+            </ul>
+        </div>
+        <div class="listbody clearfix">
+            <ul class="clearfix">
+                <li style="width:70px;"><img class="photo" src="../images/nophoto/wjj.jpg"></li>
+                <li style="width:170px;">
+                    <span class="textup left">挖掘机</span>
+                    <span class="textdown left">ZE205E</span>
+                </li>
+                <li style="width:80px;">
+                    <span>清淤设备</span>
+                </li>
+                <li class="noover two" style="width:120px;">
+                    <span>中联重科机械制造有限责任公司</span>
+                </li>
+                <li style="width:60px;">
+                    <span>10台</span>
+                </li>
+                <li style="width:80px;">
+                    <span>购入</span>
+                </li>
+                <li style="width:80px;">
+                    <span>中央投资</span>
+                </li>
+                <li style="width:90px;">
+                    <span>2012-02-03</span>
+                </li>
+                <li style="width:80px;">
+                    <span>张三</span>
+                </li>
+                <li style="width:60px;">
+                    <div class="button"><span>修改</span></div>
+                </li>
+                <li style="width:59px;">
+                    <div class="button red"><span>删除</span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="listbody clearfix">
+            <ul class="clearfix">
+                <li style="width:70px;"><img class="photo" src="../images/nophoto/djj.jpg"></li>
+                <li style="width:170px;">
+                    <span class="textup left">打井机</span>
+                    <span class="textdown left">AE76</span>
+                </li>
+                <li style="width:80px;">
+                    <span>打井洗井设备</span>
+                </li>
+                <li class="noover two" style="width:120px;">
+                    <span>三一重工集团有限公司</span>
+                </li>
+                <li style="width:60px;">
+                    <span>2台</span>
+                </li>
+                <li style="width:80px;">
+                    <span>购入</span>
+                </li>
+                <li style="width:80px;">
+                    <span>中央投资</span>
+                </li>
+                <li style="width:90px;">
+                    <span>2012-02-04</span>
+                </li>
+                <li style="width:80px;">
+                    <span>李四</span>
+                </li>
+                <li style="width:60px;">
+                    <div class="button"><span>修改</span></div>
+                </li>
+                <li style="width:59px;">
+                    <div class="button red"><span>删除</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    //配置KISSY包路径
+    KISSY.config({
+        tag: new Date().toString(),
+        packages: {
+            Project: {
+                base: "../",
+                debug: true
+            }
+        }
+    });
+    KISSY.ready(function (S) {
+        var PopMenu = function(){
+            var Pop = {};
+            var ShowPop = function(event){
+                var id = $("#filter ul li").index(this);
+                var TarPop = undefined;
+                if($.isNumeric(id)){
+                    TarPop = $("#menus .menu").eq(id);
+                    if(TarPop.length > 0){
+                        var left = $(this).offset().left - 1;
+                        var height = $(this).outerHeight();
+                        var top = $(this).offset().top + height;
+                        //var left = this.offsetLeft;
+                        //$(this).css("left").replace("px","");
+                        //var width = $(this).outerWidth();
+                        $(this).addClass("menuopen");
+                        TarPop.css({"left": left + "px","top": top + "px"});
+                        TarPop.show();
+                    }
+                }
+                return TarPop;
+            };
+            var HidePop = function(){
+                $("#filter ul li").removeClass("menuopen");
+                $(".menu").hide();
+            };
+            var BindMove = function(enterEvent,TarPop){
+                var enterElement = this;
+                if(TarPop && TarPop.length > 0){
+                    $(document).mousemove(function(event){
+                        if(enterElement != event.target &&
+                                !$.contains(enterElement,event.target) &&
+                                !$.contains(TarPop[0],event.target)){
+                            HidePop();
+                            UnBindMove(event);
+                        }else{
+                            ShowPop.call(enterElement,enterEvent);
+                        }
+                    })
+                }
+            };
+            var UnBindMove = function(event){
+                $(document).unbind(event);
+            };
+            $("#filter ul li").mouseenter(function(event){
+                var TarPop = ShowPop.call(this,event);
+                BindMove.call(this,event,TarPop);
+            });
+            return Pop;
+        };
+        var pop = new PopMenu();
+    })
+</script>
+</body>
+</html>
