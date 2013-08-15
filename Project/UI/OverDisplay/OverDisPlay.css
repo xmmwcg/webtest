@@ -2,7 +2,7 @@
     position: absolute;
     top: 99px;
     bottom: 0;
-    left: 0;
+    left: 100000px;
     right: 0;
     width: 0;
 }
@@ -13,6 +13,7 @@
     right: 0;
     height: 30px;
     background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
 }
 #OverDisplay .Bar ul{
     list-style: none;
@@ -20,14 +21,37 @@
     padding: 0;
 }
 #OverDisplay .Bar ul li{
-    background-image: url(bararrow.png);
-    background-repeat: no-repeat;
-    background-position: left top;
+    position: relative;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(bararrow.png) no-repeat right top;
+    cursor: pointer;
+    z-index: 10;
+ }
+#OverDisplay .Bar ul li.cur{
+    background-position: right bottom;
+    cursor: default;
+    z-index: 9;
+}
+#OverDisplay .Bar ul li.cur span{
+    margin-left: -6px;
+    padding-left: 14px;
+    background-color: #ededed;
+}
+#OverDisplay .Bar ul li span{
+
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 8px 0 8px;
+    margin-right: 6px;
 
 }
 #OverDisplay .Display{
     position: absolute;
-    top: 30px;
+    top: 31px;
     left: 0;
     right:0;
     bottom: 0;
