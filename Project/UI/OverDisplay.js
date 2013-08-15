@@ -5,9 +5,9 @@ KISSY.add("Project/UI/OverDisplay",function(S){
         var OverDisplayElement = $("#OverDisplay");
         var ParentCon = OverDisplayElement.parent();
         var Historybar = OverDisplayElement.find(".Bar ul");
-        //var CloseBt = OverDisplayElement.one(".close").on("click",function(){
-        //    Close();
-        //});
+        var CloseBt = OverDisplayElement.find(".close").click(function(){
+            Close();
+        });
         var frame = OverDisplayElement.find("#DisplayFrame");
         var histroylist = [];
         var isOpen = false;
