@@ -30,7 +30,7 @@
                     <span>0</span>
                 </div>
             </div>
-            <div class="text"><span>提交设备清单</span></div>
+            <div class="text"><span>提交操作清单</span></div>
             <div class="arrow"></div>
         </div>
     </div>
@@ -148,87 +148,66 @@
         <div class="listhead clearfix">
             <ul class="clearfix">
                 <li style="width:70px;"><span>设备照片</span></li>
-                <li style="width:170px;"><span>设备名称</span></li>
-                <li style="width:80px;"><span>设备类别</span></li>
-                <li style="width:120px;"><span>厂商品牌</span></li>
-                <li style="width:60px;"><span>数量</span></li>
-                <li style="width:80px;"><span>入账方式</span></li>
-                <li style="width:80px;"><span>资金来源</span></li>
-                <li style="width:90px;"><span>入库时间</span></li>
-                <li style="width:80px;"><span>入库人</span></li>
-                <li style="width:60px;"><span>删除</span></li>
-                <li class="last" style="width:60px;"><span>查看</span></li>
+                <li style="width:200px;"><span>设备名称</span></li>
+                <li style="width:120px;"><span>出厂编号</span></li>
+                <li style="width:80px;"><span>当前状态</span></li>
+                <li style="width:210px;"><span>使用信息</span></li>
+                <li style="width:100px;"><span>状态变更时间</span></li>
+                <li style="width:60px;"><span>查看</span></li>
+                <li class="last" style="width:110px;"><span>加入操作清单</span></li>
             </ul>
         </div>
         <div class="listbody clearfix">
             <ul class="clearfix">
                 <li style="width:70px;"><img class="photo" src="../images/nophoto/wjj.jpg"></li>
-                <li style="width:170px;">
+                <li style="width:200px;">
                     <span class="textup left">挖掘机</span>
                     <span class="textdown left">ZE205E</span>
                 </li>
-                <li style="width:80px;">
-                    <span>清淤设备</span>
+                <li style="width:120px;">
+                    <span>AEZ0125</span>
                 </li>
-                <li class="noover two" style="width:120px;">
-                    <span>中联重科机械制造有限责任公司</span>
+                <li style="width:80px;">
+                    <span>库存</span>
+                </li>
+                <li style="width:210px;">
+                    <span>该设备已使用200小时</span>
+                </li>
+                <li style="width:100px;">
+                    <span>2012-03-03</span>
                 </li>
                 <li style="width:60px;">
-                    <span>10台</span>
+                    <div class="button"><span>查看</span></div>
                 </li>
-                <li style="width:80px;">
-                    <span>购入</span>
-                </li>
-                <li style="width:80px;">
-                    <span>中央投资</span>
-                </li>
-                <li style="width:90px;">
-                    <span>2012-02-03</span>
-                </li>
-                <li style="width:80px;">
-                    <span>张三</span>
-                </li>
-                <li style="width:60px;">
-                    <div class="button"><span>修改</span></div>
-                </li>
-                <li style="width:59px;">
-                    <div class="button red"><span>删除</span></div>
+                <li style="width:110px;">
+                    <div class="button orange"><span>加入操作清单</span></div>
                 </li>
             </ul>
         </div>
         <div class="listbody clearfix">
             <ul class="clearfix">
                 <li style="width:70px;"><img class="photo" src="../images/nophoto/djj.jpg"></li>
-                <li style="width:170px;">
+                <li style="width:200px;">
                     <span class="textup left">打井机</span>
                     <span class="textdown left">AE76</span>
                 </li>
-                <li style="width:80px;">
-                    <span>打井洗井设备</span>
+                <li style="width:120px;">
+                    <span>SCD0254</span>
                 </li>
-                <li class="noover two" style="width:120px;">
-                    <span>三一重工集团有限公司</span>
+                <li style="width:80px;">
+                    <span>使用</span>
+                </li>
+                <li style="width:210px;">
+                    <span>该设备已使用90小时</span>
+                </li>
+                <li style="width:100px;">
+                    <span>2012-04-03</span>
                 </li>
                 <li style="width:60px;">
-                    <span>2台</span>
+                    <div class="button"><span>查看</span></div>
                 </li>
-                <li style="width:80px;">
-                    <span>购入</span>
-                </li>
-                <li style="width:80px;">
-                    <span>中央投资</span>
-                </li>
-                <li style="width:90px;">
-                    <span>2012-02-04</span>
-                </li>
-                <li style="width:80px;">
-                    <span>李四</span>
-                </li>
-                <li style="width:60px;">
-                    <div class="button"><span>修改</span></div>
-                </li>
-                <li style="width:59px;">
-                    <div class="button red"><span>删除</span></div>
+                <li style="width:110px;">
+                    <div class="button orange"><span>加入操作清单</span></div>
                 </li>
             </ul>
         </div>
@@ -254,9 +233,15 @@
                 if($.isNumeric(id)){
                     TarPop = $("#menus .menu").eq(id);
                     if(TarPop.length > 0){
+                        var filterright = $("#filter").offset().left + $("#filter").outerWidth();
                         var left = $(this).offset().left - 1;
+                        var right = left + $(this).outerWidth();
                         var height = $(this).outerHeight();
                         var top = $(this).offset().top + height;
+                        var popwidth = TarPop.outerWidth();
+                        if(left + popwidth > filterright){
+                            left = right - popwidth + 1;
+                        }
                         //var left = this.offsetLeft;
                         //$(this).css("left").replace("px","");
                         //var width = $(this).outerWidth();

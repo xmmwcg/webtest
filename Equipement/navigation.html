@@ -206,9 +206,15 @@
                 if($.isNumeric(id)){
                     TarPop = $("#menus .menu").eq(id);
                     if(TarPop.length > 0){
+                        var filterright = $("#filter").offset().left + $("#filter").outerWidth();
                         var left = $(this).offset().left - 1;
+                        var right = left + $(this).outerWidth();
                         var height = $(this).outerHeight();
                         var top = $(this).offset().top + height;
+                        var popwidth = TarPop.outerWidth();
+                        if(left + popwidth > filterright){
+                            left = right - popwidth + 1;
+                        }
                         //var left = this.offsetLeft;
                         //$(this).css("left").replace("px","");
                         //var width = $(this).outerWidth();
