@@ -24,16 +24,17 @@
             </div>
             <input class="dosearch" type="button" value="搜索"/>
         </div>
-        <div class="basket">
+        <div id="basket" class="basket" style="cursor: pointer;">
             <div class="ico">
                 <div class="counter">
-                    <span>0</span>
+                    <span>1</span>
                 </div>
             </div>
             <div class="text"><span>提交操作清单</span></div>
             <div class="arrow"></div>
         </div>
     </div>
+    <div class="width960" style="height: 0;position: relative;"><img id="buylist" src="../images/pic/buylist.png" style="display: none; position: absolute; top: -1px; right: 0;z-index: 100;border-right:1px solid #eeeeee;border-top:1px solid #eeeeee; "/></div>
     <div class="width960 linespace">
         <div id="filter" class="filter width960bor clearfix">
             <div class="ti"><span>设备筛选</span></div>
@@ -549,6 +550,9 @@
         }
     });
     KISSY.ready(function (S) {
+        $("#basket").click(function(){
+             $("#buylist").toggle();
+        })
         var PopMenu = function(){
             var Pop = {};
             var ShowPop = function(event){
