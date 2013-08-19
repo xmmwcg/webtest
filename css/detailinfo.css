@@ -131,3 +131,50 @@
 .history{
     border: 1px solid #e1e1e1;
 }
+.history ul{
+    margin: 0;
+    padding: 10px 19px;
+    list-style: none;
+}
+.history ul li{
+    padding: 4px 5px 4px 145px;
+    margin-top: 3px;
+}
+.history ul li:hover{
+    background-color: #f6f6f6;
+}
+.history ul li.active{
+    border: 1px solid #f0f0f0;
+    background-color: #f6f6f6;
+}
+.history ul li span{
+    font-size: 12px;
+    line-height: 24px;
+    display: block;
+}
+.history ul li .time{
+    position: absolute;
+    margin-left: -125px;
+}
+.history ul li .info{
+    display: none;
+    color: #858585;
+}
+.history ul li.active .info{
+    display: block;
+}
+.history ul li .info .line{
+    padding: 5px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.history ul li .info .up{
+    border-top: 1px solid #EEE;
+}
+.history ul li .info .infotext{
+    padding-right: 1em;
+    line-height: 26px;
+}
+.history ul li .info span{
+    float: left;
+    padding-right: 25px;
+}
