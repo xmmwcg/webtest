@@ -1,0 +1,30 @@
+.tittle{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.a{
+    text-align: center;
+    margin-top: 20px;
+}
+.a ul li{
+    margin: 5px auto;
+}
+.a span{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.a input{
+    width: 150px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #cccccc;
+    margin-right: 10px;
+}
+.a a{
+
+}
+.a a:hover{
+
+}
