@@ -1,0 +1,32 @@
+.dtitle span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.ddetail{
+    margin-left: 400px;
+}
+.ddetail ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+    width: 250px;
+    float: left;
+}
+.ddetail ul li{
+    height: 24px;
+    line-height: 24px;
+    display: block;
+}
+.ddetail ul li span{
+    font-size: 12px;
+    line-height: 24px;
+    width: 180px;
+    display: block;
+    float: left;
+}
+.ddetail ul li span.linetitle{
+    width: 68px;
+    font-weight: bold;
+    text-align: left;
+}
