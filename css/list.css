@@ -134,3 +134,37 @@
 .listbody ul li .button.red:hover{
     background-color: #cb3e35;
 }
+
+.list.b .h30,.list.b .listbody.h30 ul li,.list.b .listbody.h30 ul li span{
+    height: 30px;
+    line-height: 30px;
+    overflow: inherit;
+    margin: 0;
+    padding-top: 0;
+}
+.list.b .listbody ul li .button{
+    margin-top: 3px;
+}
+.list.b .listbody ul li .button span{
+    height: 22px;
+    line-height: 22px;
+}
+.list.b{
+    border: none;
+}
+.list.b .bl{
+    height: 30px;
+    position: relative;
+    border: 1px solid #efefef;
+    margin-top: -1px;
+    z-index: 1;
+    overflow: hidden;
+}
+.list.b .bl.open{
+    border-color: #cccccc;
+    height: auto;
+    z-index: 30;
+}
+.list.b .clist .last{
+    border-bottom:none;
+}
