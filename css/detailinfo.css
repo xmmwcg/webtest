@@ -30,3 +30,101 @@
     font-weight: bold;
     text-align: left;
 }
+
+.tab{
+    height: 40px;
+    border: 1px solid #e1e1e1;
+}
+.tab ul{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tab ul li{
+    height: 40px;
+    display: block;
+    border-right: 1px solid transparent;
+    float: left;
+    cursor: pointer;
+}
+.tab ul li.selected{
+    border-right: 1px solid #e1e1e1;
+    cursor: default;
+}
+.tab ul li span{
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    display: block;
+    background-color: #ffffff;
+}
+.tab ul li.selected span{
+    margin-top: -1px;
+    border-top: 2px solid #69cfff;
+    background-color: #f6f6f6;
+}
+.listhead{
+    height: 30px;
+    border: 1px solid #e1e1e1;
+    border-top: none;
+    background-color: #f6f6f6;
+}
+.listhead ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.listhead ul li{
+    height: 30px;
+    display: block;
+    float: left;
+}
+.listhead ul li span{
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    padding: 0 5px;
+    text-align: center;
+}
+.list{
+    border: 1px solid #e1e1e1;
+}
+.list .listbody{
+    height: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+.list .listbody.last{
+    border-bottom: none;
+}
+.list .listbody.selected{
+    background-color: #f6f6f6;
+    cursor: default;
+}
+.list .listbody ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list .listbody ul li{
+    height: 30px;
+    display: block;
+    float: left;
+}
+.list .listbody ul li span{
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    padding: 0 5px;
+    color: #666;
+}
+.list .listbody .center span{
+    text-align: center;
+}
+

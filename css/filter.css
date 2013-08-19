@@ -135,7 +135,5 @@
     height: 20px;
     float: left;
     margin: 2px 0 2px 8px;
-    background-image: url(../images/filter/check.png);
-    background-repeat: no-repeat;
-    background-position: top left;
+    background: url(../images/filter/check.png) no-repeat top left;
 }
