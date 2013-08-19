@@ -1,0 +1,54 @@
+.photograph{
+    width:300px;
+    float: left;
+}
+.photograph .photoshower{
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+}
+.photograph .photoshower img{
+    width: 300px;
+    height: 250px;
+    border: none;
+}
+.photolist{
+    width: 300px;
+    height: 80px;
+    overflow: hidden;
+}
+.photolist ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 10px;
+}
+.photolist ul li{
+    display: block;
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+.photolist ul li.selected{
+    background-image: url(../images/photograph/photoselected.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.photolist ul li a{
+    width: 48px;
+    height: 48px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    display: block;
+}
+.photolist ul li.selected a{
+    border: 1px solid #cccccc;
+}
+.photolist ul li a img{
+    width: 46px;
+    height: 46px;
+    border: 1px solid #ffffff;
+}
