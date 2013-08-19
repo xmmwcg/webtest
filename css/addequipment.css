@@ -1,15 +1,17 @@
 .tittle{
     text-align: center;
     font-size: 22px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: bold;
 }
 .a{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .a ul li{
     margin: 5px auto;
+    height: 22px;
+    line-height: 22px;
 }
 .a span{
     margin-left: 20px;
@@ -27,4 +29,7 @@
 }
 .a a:hover{
 
+}
+.a .botton{
+    color: #cccccc;
 }
