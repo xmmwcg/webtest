@@ -9,6 +9,9 @@
     <link href="../css/page.css" rel="stylesheet" type="text/css">
     <link href="../css/detailinfo.css" rel="stylesheet" type="text/css">
     <link href="../css/photograph.css" rel="stylesheet" type="text/css">
+
+    <script src="../js/Jquery/jquery-1.10.2.js"></script>
+    <script src="../js/frame.js"></script>
 </head>
 <body>
     <div class="width960 upspace">
@@ -98,14 +101,80 @@
                 </div>
             </div>
         </div>
-        <div class="width960 linespace">
+        <div class="width960 linespace underspace">
             <div class="width960bor">
-               <div class="history">
-
+                <div class="history tabc" style="display: block;">
+                    <ul>
+                        <li class="active">
+                            <span class="time">2012-06-20 14:30</span>
+                            <span class="text">XXXXXXXXXXXXXXXXXX</span>
+                            <div class="info">
+                                <p class="line"></p>
+                                <p class="infotext up clearfix">
+                                    <span class="left">借用人：XXX</span>
+                                    <span>保管人：XXX</span>
+                                    <span>联系电话：XXX</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="time">2012-06-20 14:30</span>
+                            <span class="text">XXXXXXXXXXXXXXXXXX</span>
+                            <div class="info">
+                                <p class="line"></p>
+                                <p class="infotext up clearfix">
+                                    <span class="left">借用人：XXX</span>
+                                    <span>保管人：XXX</span>
+                                    <span>联系电话：XXX</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="time">2012-06-20 14:30</span>
+                            <span class="text">XXXXXXXXXXXXXXXXXX</span>
+                            <div class="info">
+                                <p class="line"></p>
+                                <p class="infotext up clearfix">
+                                    <span class="left">借用人：XXX</span>
+                                    <span>保管人：XXX</span>
+                                    <span>联系电话：XXX</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="time">2012-06-20 14:30</span>
+                            <span class="text">XXXXXXXXXXXXXXXXXX</span>
+                            <div class="info">
+                                <p class="line"></p>
+                                <p class="infotext up clearfix">
+                                    <span class="left">借用人：XXX</span>
+                                    <span>保管人：XXX</span>
+                                    <span>联系电话：XXX</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                </div>
+                <div class="gps tabc" style="display: none">
+                    <div class="framebox">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    <script>
+        $(function(){
+            $(".tab li").click(function(){
+                var index = $(".tab li").removeClass("selected").index(this);
+                $(this).addClass("selected");
+                $(".tabc").hide().eq(index).show();
+            })
+            $(".history li").click(function(){
+                $(".history li").removeClass("active");
+                $(this).addClass("active");
+            })
+        })
+    </script>
 </body>
 </html>

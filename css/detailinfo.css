@@ -44,12 +44,11 @@
 .tab ul li{
     height: 40px;
     display: block;
-    border-right: 1px solid transparent;
     float: left;
+    border-right: 1px solid #e1e1e1;
     cursor: pointer;
 }
 .tab ul li.selected{
-    border-right: 1px solid #e1e1e1;
     cursor: default;
 }
 .tab ul li span{
@@ -128,6 +127,60 @@
     text-align: center;
 }
 
-.history{
+.history,.gps{
     border: 1px solid #e1e1e1;
+}
+.history ul{
+    margin: 0;
+    padding: 10px 19px;
+    list-style: none;
+}
+.history ul li{
+    padding: 4px 5px 4px 145px;
+    margin-top: 3px;
+}
+.history ul li:hover{
+    background-color: #f6f6f6;
+}
+.history ul li.active{
+    border: 1px solid #f0f0f0;
+    background-color: #f6f6f6;
+}
+.history ul li span{
+    font-size: 12px;
+    line-height: 24px;
+}
+.history ul li .time{
+    position: absolute;
+    margin-left: -125px;
+}
+.history ul li:hover:not(.active) .text{
+    padding-right: 20px;
+    background: url(../images/history/active.png) no-repeat right -2px;
+}
+.history ul li .info{
+    display: none;
+    color: #858585;
+}
+.history ul li.active .info{
+    display: block;
+}
+.history ul li .info .line{
+    padding: 5px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+.history ul li .info .up{
+    border-top: 1px solid #fff;
+}
+.history ul li .info .infotext{
+    padding-right: 1em;
+    line-height: 26px;
+}
+.history ul li .info span{
+    float: left;
+    padding-right: 25px;
+}
+.gps .framebox{
+    height: 400px;
+    padding: 10px;
 }
