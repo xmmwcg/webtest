@@ -4,32 +4,45 @@
     margin-top: 30px;
     font-weight: bold;
 }
-.a{
+.alist{
     text-align: center;
     margin-top: 30px;
 }
-.a ul li{
+.alist ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.alist ul li{
     margin: 5px auto;
     height: 22px;
     line-height: 22px;
+    display: block;
 }
-.a span{
+.alist ul li span{
     margin-left: 20px;
     margin-right: 10px;
 }
-.a input{
+.alist ul li input{
     width: 150px;
     height: 18px;
     line-height: 18px;
     border: 1px solid #cccccc;
     margin-right: 10px;
 }
-.a a{
-
+.alist ul li a{
+    color: #333;
 }
-.a a:hover{
-
+.alist ul li a:hover{
+    color: #ccc;
 }
-.a .botton{
-    color: #cccccc;
+.alist ul li.l295{
+    float: left;
+    margin-left: 296px;
+}
+.alist ul li select{
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #cccccc;
+    margin-right: 10px;
 }
