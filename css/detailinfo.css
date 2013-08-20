@@ -44,12 +44,11 @@
 .tab ul li{
     height: 40px;
     display: block;
-    border-right: 1px solid transparent;
     float: left;
+    border-right: 1px solid #e1e1e1;
     cursor: pointer;
 }
 .tab ul li.selected{
-    border-right: 1px solid #e1e1e1;
     cursor: default;
 }
 .tab ul li span{
@@ -128,7 +127,7 @@
     text-align: center;
 }
 
-.history{
+.history,.gps{
     border: 1px solid #e1e1e1;
 }
 .history ul{
@@ -150,11 +149,14 @@
 .history ul li span{
     font-size: 12px;
     line-height: 24px;
-    display: block;
 }
 .history ul li .time{
     position: absolute;
     margin-left: -125px;
+}
+.history ul li:hover:not(.active) .text{
+    padding-right: 20px;
+    background: url(../images/history/active.png) no-repeat right -2px;
 }
 .history ul li .info{
     display: none;
@@ -168,7 +170,7 @@
     border-bottom: 1px solid #e1e1e1;
 }
 .history ul li .info .up{
-    border-top: 1px solid #EEE;
+    border-top: 1px solid #fff;
 }
 .history ul li .info .infotext{
     padding-right: 1em;
@@ -177,4 +179,8 @@
 .history ul li .info span{
     float: left;
     padding-right: 25px;
+}
+.gps .framebox{
+    height: 400px;
+    padding: 10px;
 }
