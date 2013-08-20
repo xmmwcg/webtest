@@ -1,6 +1,6 @@
 .tittle{
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 30px;
     font-weight: bold;
 }
@@ -23,6 +23,9 @@
     margin-left: 20px;
     margin-right: 10px;
 }
+.alist ul li span.l0{
+    margin-left: 0;
+}
 .alist ul li input{
     width: 150px;
     height: 18px;
@@ -34,11 +37,7 @@
     color: #333;
 }
 .alist ul li a:hover{
-    color: #ccc;
-}
-.alist ul li.l295{
-    float: left;
-    margin-left: 296px;
+    color: #a7a6aa;
 }
 .alist ul li select{
     height: 22px;
@@ -46,3 +45,70 @@
     border: 1px solid #cccccc;
     margin-right: 10px;
 }
+.alist .stock{
+    display: inline-block;
+}
+.alist .stock a{
+    border: 1px solid #A7A6AA;
+    height: 9px;
+    padding: 5px 0;
+    line-height: 7px;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 0;
+    width: 12px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ededed;
+    background-position: 3px -183px;
+    overflow: hidden;
+    line-height: 50px;
+    background-image: url("../images/pic/T1_pgoXiNbXXXJfp.n-635-256.png");
+}
+.alist .stock a:hover{
+    text-decoration: none;
+    background-color: #fff;
+}
+.alist .stock a.increase{
+    background-position: -42px -183px;
+
+    margin-right: 2px;
+}
+.alist .stock a.reduce{
+
+    margin-right: 2px;
+}
+.alist .stock a:hover.increase{
+    background-position: -72px -183px;
+}
+.alist .stock a:hover.reduce{
+    background-position: -27px -183px;
+}
+.alist .stock a.increase.disable,.alist .stock a:hover.increase.disable{
+    background-position: -12px -183px;
+    background-color: #ededed;
+}
+.alist .stock a.reduce.disable,.alist .stock a:hover.reduce.disable{
+    background-position: -57px -183px;
+    background-color: #ededed;
+}
+.alist .stock input.ibb{
+    height: 16px;
+    margin: -6px;
+    padding: 3px 2px 0 15px;
+    font-size: 12px;
+    border: 1px solid #a7a6aa;
+    outline: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
