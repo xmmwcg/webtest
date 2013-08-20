@@ -124,7 +124,8 @@
                         <span>日期：2012-06-03</span>
                     </li>
                     <li class="sw" style="width:70px;">
-                        <span class="hand">展开</span>
+                        <span class="hand">展开<em class="arrow"></em></span>
+
                     </li>
                 </ul>
             </div>
@@ -255,7 +256,7 @@
                         <span>日期：2012-06-03</span>
                     </li>
                     <li class="sw" style="width:70px;">
-                        <span class="hand">展开</span>
+                        <span class="hand">展开<em class="arrow"></em></span>
                     </li>
                 </ul>
             </div>
@@ -386,7 +387,7 @@
                         <span>日期：2012-06-03</span>
                     </li>
                     <li class="sw" style="width:70px;">
-                        <span class="hand">展开</span>
+                        <span class="hand">展开<em class="arrow"></em></span>
                     </li>
                 </ul>
             </div>
@@ -504,7 +505,7 @@
 <script>
     $(".bl .listclick").click(function(){
         var s = $(this).parents(".bl").toggleClass("open").hasClass("open");
-        $(this).find('.sw span').text(s?"收拢":"展开");
+        $(this).find('.sw span').html(s?"收拢<em class='arrow up'></em>":"展开<em class='arrow'></em>");
     })
 
     //配置KISSY包路径
