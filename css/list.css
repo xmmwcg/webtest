@@ -174,3 +174,22 @@
 .list.b .clist .last{
     border-bottom:none;
 }
+.list.b .infotext ul{
+    padding: 0 20px 10px 20px;
+}
+.list.b .infotext ul li.ulist{
+    display: inline;
+    float: left;
+    width: 180px;
+    padding-left: 20px;
+    margin: 10px 15px 0 0;
+    height: 18px;
+    line-height: 18px;
+}
+.list.b .infotext ul li.ulist span{
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
