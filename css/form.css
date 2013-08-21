@@ -11,7 +11,8 @@
 .alist ul{
     list-style: none;
     padding: 0;
-    margin-left: 296px;
+    margin: 0 auto;
+    width: 650px;
 }
 .alist ul li{
     margin: 5px auto;
@@ -23,6 +24,15 @@
     margin-left: 20px;
     margin-right: 10px;
 }
+.alist ul li span.top{
+    vertical-align: top;
+}
+.alist ul li span.l32{
+    margin-left: 32px;
+}
+.alist ul li span.l44{
+    margin-left: 44px;
+}
 .alist ul li span.l0{
     margin-left: 0;
 }
@@ -33,11 +43,23 @@
     border: 1px solid #cccccc;
     margin-right: 10px;
 }
+.alist ul li.h60{
+    height: 70px;
+}
+.alist ul li textarea{
+    width: 270px;
+    height: 60px;
+    line-height: 18px;
+    border: 1px solid #cccccc;
+    margin-right: 10px;
+}
 .alist ul li a{
-    color: #333;
+    color: #b2adb9;
+    text-decoration: none;
 }
 .alist ul li a:hover{
-    color: #a7a6aa;
+    color: #f60;
+    text-decoration: underline;
 }
 .alist ul li select{
     height: 22px;
@@ -101,6 +123,95 @@
     outline: 0;
     border-right: 0;
     border-left: 0;
+}
+.alist ul li.h100{
+    height: 118px;
+}
+.alist ul li .info{
+    border: 1px solid #dddddd;
+    background-color: #f6f6f6;
+    height: 118px;
+}
+.alist ul li .info ol{
+    list-style: none;
+    padding: 0;
+}
+.alist ul li .info ol li{
+    margin: 5px 0 0 0;
+}
+.alist ul li .info ol li.selected{
+    -webkit-box-shadow: 15px 5px 0px #ccc;
+    margin-bottom: 7px;
+    width: 625px;
+}
+.alist ul li .info ol li span{
+     color: #abadb3;
+ }
+.alist ul li .info ol li .info_add{
+    background-color: #fff5cc;
+    border: 1px solid #ffe580;
+    width: 625px;
+    margin-left: 10px;
+    height: 22px;
+    display: block;
+}
+.alist ul li .info ol li .info_add input{
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 auto;
+}
+.alist ul li .info ol li .info_add span{
+    color: #333;
+    margin: 0 auto;
+    height: 22px;
+    line-height: 22px;
+    vertical-align: top;
+}
+.alist ul li .info ol li a{
+    float: right;
+    margin-right: 15px;
+    color: #3366cc;
+    text-decoration: none;
+}
+.alist ul li .info ol li a:hover{
+    color: #f60;
+    text-decoration: underline;
+}
+.alist ul li .info ol li .info_add2{
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+}
+.alist ul li .info ol li a.l20{
+    float: left;
+    margin-left: 25px;
+    text-decoration: underline;
+}
+.submit{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.submit hr{
+    width: 900px;
+}
+.submit .submit_tb{
+    background-color: #f6f6f6;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+    width: 70px;
+    height: 30px;
+}
+.submit .submit_tb a{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+}
+.submit .submit_tb a:hover{
+    text-decoration: underline;
+    color: #f60;
 }
 
 
