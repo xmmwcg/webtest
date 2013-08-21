@@ -189,25 +189,31 @@
 }
 .submit{
     text-align: center;
-    margin-bottom: 60px;
-    margin-top: 30px;
+    margin-top: 20px;
+    position: relative;
 }
 .submit hr{
     width: 900px;
 }
 .submit .submit_tb{
-    background-color: #efefef;
-    margin: 20px auto;
+    background-color: #f6f6f6;
+    margin: 5px auto;
     border: 1px solid #ccc;
-    width: 80px;
+    width: 70px;
     height: 30px;
 }
 .submit .submit_tb a{
     height: 30px;
     line-height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
+    color: #333;
 }
+.submit .submit_tb a:hover{
+    text-decoration: underline;
+    color: #f60;
+}
+
 
 
 
