@@ -9,16 +9,23 @@ KISSY.add("Project/UI/PopupMenu", function (S) {
         };
         $.extend(DefaultCfg, Cfg);
         var BindMenuEvent = function (index) {
+            //非负整数正则
             var intreg = /^\d+$/;
             if ($.isNumeric(index) && intreg.test(index)) {
+                //根据是否参数判断关闭触发方式
                 var eventtype = DefaultCfg.autoHideOnMouseLeave ? "mousemove" : "click";
                 var SelectorEle = SelectorEles.eq(index);
                 var MenuSelectorEle = MenuSelectorEles.eq(index);
+                //绑定关闭事件
                 $(document).bind(eventtype, function (event) {
+                    //如果事件触发目标不是菜单按钮，不属于菜单内部范围
                     if (SelectorEle[0] != event.target && !$.contains(SelectorEle[0], event.target) && !$.contains(MenuSelectorEle[0], event.target)) {
+                        //隐藏菜单
                         HideMenu(index);
+                        //取消全局监控事件绑定
                         UnBindEvent(event);
                     } else {
+                        //重新设置菜单位置
                         SetMenuPos(index);
                     }
                 })
@@ -27,9 +34,11 @@ KISSY.add("Project/UI/PopupMenu", function (S) {
             }
         };
         var UnBindEvent = function (event) {
+            //解除事件绑定
             $(document).unbind(event);
         };
         var ShowMenu = function (index) {
+            //非负整数正则
             var intreg = /^\d+$/;
             if ($.isNumeric(index) && intreg.test(index)) {
                 var MenuSelectorEle = MenuSelectorEles.eq(index);
@@ -41,6 +50,7 @@ KISSY.add("Project/UI/PopupMenu", function (S) {
             }
         };
         var HideMenu = function (index) {
+            //非负整数正则
             var intreg = /^\d+$/;
             if ($.isNumeric(index) && intreg.test(index)) {
                 var SelectorEle = SelectorEles.eq(index);
@@ -85,6 +95,7 @@ KISSY.add("Project/UI/PopupMenu", function (S) {
                             var SelectorIndex = SelectorEles.index(this);
                             //弹出菜单
                             ShowMenu(SelectorIndex);
+                            //绑定全局监控（判断菜单什么时候关闭）
                             BindMenuEvent(SelectorIndex);
                         })
                     } else {
