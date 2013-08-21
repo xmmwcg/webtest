@@ -107,6 +107,9 @@ KISSY.add("Project/UI/LeftMenu/Menus", function (S, Item) {
         Menus.GoFirst = function(){
 
         };
+        Menus.GoDefault = function(){
+            element.find(".selected").click();
+        };
         //选项集合（数组）
         var Items = function () {
             var ItemsArray = [];
