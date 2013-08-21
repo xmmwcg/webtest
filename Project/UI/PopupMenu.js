@@ -5,7 +5,8 @@ KISSY.add("Project/UI/PopupMenu", function (S) {
         var DefaultCfg = {
             popupMethod: "click",
             autoHideOnMouseLeave: false,
-            selectorClass: "menuopen"
+            selectorClass: "menuopen",
+            maxWidth: 960
         };
         $.extend(DefaultCfg, Cfg);
         var BindMenuEvent = function (index) {
@@ -73,9 +74,14 @@ KISSY.add("Project/UI/PopupMenu", function (S) {
             var SelectorEleLeft = SelectorEleOffset.left;
             var SelectorEleRight = SelectorEleLeft + SelectorEleOuterWidth;
             var SelectorEleBottom = SelectorEleTop + SelectorEleOuterHeight;
-
+            var MenuSelectorOuterWidth = MenuSelectorEle.outerWidth();
             var MenuSelectorEleTop = SelectorEleBottom;
             var MenuSelectorEleLeft = SelectorEleLeft - SelectorEleBorderLR;
+
+            if(MenuSelectorEleLeft + MenuSelectorOuterWidth > DefaultCfg.maxWidth){
+                MenuSelectorEleLeft = SelectorEleRight - MenuSelectorOuterWidth;
+            }
+
 
             SelectorEle.addClass(DefaultCfg.selectorClass);
             MenuSelectorEle.css({"left": MenuSelectorEleLeft + "px", "top": MenuSelectorEleTop + "px"}).show();
