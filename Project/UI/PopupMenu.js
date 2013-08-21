@@ -1,21 +1,55 @@
-KISSY.add("Project/UI/PopupMenu",function(S){
-    return function(Selector,MenuSelector,Cfg){
+KISSY.add("Project/UI/PopupMenu", function (S) {
+    return function (Selector, MenuSelector, Cfg) {
         var Popup = {};
-        var SelectorEles,MenuSelectorEles;
+        var SelectorEles, MenuSelectorEles;
         var DefaultCfg = {
-            popupMethod : "click",
-            autoHideOnMouseLeave : false
+            popupMethod: "click",
+            autoHideOnMouseLeave: false,
+            selectorClass: "menuopen"
         };
-        $.extend(DefaultCfg,Cfg);
-        var ShowMenu = function(index){
-            if($.isNumeric(index)){
+        $.extend(DefaultCfg, Cfg);
+        var BindMenuEvent = function (index) {
+            var intreg = /^\d+$/;
+            if ($.isNumeric(index) && intreg.test(index)) {
+                var eventtype = DefaultCfg.autoHideOnMouseLeave ? "mousemove" : "click";
+                var SelectorEle = SelectorEles.eq(index);
                 var MenuSelectorEle = MenuSelectorEles.eq(index);
-                if(MenuSelectorEle.length > 0){
-                    SetMenuPos(index);
-                }
+                $(document).bind(eventtype, function (event) {
+                    if (SelectorEle[0] != this && !$.contains(SelectorEle[0], this) && !$.contains(MenuSelectorEle[0], this)) {
+                        HideMenu(index);
+                        UnBindEvent(event);
+                    } else {
+                        SetMenuPos(index);
+                    }
+                })
+            } else {
+                throw "序号必须为正整数";
             }
         };
-        var SetMenuPos = function(index){
+        var UnBindEvent = function (event) {
+            $(document).unbind(event);
+        };
+        var ShowMenu = function (index) {
+            var intreg = /^\d+$/;
+            if ($.isNumeric(index) && intreg.test(index)) {
+                var MenuSelectorEle = MenuSelectorEles.eq(index);
+                if (MenuSelectorEle.length > 0) {
+                    SetMenuPos(index);
+                }
+            } else {
+                throw "序号必须为正整数";
+            }
+        };
+        var HideMenu = function (index) {
+            var intreg = /^\d+$/;
+            if ($.isNumeric(index) && intreg.test(index)) {
+                var SelectorEle = SelectorEles.eq(index);
+                var MenuSelectorEle = MenuSelectorEles.eq(index);
+                SelectorEles.removeClass(DefaultCfg.selectorClass);
+                MenuSelectorEle.hide();
+            }
+        };
+        var SetMenuPos = function (index) {
             var SelectorEle = SelectorEles.eq(index);
             var MenuSelectorEle = MenuSelectorEles.eq(index);
             var SelectorEleOffset = SelectorEle.offset();
@@ -26,30 +60,36 @@ KISSY.add("Project/UI/PopupMenu",function(S){
             var SelectorEleRight = SelectorEleLeft + SelectorEleOuterWidth;
             var SelectorEleBottom = SelectorEleTop + SelectorEleOuterHeight;
 
+            var MenuSelectorEleTop = SelectorEleBottom;
+            var MenuSelectorEleLeft = SelectorEleLeft;
+
+            SelectorEle.addClass(DefaultCfg.selectorClass);
+            MenuSelectorEle.css({"left": MenuSelectorEleLeft + "px", "top": MenuSelectorEleTop + "px"}).show();
         };
-        var LoadSelector = function(){
-            if(typeof(Selector) == "string" && typeof(MenuSelector) == "string"){
+        var LoadSelector = function () {
+            if (typeof(Selector) == "string" && typeof(MenuSelector) == "string") {
                 SelectorEles = $(Selector);
                 MenuSelectorEles = $(MenuSelector);
-                if(SelectorEles.length > 0 && MenuSelectorEles.length > 0){
+                if (SelectorEles.length > 0 && MenuSelectorEles.length > 0) {
                     //弹出方式集合
                     var popupMethods = "click mouseenter".split(" ");
                     //如果设置参数中的弹出方式在弹出方式集合中
-                    if($.inArray(DefaultCfg.popupMethod,popupMethods)){
+                    if ($.inArray(DefaultCfg.popupMethod, popupMethods)) {
                         //绑定事件
-                        SelectorEles.bind(DefaultCfg.popupMethod,function(){
+                        SelectorEles.bind(DefaultCfg.popupMethod, function () {
                             //触发事件的元素序号
                             var SelectorIndex = SelectorEles.index(this);
                             //弹出菜单
                             ShowMenu(SelectorIndex);
+                            BindMenuEvent(SelectorIndex);
                         })
-                    }else{
+                    } else {
                         throw "弹出方式设置错误";
                     }
-                }else{
+                } else {
                     throw "木有找到目标或目标菜单菜单";
                 }
-            }else{
+            } else {
                 throw "初始化需要选择器";
             }
         }();

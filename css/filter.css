@@ -137,3 +137,6 @@
     margin: 2px 0 2px 8px;
     background: url(../images/filter/check.png) no-repeat top left;
 }
+.menus .menu ul li.selected em{
+    background-position: left bottom;
+}
