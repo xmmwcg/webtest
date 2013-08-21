@@ -231,62 +231,13 @@
         }
     });
     KISSY.ready(function (S) {
-        var PopMenu = function(){
-            var Pop = {};
-            var ShowPop = function(event){
-                var id = $("#filter ul li").index(this);
-                var TarPop = undefined;
-                if($.isNumeric(id)){
-                    TarPop = $("#menus .menu").eq(id);
-                    if(TarPop.length > 0){
-                        var filterright = $("#filter").offset().left + $("#filter").outerWidth();
-                        var left = $(this).offset().left - 1;
-                        var right = left + $(this).outerWidth();
-                        var height = $(this).outerHeight();
-                        var top = $(this).offset().top + height;
-                        var popwidth = TarPop.outerWidth();
-                        if(left + popwidth > filterright){
-                            left = right - popwidth + 1;
-                        }
-                        //var left = this.offsetLeft;
-                        //$(this).css("left").replace("px","");
-                        //var width = $(this).outerWidth();
-                        $(this).addClass("menuopen");
-                        TarPop.css({"left": left + "px","top": top + "px"});
-                        TarPop.show();
-                    }
-                }
-                return TarPop;
+        KISSY.use("Project/UI/PopupMenu",function(S,PopupMenu){
+            var PopUpCfg = {
+                autoHideOnMouseLeave: true,
+                popupMethod: "mouseenter"
             };
-            var HidePop = function(){
-                $("#filter ul li").removeClass("menuopen");
-                $(".menu").hide();
-            };
-            var BindMove = function(enterEvent,TarPop){
-                var enterElement = this;
-                if(TarPop && TarPop.length > 0){
-                    $(document).mousemove(function(event){
-                        if(enterElement != event.target &&
-                                !$.contains(enterElement,event.target) &&
-                                !$.contains(TarPop[0],event.target)){
-                            HidePop();
-                            UnBindMove(event);
-                        }else{
-                            ShowPop.call(enterElement,enterEvent);
-                        }
-                    })
-                }
-            };
-            var UnBindMove = function(event){
-                $(document).unbind(event);
-            };
-            $("#filter ul li").mouseenter(function(event){
-                var TarPop = ShowPop.call(this,event);
-                BindMove.call(this,event,TarPop);
-            });
-            return Pop;
-        };
-        var pop = new PopMenu();
+            var PopUp = new PopupMenu("#filter li",".menus .menu",PopUpCfg);
+        })
     })
 </script>
 </body>
