@@ -506,7 +506,7 @@
     $(".bl .listclick").click(function(){
         var s = $(this).parents(".bl").toggleClass("open").hasClass("open");
         $(this).find('.sw span').html(s?"收拢<em class='arrow up'></em>":"展开<em class='arrow'></em>");
-    })
+    });
 
     //配置KISSY包路径
     KISSY.config({
@@ -521,7 +521,8 @@
     KISSY.ready(function (S) {
         KISSY.use("Project/UI/PopupMenu",function(S,PopupMenu){
             var PopUpCfg = {
-                autoHideOnMouseLeave: true
+                autoHideOnMouseLeave: true,
+                popupMethod: "mouseenter"
             };
             var PopUp = new PopupMenu("#filter li",".menus .menu",PopUpCfg);
         })
