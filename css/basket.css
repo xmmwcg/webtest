@@ -132,3 +132,24 @@
     border: 1px solid #fff;
     border-top: none;
 }
+.basketpanel .basketopreat .basketbutton{
+    height: 22px;
+    line-height: 22px;
+    color: #ffffff;
+    border: 1px solid #d77a11;
+    background-color: #f18e11;
+    margin: 9px 5px 0;
+    padding: 0 6px;
+    float: right;
+    cursor: pointer;
+}
+.basketpanel .basketopreat .basketbutton:hover{
+    background-color: #d77a11;
+}
+.basketpanel .basketopreat .basketbutton span{
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 22px;
+}
