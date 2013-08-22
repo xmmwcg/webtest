@@ -16,7 +16,7 @@
     <script src="../js/frame.js"></script>
 </head>
 <body>
-<div class="width960 upspace underspace">
+<div class="width960 upspace underspace leftrightspace">
     <div class="width960 linespace clearfix">
         <div id="searcher" class="searcher">
             <div class="searchtext">
@@ -48,17 +48,32 @@
                             <img class="photo" src="../images/nophoto/fdj.png">
                         </div>
                         <div class="text">
-                            <span>汽油发动机(4301030020110902001)</span>
+                            <span>汽油发动机 10GF1/10KVA 4301030020110902001</span>
+                        </div>
+                        <div class="opreat">
+                            <a>删除</a>
                         </div>
                     </li>
-                    <li class="last"></li>
+                    <li class="last">
+                        <div class="photograph">
+                            <img class="photo" src="../images/nophoto/fdj.png">
+                        </div>
+                        <div class="text">
+                            <span>汽油发动机 10GF1/10KVA 4301030020110902002</span>
+                        </div>
+                        <div class="opreat">
+                            <a>删除</a>
+                        </div>
+                    </li>
                 </ul>
                 <div class="noeq">
 
                 </div>
             </div>
             <div class="basketopreat">
-
+                <div class="basketbutton">
+                    <span>提交操作清单</span>
+                </div>
             </div>
         </div>
     </div>
@@ -566,6 +581,7 @@
     </div>
 </div>
 <script>
+    var PopUp,BasketPopUp;
     //配置KISSY包路径
     KISSY.config({
         tag: new Date().toString(),
@@ -582,12 +598,12 @@
                 autoHideOnMouseLeave: true,
                 popupMethod: "mouseenter"
             };
-            var PopUp = new PopupMenu("#filter li",".menus .menu",PopUpCfg);
+            PopUp = new PopupMenu("#filter li",".menus .menu",PopUpCfg);
 
             var BasketPopUpCfg = {
                 selectorClass: "popup"
             };
-            var BasketPopUp = new PopupMenu("#basket","#basketcon .basketpanel",BasketPopUpCfg);
+            BasketPopUp = new PopupMenu("#basket","#basketcon .basketpanel",BasketPopUpCfg);
         })
     })
 </script>

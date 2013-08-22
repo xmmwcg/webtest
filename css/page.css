@@ -9,8 +9,11 @@
 .linespace{
     margin: 15px 0 0 0;
 }
+.leftrightspace{
+    padding: 0 4px;
+}
 .upspace{
-     margin-top: 25px;
+    margin-top: 25px;
  }
 .underspace{
     margin-bottom: 25px;

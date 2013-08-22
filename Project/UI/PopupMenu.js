@@ -77,8 +77,10 @@ KISSY.add("Project/UI/PopupMenu", function (S) {
             var MenuSelectorOuterWidth = MenuSelectorEle.outerWidth();
             var MenuSelectorEleTop = SelectorEleBottom;
             var MenuSelectorEleLeft = SelectorEleLeft - SelectorEleBorderLR;
+            var SelectorEleParent = SelectorEle.parent();
+            var SelectorEleParentOffset = SelectorEleParent.offset();
 
-            if(MenuSelectorEleLeft + MenuSelectorOuterWidth > DefaultCfg.maxWidth){
+            if(MenuSelectorEleLeft + MenuSelectorOuterWidth - SelectorEleParentOffset.left > DefaultCfg.maxWidth){
                 MenuSelectorEleLeft = SelectorEleRight - MenuSelectorOuterWidth;
             }
 
