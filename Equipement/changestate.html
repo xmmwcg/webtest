@@ -34,7 +34,7 @@
             <div class="arrow"></div>
         </div>
     </div>
-    <div class="width960" style="height: 0;position: relative;"><img id="buylist" src="../images/pic/buylist.png" style="display: none; position: absolute; top: -1px; right: 0;z-index: 100;border-right:1px solid #eeeeee;border-top:1px solid #eeeeee; "/></div>
+    <div class="width960"></div>
     <div class="width960 linespace">
         <div id="filter" class="filter width960bor clearfix">
             <div class="ti"><span>设备筛选</span></div>
@@ -549,12 +549,15 @@
             }
         }
     });
-    KISSY.use("Project/UI/PopupMenu",function(S,PopupMenu){
-        var PopUpCfg = {
-            autoHideOnMouseLeave: true,
-            popupMethod: "mouseenter"
-        };
-        var PopUp = new PopupMenu("#filter li",".menus .menu",PopUpCfg);
+    KISSY.ready(function (S) {
+        KISSY.use("Project/UI/PopupMenu",function(S,PopupMenu){
+            var PopUpCfg = {
+                autoHideOnMouseLeave: true,
+                popupMethod: "mouseenter"
+            };
+            var PopUp = new PopupMenu("#filter li",".menus .menu",PopUpCfg);
+            var BasketPopUp = new PopupMenu("#basket","#buylist");
+        })
     })
 </script>
 </body>
