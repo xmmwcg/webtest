@@ -107,6 +107,19 @@
     line-height: 17px;
     word-break: break-all;
 }
+.basketpanel .basketlist ul li .opreat{
+    float: right;
+}
+.basketpanel .basketlist ul li .opreat a{
+    color: #005EA7;
+    text-align: right;
+    padding-right: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.basketpanel .basketlist ul li .opreat a:hover{
+    text-decoration: underline;
+}
 .basketpanel .basketlist ul li .photograph .photo{
     width: 50px;
     height: 40px;
