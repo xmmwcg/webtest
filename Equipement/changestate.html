@@ -25,6 +25,7 @@
             <input class="dosearch" type="button" value="搜索"/>
         </div>
         <div id="basket" class="basket" style="cursor: pointer;">
+            <div class="basketinner">
             <div class="ico">
                 <div class="counter">
                     <span>1</span>
@@ -32,9 +33,35 @@
             </div>
             <div class="text"><span>提交操作清单</span></div>
             <div class="arrow"></div>
+            </div>
         </div>
     </div>
-    <div class="width960"></div>
+    <div id="basketcon" class="width960">
+        <div class="basketpanel">
+            <div class="baskettitle">
+                <label>加入的设备</label>
+            </div>
+            <div class="basketlist">
+                <ul>
+                    <li>
+                        <div class="photograph">
+                            <img class="photo" src="../images/nophoto/fdj.png">
+                        </div>
+                        <div class="text">
+                            <span>汽油发动机(4301030020110902001)</span>
+                        </div>
+                    </li>
+                    <li class="last"></li>
+                </ul>
+                <div class="noeq">
+
+                </div>
+            </div>
+            <div class="basketopreat">
+
+            </div>
+        </div>
+    </div>
     <div class="width960 linespace">
         <div id="filter" class="filter width960bor clearfix">
             <div class="ti"><span>设备筛选</span></div>
@@ -556,7 +583,11 @@
                 popupMethod: "mouseenter"
             };
             var PopUp = new PopupMenu("#filter li",".menus .menu",PopUpCfg);
-            var BasketPopUp = new PopupMenu("#basket","#buylist");
+
+            var BasketPopUpCfg = {
+                selectorClass: "popup"
+            };
+            var BasketPopUp = new PopupMenu("#basket","#basketcon .basketpanel",BasketPopUpCfg);
         })
     })
 </script>
