@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>库存增减明细</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/clearfix.css" rel="stylesheet" type="text/css">
+    <link href="../css/page.css" rel="stylesheet" type="text/css">
+    <link href="../css/searcher.css" rel="stylesheet" type="text/css">
+    <link href="../css/filter.css" rel="stylesheet" type="text/css">
+    <link href="../css/list.css" rel="stylesheet" type="text/css">
+    <link href="../css/summarylist.css" rel="stylesheet" type="text/css">
+
+    <script src="http://g.tbcdn.cn/kissy/k/1.3.1/kissy-min.js"></script>
+    <script src="../js/Jquery/jquery-1.10.2.js"></script>
+    <script src="../js/frame.js"></script>
+</head>
+<body>
+<div class="width960 upspace underspace leftrightspace">
+    <div class="width960 linespace clearfix">
+        <div id="searcher" class="searcher">
+            <div class="searchtext">
+                <input class="text" type="text"/>
+            </div>
+            <input class="dosearch" type="button" value="搜索"/>
+        </div>
+    </div>
+    <div class="width960 linespace">
+        <div id="filter" class="filter width960bor clearfix">
+            <div class="ti"><span>记录筛选</span></div>
+            <ul class="clearfix">
+                <li class="clearfix">
+                    <span>年份</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
+                    <span>月份</span><em class="arrowdown"></em>
+                </li>
+            </ul>
+            <div class="buttons clearfix">
+                <div class="button orange"><span>筛选</span></div>
+            </div>
+        </div>
+    </div>
+    <div id="menus" class="menus width960">
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>2010</span></li>
+                <li><em></em><span>2011</span></li>
+                <li><em></em><span>2012</span></li>
+                <li><em></em><span>2013</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>1</span></li>
+                <li><em></em><span>2</span></li>
+                <li><em></em><span>3</span></li>
+                <li><em></em><span>4</span></li>
+                <li><em></em><span>5</span></li>
+                <li><em></em><span>6</span></li>
+                <li><em></em><span>7</span></li>
+                <li><em></em><span>8</span></li>
+                <li><em></em><span>9</span></li>
+                <li><em></em><span>10</span></li>
+                <li><em></em><span>11</span></li>
+                <li><em></em><span>12</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="List" style="top: 15px;">
+        <div class="ListSpace auto">
+            <table cellspacing="0" id="EquipmentList">
+                <thead style="white-space: nowrap">
+                <tr>
+                    <td rowspan="2"><span></span>日期</span></td>
+                    <td><span>应急拉水车</span></td>
+                    <td><span>打井洗井设备</span></td>
+                    <td><span>移动灌溉设备</span></td>
+                    <td><span>移动喷滴灌节水设备</span></td>
+                    <td><span>输水软管</span></td>
+                    <td><span>简易净水设备</span></td>
+                    <td><span>清淤设备</span></td>
+                    <td><span>发电和动力设备</span></td>
+                    <td><span>其他设备</span></td>
+                    <td rowspan="2"><span>合计</span></td>
+                    <td rowspan="2"><span>状态变更</span></td>
+                </tr>
+                <tr>
+                    <td><span>辆</span></td>
+                    <td><span>台</span></td>
+                    <td><span>台</span></td>
+                    <td><span>台</span></td>
+                    <td><span>根</span></td>
+                    <td><span>台</span></td>
+                    <td><span>台</span></td>
+                    <td><span>台</span></td>
+                    <td><span>台</span></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="center"><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/starelist.html','设备列表')">2012-06-03</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">+10</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">90</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">入库：90</a></td>
+                </tr>
+                <tr>
+                    <td class="center"><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">2012-06-05</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">8（<b>-2</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">7（<b>-3</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">9（<b>-1</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">5（<b>-5</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">8（<b>-2</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">6（<b>-4</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">7（<b>-3</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">8（<b>-2</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">9（<b>-1</b>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">77</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">使用：23</a></td>
+                </tr>
+                <tr>
+                    <td class="center"><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">2012-06-08</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">9（<c>+1</c>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">7</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">10（<c>+1</c>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">5</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">9（<c>+1</c>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">8（<c>+2</c>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">10（<c>+3</c>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">9（<c>+1</c>）</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">9</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">86</a></td>
+                    <td class="center "><a href="javascript:;" onclick="GetTop().Display.Open('Equipement/navigation.html','设备列表')">入库：9</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    $(".bl .listclick").click(function () {
+        var s = $(this).parents(".bl").toggleClass("open").hasClass("open");
+        $(this).find('.sw span').html(s ? "收拢<em class='arrow up'></em>" : "展开<em class='arrow'></em>");
+    });
+
+    //配置KISSY包路径
+    KISSY.config({
+        tag: new Date().toString(),
+        packages: {
+            Project: {
+                base: "../",
+                debug: true
+            }
+        }
+    });
+    KISSY.ready(function (S) {
+        KISSY.use("Project/UI/PopupMenu", function (S, PopupMenu) {
+            var PopUpCfg = {
+                autoHideOnMouseLeave: true,
+                popupMethod: "mouseenter"
+            };
+            var PopUp = new PopupMenu("#filter li", ".menus .menu", PopUpCfg);
+        })
+    })
+</script>
+</body>
+</html>
