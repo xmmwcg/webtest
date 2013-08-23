@@ -22,6 +22,9 @@
     display: inline-block;
     margin: 0 35px;
 }
+.List .auto{
+    margin: 0 auto;
+}
 .List .ListSpace.fulltable{
     width: 930px;
 }
@@ -29,15 +32,15 @@
     width: 100%
 }
 .List table{
-    border: 1px solid #c1c1c1;
+    border: 1px solid #efefef;
     border-right: none;
     border-bottom: none;
     font-size: 13px;
 }
 .List table td
 {
-    border-right:1px solid #c1c1c1;
-    border-bottom:1px solid #c1c1c1;
+    border-right:1px solid #efefef;
+    border-bottom:1px solid #efefef;
     height:22px;
     line-height:22px;
     vertical-align:middle;
@@ -77,6 +80,13 @@
 .List table td a{
     cursor: pointer;
 }
+.List table td  a b{
+     color: #4cb848;
+ }
+.List table td  a c{
+    color: #e6413a;
+    font-weight: bold;
+}
 .List table td a:visited{
     color: #333;
 }
@@ -92,7 +102,7 @@
     text-align:center;
     width: 100px;
     height:30px;
-    background-color:#dddddd;
+    background-color:#f7f7f7;
     white-space: nowrap;
 }
 .List table tbody tr{
