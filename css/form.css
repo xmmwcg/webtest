@@ -26,6 +26,12 @@
     vertical-align: top;
     display: inline-block;
 }
+.alist ul li label.note{
+    width: 300px;
+    margin-left: 125px;
+    color: #999999;
+    text-align: left;
+}
 .alist ul li span{
     margin-right: 8px;
 }
@@ -47,7 +53,7 @@
     margin-right: 10px;
 }
 .alist ul li a{
-    color: #b2adb9;
+    color: #36c;
     text-decoration: none;
 }
 .alist ul li a:hover{
