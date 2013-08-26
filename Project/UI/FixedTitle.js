@@ -10,7 +10,7 @@
             NewTitle +=  Split[i];
         }
         return NewTitle;
-    }
+    };
     var init = function(id,title,Cfg){
         var Cfg = Cfg || {};
         var TitleContiner = S.one(document.createElement("div")).addClass("FixedTitle");
@@ -32,7 +32,7 @@
             Pos.TitleTop = TitleContiner.getDOMNode().offsetTop;
             Pos.TitleHeight = TitleContiner.outerHeight();
             return Pos;
-        }
+        };
         FixedTitle.ScrollTitle = function(){
             var Children = TitleContiner.children();
             var Pos = GetPos();
@@ -53,7 +53,10 @@
                 TitleContiner.css({"height":"auto","width":"auto"});                                
                 Children.removeClass("FixedTitleMove");
             }
-        }
+        };
+        /**
+         * @return {string}
+         */
         FixedTitle.CanSeeTitle = function(){
             var Pos = GetPos();
             var VisiableTop = Pos.TitleTop;
@@ -65,7 +68,7 @@
                 return "under";
             }
             return "up";
-        }
+        };
         if(typeof(title) == "string"){
             title = settitle(id,title)
         }
@@ -74,9 +77,9 @@
         FixedTitle.ScrollTitle();
         Parent.on("scroll",function(){
             FixedTitle.ScrollTitle();
-        })
+        });
         return FixedTitle;
-    }
+    };
     var ToFixed = function(id,title,Cfg){
         $ = S.all;
         var Objs = $(id);
@@ -91,6 +94,6 @@
             Fixeds.push(Fixed);
         }
         return Fixed;
-    }
+    };
     return ToFixed;
-})
+});

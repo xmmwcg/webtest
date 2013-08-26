@@ -38,6 +38,7 @@
 .alist ul li span.top{
     vertical-align: top;
 }
+
 .alist ul li input{
     width: 150px;
     height: 18px;
@@ -45,12 +46,20 @@
     border: 1px solid #cccccc;
     margin-right: 10px;
 }
-.alist ul li textarea{
-    width: 270px;
-    height: 60px;
-    line-height: 18px;
-    border: 1px solid #cccccc;
-    margin-right: 10px;
+
+.textarea{
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+    padding: 5px;
+    display: inline-block;
+}
+textarea {
+    width: 450px;
+    height: 86px;
+    margin: 0;
+    padding: 0;
+    resize: none;
+    border: none;
 }
 .alist ul li a{
     color: #36c;
