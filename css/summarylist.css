@@ -80,12 +80,20 @@
 .List table td a{
     cursor: pointer;
 }
-.List table td  a b{
-     color: #4cb848;
+.List table td a.da{
+    padding-right: 50px;
+    text-align: right;
+}
+.List table td a.da b{
+    color: #4cb848;
+    display: inline-block;
+    width: 48px;
+    text-align: center;
+    margin-right: -50px;
+    float: right;
  }
-.List table td  a c{
+.List table td  a.da b.c{
     color: #e6413a;
-    font-weight: bold;
 }
 .List table td a:visited{
     color: #333;
