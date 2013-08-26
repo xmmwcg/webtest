@@ -231,14 +231,15 @@ textarea {
     background-color: #fff;
     height: 22px;
 }
-.alist ul li input.w40{
+.alist ul li input.state{
     width: 20px;
     margin-right: 0;
     vertical-align: top;
     margin-left: 17px;
 }
-.alist ul li a.c333{
+.alist ul li a.state_tb{
     color: #333;
+    vertical-align: bottom;
 }
 
 
