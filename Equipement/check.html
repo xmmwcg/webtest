@@ -77,10 +77,10 @@
                 </div>
             </div>
         </div>
-        <div class="width960 linespace">
+        <div id="EQLIST" class="width960 linespace">
             <div class="width960bor">
                 <div class="list">
-                   <div class="listbody selected">
+                   <div class="listbody selected" eqid="43010300201109020388001">
                        <ul class="clearfix">
                            <li class="center"  style="width:250px;"><span>43010300201109020388001</span></li>
                            <li class="center"  style="width: 120px;"><span>FDJ001</span></li>
@@ -89,7 +89,7 @@
                            <li class="center" style="width: 150px;"><span>2011-09-06</span></li>
                        </ul>
                    </div>
-                    <div class="listbody last">
+                    <div class="listbody last" eqid="43010300201109020388001">
                         <ul class="clearfix">
                             <li class="center"  style="width:250px;"><span>43010300201109020388001</span></li>
                             <li class="center"  style="width: 120px;"><span>FDJ001</span></li>
@@ -153,6 +153,12 @@
                                 </p>
                             </div>
                         </li>
+                        <script>
+                            $(".history li").click(function(){
+                                $(".history li").removeClass("active");
+                                $(this).addClass("active");
+                            })
+                        </script>
                     </ul>
                </div>
                 <div class="gps tabc" style="display: none">
@@ -170,9 +176,18 @@
                 $(this).addClass("selected");
                 $(".tabc").hide().eq(index).show();
             })
-            $(".history li").click(function(){
-                $(".history li").removeClass("active");
-                $(this).addClass("active");
+            $("#EQLIST li").click(function(){
+                var eqid = $(this).attr("eqid");
+                $.ajax({
+                    url:"" + eqid,
+                    type:"get",
+                    success:function(html){
+
+                    } ,
+                    error : function(){
+
+                    }
+                })
             })
         })
     </script>
