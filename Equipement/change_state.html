@@ -14,8 +14,8 @@
     <script src="../js/frame.js"></script>
 </head>
 <body>
-<div id="fancybox-overlay" style="background-color: rgb(119, 119, 119); opacity: 0.7; cursor: pointer; height: 1825px; display: block;"></div>
-<div id="fancybox-wrap" style="width: 620px; height: auto; top: 320px; left: 500px; display: block;">
+<div id="fancybox-overlay" style="background-color: #efefef; opacity: 0.7; cursor: pointer; height: 800px; display: block;"></div>
+<div id="fancybox-wrap" style="width: 620px; height: auto; top: 180px; left: 400px; display: block;">
     <div id="fancybox-outer">
         <div class="fancybox-bg" id="fancybox-bg-n"></div>
         <div class="fancybox-bg" id="fancybox-bg-ne"></div>
@@ -30,45 +30,47 @@
                 <div class="tittle">状态改变单</div>
             </div>
             <div class="width960" style="width: auto;">
-                <div class="alist l100">
-                    <ul>
+                <div class="alist">
+                    <ul style="width: 430px">
                         <li>
-                            <input class="w40" type="radio">
-                            <a class="c333" href="#">使用</a>
-                            <input class="w40" type="radio">
-                            <a class="c333" href="#">租借</a>
-                            <input class="w40" type="radio">
-                            <a class="c333" href="#">转移</a>
-                            <input class="w40" type="radio">
-                            <a class="c333" href="#">报废</a>
-                            <input class="w40" type="radio">
-                            <a class="c333" href="#">检修</a>
-                            <input class="w40" type="radio">
-                            <a class="c333" href="#">清理</a>
+                            <input class="state" type="radio">
+                            <a class="state_tb" href="#">使用</a>
+                            <input class="state" type="radio">
+                            <a class="state_tb" href="#">租赁</a>
+                            <input class="state" type="radio">
+                            <a class="state_tb" href="#">转移</a>
+                            <input class="state" type="radio">
+                            <a class="state_tb" href="#">报废</a>
+                            <input class="state" type="radio">
+                            <a class="state_tb" href="#">检修</a>
+                            <input class="state" type="radio">
+                            <a class="state_tb" href="#">清理</a>
                         </li>
                         <li>
-                            <span>使用用途：</span>
+                            <label>使用用途：</label>
                             <input type="text">
                         </li>
                         <li>
-                            <span>使用部门：</span>
+                            <label>使用部门：</label>
                             <input type="text">
                         </li>
                         <li>
-                            <span class="l32">接手人：</span>
+                            <label>接手人：</label>
                             <input type="text">
                         </li>
                         <li>
-                            <span class="l32">经手人：</span>
+                            <label>经手人：</label>
                             <input type="text">
                         </li>
                         <li>
-                            <span>使用地点：</span>
+                            <label>使用地点：</label>
                             <input type="text">
                         </li>
-                        <li class="h60">
-                            <span class="top l44">备注：</span>
-                            <textarea></textarea>
+                        <li>
+                            <label>备注：</label>
+                            <div class="textarea">
+                                <textarea style="width: 270px; height: 50px"></textarea>
+                            </div>
                         </li>
                     </ul>
                 </div>
