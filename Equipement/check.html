@@ -176,19 +176,6 @@
                 $(this).addClass("selected");
                 $(".tabc").hide().eq(index).show();
             })
-            $("#EQLIST li").click(function(){
-                var eqid = $(this).attr("eqid");
-                $.ajax({
-                    url:"" + eqid,
-                    type:"get",
-                    success:function(html){
-
-                    } ,
-                    error : function(){
-
-                    }
-                })
-            })
         })
     </script>
 </body>
