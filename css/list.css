@@ -2,6 +2,9 @@
     border: 1px solid #efefef;
     border-bottom: none;
 }
+.listtop{
+    margin: 4px 0;
+}
 .list .listhead{
     height: 30px;
     border-bottom: 1px solid #efefef;
@@ -25,6 +28,23 @@
     height: 30px;
     background-color: #f7f7f7;
     border-right: 1px dotted #d7d7d7;
+}
+.list .listhead ul li.border_left{
+    border-left: 1px dotted #d7d7d7;
+    border-right: none;
+}
+.list .listhead ul li.right{
+    float: right;
+}
+.list .listhead ul li.lcolor{
+    background-color: #fff;
+}
+.list ul li.hideble{
+    min-width: 200px;
+    overflow: hidden;
+}
+.list ul li input.check{
+    margin: 8px 29px;
 }
 .list .listhead ul li.last{
     border-right: none;
