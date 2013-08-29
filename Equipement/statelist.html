@@ -35,6 +35,9 @@
                     <span>资金来源</span><em class="arrowdown"></em>
                 </li>
                 <li class="clearfix">
+                    <span>设备用途</span><em class="arrowdown"></em>
+                </li>
+                <li class="clearfix">
                     <span>入账方式</span><em class="arrowdown"></em>
                 </li>
                 <li class="clearfix">
@@ -75,10 +78,17 @@
         </div>
         <div class="menu" style="display: none">
             <ul class="clearfix">
-                <li><em></em><span>购入</span></li>
-                <li><em></em><span>调拨</span></li>
-                <li><em></em><span>接受捐赠</span></li>
-                <li><em></em><span>其他</span></li>
+                <li><em></em><span>防汛</span></li>
+                <li><em></em><span>抗旱</span></li>
+                <li><em></em><span>防汛抗旱</span></li>
+            </ul>
+        </div>
+        <div class="menu" style="display: none">
+            <ul class="clearfix">
+                <li><em></em><span>采购入库</span></li>
+                <li><em></em><span>调拨入库</span></li>
+                <li><em></em><span>捐赠入库</span></li>
+                <li><em></em><span>其他方式</span></li>
             </ul>
         </div>
         <div class="menu" style="display: none">
@@ -109,7 +119,7 @@
                 <div class="listclick listbody clearfix h30">
                     <ul class="clearfix">
                         <li style="width:250px;">
-                            <span>操作编号：43010300201206030301</span>
+                            <span style=" overflow: hidden; text-overflow: ellipsis;" title="挖掘机+汽油发电机+柴油发电机+皮卡车+送水车">挖掘机×2+汽油发电机+柴油发电机+皮卡车+送水车</span>
                         </li>
                         <li style="width:150px;">
                             <span class="textup">接收人：张三</span>
@@ -118,14 +128,20 @@
                             <span>状态：借用</span>
                         </li>
                         <li style="width:150px;">
-                            <span>操作数量：3</span>
+                            <span>操作数量：6</span>
                         </li>
                         <li style="width:180px;">
                             <span>日期：2012-06-03</span>
                         </li>
                         <li class="sw" style="width:70px;">
                             <span class="hand">展开<em class="arrow"></em></span>
-
+                        </li>
+                    </ul>
+                </div>
+                <div class="listclick listbody clearfix h30">
+                    <ul class="clearfix">
+                        <li style="width:250px;">
+                            <span>操作编号：43010300201206030301</span>
                         </li>
                     </ul>
                 </div>
@@ -141,13 +157,13 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span>43010300201206030301</span>
+                                <span>430103000001</span>
                             </li>
                             <li style="width:500px;">
                                 <span class="textup left">挖掘机（ZE205E）</span>
                             </li>
                             <li style="width:142px;">
-                                <span>AE86</span>
+                                <span>AE85</span>
                             </li>
                             <li style="width:60px;">
                                 <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
@@ -159,7 +175,7 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span class="h30">43010300201206030301</span>
+                                <span class="h30">430103000002</span>
                             </li>
                             <li style="width:500px;">
                                 <span class="textup h30 left">挖掘机（ZE205E）</span>
@@ -177,13 +193,67 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span class="h30">43010300201206030301</span>
+                                <span class="h30">430103000003</span>
                             </li>
                             <li style="width:500px;">
-                                <span class="l30 textup h30 left">挖掘机（ZE205E）</span>
+                                <span class="l30 textup h30 left">汽油发电机（重庆隆鑫10kw）</span>
                             </li>
                             <li style="width:142px;">
-                                <span class="h30">AE86</span>
+                                <span class="h30">AE87</span>
+                            </li>
+                            <li style="width:60px;">
+                                <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
+                                    <span>查看</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listbody clearfix h30">
+                        <ul class="clearfix">
+                            <li style="width:250px;">
+                                <span class="h30">430103000004</span>
+                            </li>
+                            <li style="width:500px;">
+                                <span class="l30 textup h30 left">柴油发电机（潍柴30kw）</span>
+                            </li>
+                            <li style="width:142px;">
+                                <span class="h30">AE87</span>
+                            </li>
+                            <li style="width:60px;">
+                                <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
+                                    <span>查看</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listbody clearfix h30">
+                        <ul class="clearfix">
+                            <li style="width:250px;">
+                                <span class="h30">430103000005</span>
+                            </li>
+                            <li style="width:500px;">
+                                <span class="l30 textup h30 left">皮卡车（扬子牌YZK520DF）</span>
+                            </li>
+                            <li style="width:142px;">
+                                <span class="h30">AE87</span>
+                            </li>
+                            <li style="width:60px;">
+                                <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
+                                    <span>查看</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listbody clearfix h30">
+                        <ul class="clearfix">
+                            <li style="width:250px;">
+                                <span class="h30">430103000006</span>
+                            </li>
+                            <li style="width:500px;">
+                                <span class="l30 textup h30 left">送水车（ZLJFDESA62045F）</span>
+                            </li>
+                            <li style="width:142px;">
+                                <span class="h30">AE87</span>
                             </li>
                             <li style="width:60px;">
                                 <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
@@ -241,22 +311,29 @@
                 <div class="listclick listbody clearfix h30">
                     <ul class="clearfix">
                         <li style="width:250px;">
-                            <span>操作编号：43010300201206030301</span>
+                            <span style=" overflow: hidden; text-overflow: ellipsis;" title="挖掘机×2+汽油发电机+柴油发电机">挖掘机×2+汽油发电机+柴油发电机</span>
                         </li>
                         <li style="width:150px;">
-                            <span class="textup">接收人：张三</span>
+                            <span class="textup">接收人：李四</span>
                         </li>
                         <li style="width:150px;">
-                            <span>状态：借用</span>
+                            <span>状态：使用</span>
                         </li>
                         <li style="width:150px;">
-                            <span>操作数量：3</span>
+                            <span>操作数量：4</span>
                         </li>
                         <li style="width:180px;">
                             <span>日期：2012-06-03</span>
                         </li>
                         <li class="sw" style="width:70px;">
                             <span class="hand">展开<em class="arrow"></em></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="listclick listbody clearfix h30">
+                    <ul class="clearfix">
+                        <li style="width:250px;">
+                            <span>操作编号：43010300201206030301</span>
                         </li>
                     </ul>
                 </div>
@@ -272,13 +349,13 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span>43010300201206030301</span>
+                                <span>430103000001</span>
                             </li>
                             <li style="width:500px;">
                                 <span class="textup left">挖掘机（ZE205E）</span>
                             </li>
                             <li style="width:142px;">
-                                <span>AE86</span>
+                                <span>AE85</span>
                             </li>
                             <li style="width:60px;">
                                 <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
@@ -290,7 +367,7 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span class="h30">43010300201206030301</span>
+                                <span class="h30">430103000002</span>
                             </li>
                             <li style="width:500px;">
                                 <span class="textup h30 left">挖掘机（ZE205E）</span>
@@ -308,13 +385,31 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span class="h30">43010300201206030301</span>
+                                <span class="h30">430103000003</span>
                             </li>
                             <li style="width:500px;">
-                                <span class="l30 textup h30 left">挖掘机（ZE205E）</span>
+                                <span class="l30 textup h30 left">汽油发电机（重庆隆鑫10kw）</span>
                             </li>
                             <li style="width:142px;">
-                                <span class="h30">AE86</span>
+                                <span class="h30">AE87</span>
+                            </li>
+                            <li style="width:60px;">
+                                <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
+                                    <span>查看</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listbody clearfix h30">
+                        <ul class="clearfix">
+                            <li style="width:250px;">
+                                <span class="h30">430103000004</span>
+                            </li>
+                            <li style="width:500px;">
+                                <span class="l30 textup h30 left">柴油发电机（潍柴30kw）</span>
+                            </li>
+                            <li style="width:142px;">
+                                <span class="h30">AE87</span>
                             </li>
                             <li style="width:60px;">
                                 <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
@@ -372,13 +467,13 @@
                 <div class="listclick listbody clearfix h30">
                     <ul class="clearfix">
                         <li style="width:250px;">
-                            <span>操作编号：43010300201206030301</span>
+                            <span style=" overflow: hidden; text-overflow: ellipsis;" title="挖掘机×2+汽油发电机">挖掘机×2+汽油发电机</span>
                         </li>
                         <li style="width:150px;">
-                            <span class="textup">接收人：张三</span>
+                            <span class="textup">接收人：王五</span>
                         </li>
                         <li style="width:150px;">
-                            <span>状态：借用</span>
+                            <span>状态：租赁</span>
                         </li>
                         <li style="width:150px;">
                             <span>操作数量：3</span>
@@ -388,6 +483,13 @@
                         </li>
                         <li class="sw" style="width:70px;">
                             <span class="hand">展开<em class="arrow"></em></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="listclick listbody clearfix h30">
+                    <ul class="clearfix">
+                        <li style="width:250px;">
+                            <span>操作编号：43010300201206030301</span>
                         </li>
                     </ul>
                 </div>
@@ -403,13 +505,13 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span>43010300201206030301</span>
+                                <span>430103000001</span>
                             </li>
                             <li style="width:500px;">
                                 <span class="textup left">挖掘机（ZE205E）</span>
                             </li>
                             <li style="width:142px;">
-                                <span>AE86</span>
+                                <span>AE85</span>
                             </li>
                             <li style="width:60px;">
                                 <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">
@@ -421,7 +523,7 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span class="h30">43010300201206030301</span>
+                                <span class="h30">430103000002</span>
                             </li>
                             <li style="width:500px;">
                                 <span class="textup h30 left">挖掘机（ZE205E）</span>
@@ -439,13 +541,13 @@
                     <div class="listbody clearfix h30">
                         <ul class="clearfix">
                             <li style="width:250px;">
-                                <span class="h30">43010300201206030301</span>
+                                <span class="h30">430103000003</span>
                             </li>
                             <li style="width:500px;">
-                                <span class="l30 textup h30 left">挖掘机（ZE205E）</span>
+                                <span class="l30 textup h30 left">汽油发电机（重庆隆鑫10kw）</span>
                             </li>
                             <li style="width:142px;">
-                                <span class="h30">AE86</span>
+                                <span class="h30">AE87</span>
                             </li>
                             <li style="width:60px;">
                                 <div class="button orange" onclick="GetTop().Display.Open('Equipement/check.html','设备详情')">

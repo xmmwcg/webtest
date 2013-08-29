@@ -25,21 +25,22 @@
             <li>
                 <label>规格型号：</label>
                 <input type="text">
-                <a href="#">从供应商设备中选择</a>
+                <a href="#">从供应商设备型号中选择</a>
+                （例：ZE205E）
             </li>
-            <li><label class="note">型号由字母和数字组成，且不能为空</label></li>
+            <li><label class="note">型号由字母、数字或汉字组成，且不能为空</label></li>
             <li>
-                <label>厂商品牌：</label>
+                <label>商品品牌：</label>
                 <input type="text">
-                <a href="#">从供应商设备中选择</a>
+                <a href="#">从厂商、品牌中选择</a>
             </li>
-            <li><label class="note">型号由字母和数字组成，且不能为空</label></li>
+            <li><label class="note">品牌由字母、数字或汉字组成，且不能为空</label></li>
             <li>
-                <label>商品条码：</label>
+                <label>EAN-13位码：</label>
                 <input type="text">
-                <a href="#">从供应商设备中选择</a>
+                （由前缀部分、制造厂商代码、商品代码和校验码组成）
             </li>
-            <li><label class="note">型号由字母和数字组成，且不能为空</label></li>
+            <li><label class="note">EAN13位码由13位字母或数字组成，且不能为空</label></li>
             <li>
                 <label>设备类别：</label>
                 <select name="移动灌溉设备" style="width: 153px">
@@ -57,8 +58,10 @@
             <li>
                 <label>数量单位：</label>
                 <select name="台" style="width: 53px">
-                    <option value="">台</option>
-                    <option value="">米</option>
+                    <option value="">辆</option>
+                    <option value="">个</option>
+                    <option value="">卷</option>
+                    <option value="">台/套</option>
                 </select>
             </li>
             <li>
@@ -82,10 +85,10 @@
             <li>
                 <label>入账方式：</label>
                 <select style="width: 80px">
-                    <option value="">购入</option>
-                    <option value="">调拨</option>
-                    <option value="">接受捐赠</option>
-                    <option value="">其他</option>
+                    <option value="">采购入库</option>
+                    <option value="">调拨入库</option>
+                    <option value="">捐赠入库</option>
+                    <option value="">其他方式</option>
                 </select>
             </li>
             <li>
@@ -110,7 +113,9 @@
                     <option value="">自有资金</option>
                     <option value="">其他</option>
                 </select>
-                <label>资金年度：</label>
+            </li>
+            <li>
+                <label style="width: 180px">资金年度：</label>
                 <select style="width: 80px">
                     <option value="">2012年度</option>
                     <option value="">2011年度</option>
@@ -128,14 +133,14 @@
                         <li class="selected">
                             <div class="info_add">
                                 <input type="radio" checked="checked">
-                                <span>湖南省  长沙市  岳麓区  麓谷软件大楼长沙至卓科技有限公司  谢沐沐(收)  12345678987</span>
+                                <span>湖南省  长沙市  岳麓区  麓谷软件大楼长沙至卓科技有限公司  谢沐沐  12345678987</span>
                                 <a href="#">修改本地址</a>
                             </div>
                         </li>
                         <li>
                             <div class="info_add info_add2">
                                 <input type="radio">
-                                <span>湖南省  长沙市  岳麓区  麓谷软件大楼长沙至卓科技有限公司  谢沐沐(收)  12345678987</span>
+                                <span>湖南省  长沙市  岳麓区  麓谷软件大楼长沙至卓科技有限公司  谢沐沐  12345678987</span>
                             </div>
                         </li>
                         <li>
