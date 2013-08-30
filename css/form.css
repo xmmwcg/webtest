@@ -1,6 +1,6 @@
 .tittle{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 30px;
     font-weight: bold;
 }
@@ -37,9 +37,6 @@
 }
 .alist ul li span{
     margin-right: 8px;
-}
-.alist ul li span.color{
-    color: #999999;
 }
 .alist ul li span.top{
     vertical-align: top;
@@ -213,15 +210,14 @@ textarea {
 .submit .submit_tb{
     background-color: #2a8cfa;
     margin: 10px auto;
-    border: 1px solid #ccc;
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     border-radius: 4px;
 }
 .submit .submit_tb a{
-    height: 30px;
-    line-height: 30px;
-    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
     text-decoration: none;
     color: #fff;
 }
