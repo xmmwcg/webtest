@@ -1,15 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>修改设备</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>修改设备资产</title>
     <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/clearfix.css" type="text/css" rel="stylesheet">
     <link href="../css/page.css" rel="stylesheet" type="text/css">
+    <link href="../css/form.css" type="text/css" rel="stylesheet">
     <script src="../js/frame.js"></script>
 </head>
 <body>
 <div class="width960">
-    <img src="../images/pic/modified.png" style="width:848px;text-align: center;margin: 0 40px;"/>
+    <div class="tittle">修改设备资产</div>
+</div>
+<div class="width960">
+    <div class="alist">
+        <ul>
+            <li>
+                <label>设备名称：</label>
+                <span class="color">挖掘机</span>
+            </li>
+            <li>
+                <label>规格型号：</label>
+                <input type="text" value="ZE205E">
+                <a href="#">从供应商设备型号中选择</a>
+            </li>
+            <li><label class="note">型号由字母、数字或汉字组成，且不能为空</label></li>
+            <li>
+                <label>商品品牌：</label>
+                <input type="text" value="中联重科">
+                <a href="#">从厂商、品牌中选择</a>
+            </li>
+            <li><label class="note">品牌由字母、数字或汉字组成，且不能为空</label></li>
+            <li>
+                <label>EAN-13位码：</label>
+                <span class="color">43010300010</span>
+            </li>
+            <li>
+                <label>设备类别：</label>
+                <span>移动灌溉设备</span>
+            </li>
+            <li>
+                <label>数量单位：</label>
+                <select name="台" style="width: 53px">
+                    <option value="">辆</option>
+                    <option value="">个</option>
+                    <option value="">卷</option>
+                    <option value="">台/套</option>
+                </select>
+            </li>
+            <li>
+                <label>设备数量：</label>
+                <span class="color">1</span>
+            </li>
+            <li>
+                <label>设备单价：</label>
+                <input type="text">
+                <span>元</span>
+            </li>
+            <li>
+                <label>设备总价：</label>
+                <span class="l0">30000</span>
+                <span class="l0">元</span>
+            </li>
+            <li>
+                <label>入账方式：</label>
+                <select style="width: 80px">
+                    <option value="">采购入库</option>
+                    <option value="">调拨入库</option>
+                    <option value="">捐赠入库</option>
+                    <option value="">其他方式</option>
+                </select>
+            </li>
+            <li>
+                <label>设备用途：</label>
+                <select style="width: 80px">
+                    <option value="">抗旱</option>
+                    <option value="">防汛</option>
+                    <option value="">防汛抗旱</option>
+                </select>
+            </li>
+            <li>
+                <label>入库时间：</label>
+                <span class="color">2012-06-03</span>
+            </li>
+            <li>
+                <label>资金来源：</label>
+                <select style="width: 80px">
+                    <option value="">中央投资</option>
+                    <option value="">省级投资</option>
+                    <option value="">市级投资</option>
+                    <option value="">县级投资</option>
+                    <option value="">自有资金</option>
+                    <option value="">其他</option>
+                </select>
+            </li>
+            <li>
+                <label style="width: 180px">资金年度：</label>
+                <select style="width: 80px">
+                    <option value="">2012年度</option>
+                    <option value="">2011年度</option>
+                    <option value="">其他</option>
+                </select>
+            </li>
+            <li>
+                <label>设备图片：</label>
+                <img src="../images/pic/equipment_photo.jpg">
+            </li>
+            <li>
+                <div class="info">
+                    <ol>
+                        <li><label>常用保管人信息</label></li>
+                        <li class="selected">
+                            <div class="info_add">
+                                <input type="radio" checked="checked">
+                                <span>湖南省  长沙市  岳麓区  麓谷软件大楼长沙至卓科技有限公司  谢沐沐  12345678987</span>
+                                <a href="#">修改本地址</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info_add info_add2">
+                                <input type="radio">
+                                <span>湖南省  长沙市  岳麓区  麓谷软件大楼长沙至卓科技有限公司  谢沐沐  12345678987</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="l20" href="#">新增保管人信息</a>
+                        </li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <label>管理部门：</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>联系电话：</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>存放地点：</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>入库人：</label>
+                <input type="text">
+            </li>
+            <li>
+                <label>备注：</label>
+                <div class="textarea">
+                    <textarea></textarea>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="submit">
+        <div class="submit_tb">
+            <a href="#">提交</a>
+        </div>
+    </div>
 </div>
 </body>
 </html>

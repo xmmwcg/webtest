@@ -20,6 +20,9 @@
     line-height: 22px;
     display: block;
 }
+.alist ul li img{
+    display: inline-block;
+}
 .alist ul li label{
     width: 180px;
     text-align: right;
@@ -34,6 +37,9 @@
 }
 .alist ul li span{
     margin-right: 8px;
+}
+.alist ul li span.color{
+    color: #999999;
 }
 .alist ul li span.top{
     vertical-align: top;
@@ -205,18 +211,19 @@ textarea {
     width: 900px;
 }
 .submit .submit_tb{
-    background-color: #f6f6f6;
+    background-color: #2a8cfa;
     margin: 10px auto;
     border: 1px solid #ccc;
     width: 70px;
     height: 30px;
+    border-radius: 4px;
 }
 .submit .submit_tb a{
     height: 30px;
     line-height: 30px;
     font-size: 16px;
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 .submit .submit_tb a:hover{
     text-decoration: underline;
