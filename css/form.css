@@ -41,7 +41,6 @@
 .alist ul li span.top{
     vertical-align: top;
 }
-
 .alist ul li input{
     width: 150px;
     height: 18px;
@@ -137,7 +136,7 @@ textarea {
 .alist ul li .info{
     border: 1px solid #dddddd;
     background-color: #f6f6f6;
-    height: 118px;
+    height: 125px;
 }
 .alist ul li .info ol{
     list-style: none;
@@ -146,24 +145,23 @@ textarea {
 .alist ul li .info ol li{
     margin: 5px 0 0 0;
 }
+.alist ul li .info ol .commom_info{
+    margin: 0 10px;
+}
 .alist ul li .info ol li.selected{
-    box-shadow: 15px 3px 0 #ccc;
+    box-shadow: 3px 3px 0 #ccc;
     margin-bottom: 7px;
-    width: 625px;
+    width: 620px;
+    background-color: #fff5cc;
+    border: 1px solid #ffe580;
+    height: 22px;
+    display: block;
 }
 .alist ul li .info ol li label{
     margin-left: 12px;
     text-align: left;
     color: #abadb3;
  }
-.alist ul li .info ol li .info_add{
-    background-color: #fff5cc;
-    border: 1px solid #ffe580;
-    width: 625px;
-    margin-left: 10px;
-    height: 22px;
-    display: block;
-}
 .alist ul li .info ol li .info_add input{
     width: 40px;
     height: 22px;
@@ -189,10 +187,6 @@ textarea {
 .alist ul li .info ol li a:hover{
     color: #f60;
     text-decoration: underline;
-}
-.alist ul li .info ol li .info_add2{
-    background-color: #f6f6f6;
-    border-color: #f6f6f6;
 }
 .alist ul li .info ol li a.l20{
     float: left;
