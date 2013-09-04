@@ -1,0 +1,103 @@
+.sub_menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    overflow: hidden;
+    background-color: #265180;
+}
+.sub_menu .menus{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    overflow: hidden;
+}
+#group_all{
+    height: 50px;
+    margin: 0 10px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px dotted #517499;
+}
+#group_all a{
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    padding: 0 10px;
+    margin: 8px 0;
+    background-color: #284463;
+    border-radius: 5px;
+}
+#group_all a span.g_n_t{
+    float: left;
+}
+#group_all a span.count{
+    float: right;
+}
+#group_box{
+    height: auto;
+    margin: 0 10px;
+    font-size: 14px;
+    min-height: 300px;
+}
+#group_box ul{
+    padding-top: 5px;
+}
+#group_box ul li{
+    padding-bottom: 5px;
+}
+#group_box ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 160px;
+    cursor: pointer;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+#group_box ul li a span.g_n_t{
+    float: left;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#group_box ul li a span.count{
+    float: right;
+}
+#other_group_box{
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px dotted #517499;
+    margin: 0 10px;
+    font-size: 14px;
+}
+#other_group_box a{
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    padding: 0 10px;
+    margin: 8px 0;
+}
+#other_group_box a span.g_n_t{
+    float: left;
+}
+#other_group_box a span.count{
+    float: right;
+}
