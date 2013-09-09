@@ -7,33 +7,42 @@
 .alist{
     margin-top: 30px;
     position: relative;
+    display: inline-block;
 }
 
 .alist ul{
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    width: 650px;
+    float: left;
 }
 .alist ul li{
     margin: 5px auto;
     line-height: 22px;
     display: block;
 }
-.alist ul li img{
+.alist ul li .img{
     display: inline-block;
+    width: 350px;
+    height: 474px;
+    background-color: #fbfbfb;
 }
 .alist ul li label{
-    width: 180px;
+    font-weight: bold;
+    width: 100px;
     text-align: right;
     vertical-align: top;
     display: inline-block;
 }
 .alist ul li label.note{
     width: 300px;
-    margin-left: 125px;
     color: #999999;
     text-align: left;
+    font-weight: normal;
+}
+.alist ul li label.img_tittle{
+    text-align: left;
+    margin-bottom: 13px;
 }
 .alist ul li span{
     margin-right: 8px;
@@ -55,8 +64,8 @@
     padding: 5px;
     display: inline-block;
 }
-textarea {
-    width: 450px;
+.alist ul li input.remark {
+    width: 400px;
     height: 86px;
     margin: 0;
     padding: 0;
@@ -151,11 +160,12 @@ textarea {
 .alist ul li .info ol li.selected{
     box-shadow: 3px 3px 0 #ccc;
     margin-bottom: 7px;
-    width: 620px;
     background-color: #fff5cc;
     border: 1px solid #ffe580;
     height: 22px;
     display: block;
+    overflow: hidden;
+    width: 895px;
 }
 .alist ul li .info ol li label{
     margin-left: 12px;

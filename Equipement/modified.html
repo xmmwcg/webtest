@@ -15,6 +15,12 @@
 </div>
 <div class="width960">
     <div class="alist">
+        <ul style="width: 370px;margin-left: 20px">
+            <li>
+                <label class="img_tittle">设备图片：</label>
+                <div class="img"></div>
+            </li>
+        </ul>
         <ul>
             <li>
                 <label>设备名称：</label>
@@ -25,17 +31,18 @@
                 <input type="text" value="ZE205E">
                 <a href="#">从供应商设备型号中选择</a>
             </li>
-            <li><label class="note">型号由字母、数字或汉字组成，且不能为空</label></li>
+            <!--<li><label class="note">型号由字母、数字或汉字组成，且不能为空</label></li>-->
             <li>
                 <label>商品品牌：</label>
                 <input type="text" value="中联重科">
                 <a href="#">从厂商、品牌中选择</a>
             </li>
-            <li><label class="note">品牌由字母、数字或汉字组成，且不能为空</label></li>
+            <!--<li><label class="note">品牌由字母、数字或汉字组成，且不能为空</label></li>-->
             <li>
                 <label>EAN-13位码：</label>
                 <span>43010300010</span>
             </li>
+            <!--<li><label class="note">EAN13位码由13位字母或数字组成，且不能为空</label></li>-->
             <li>
                 <label>设备类别：</label>
                 <span>移动灌溉设备</span>
@@ -81,10 +88,6 @@
                 </select>
             </li>
             <li>
-                <label>入库时间：</label>
-                <span>2012-06-03</span>
-            </li>
-            <li>
                 <label>资金来源：</label>
                 <select style="width: 80px">
                     <option value="">中央投资</option>
@@ -96,7 +99,7 @@
                 </select>
             </li>
             <li>
-                <label style="width: 180px">资金年度：</label>
+                <label>资金年度：</label>
                 <select style="width: 80px">
                     <option value="">2012年度</option>
                     <option value="">2011年度</option>
@@ -104,9 +107,21 @@
                 </select>
             </li>
             <li>
-                <label>设备图片：</label>
-                <img src="../images/pic/equipment_photo.jpg">
+                <label>入库人：</label>
+                <input type="text">
             </li>
+            <li>
+                <label>入库时间：</label>
+                <span>2012-06-03</span>
+            </li>
+            <li>
+                <label>备注：</label>
+                <div class="textarea">
+                    <input class="remark" type="text">
+                </div>
+            </li>
+        </ul>
+        <ul style="width: 920px; margin: 0 20px">
             <li>
                 <div class="info">
                     <ol>
@@ -126,28 +141,6 @@
                             <a class="l20" href="#">新增保管人信息</a>
                         </li>
                     </ol>
-                </div>
-            </li>
-            <li>
-                <label>管理部门：</label>
-                <input type="text">
-            </li>
-            <li>
-                <label>联系电话：</label>
-                <input type="text">
-            </li>
-            <li>
-                <label>存放地点：</label>
-                <input type="text">
-            </li>
-            <li>
-                <label>入库人：</label>
-                <input type="text">
-            </li>
-            <li>
-                <label>备注：</label>
-                <div class="textarea">
-                    <textarea></textarea>
                 </div>
             </li>
         </ul>
