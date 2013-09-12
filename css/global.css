@@ -65,3 +65,29 @@ table {
     position: relative;
     overflow: hidden;
 }
+.submit{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.submit .submit_tb{
+    background-color: #2a8cfa;
+    margin: 0 auto;
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+}
+.submit a{
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    float: left;
+    width: 80px;
+}
+.submit a:hover{
+    text-decoration: underline;
+    color: #f60;
+}
+

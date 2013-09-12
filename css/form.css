@@ -203,32 +203,6 @@
     margin-left: 25px;
     text-decoration: underline;
 }
-.submit{
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-}
-.submit hr{
-    width: 900px;
-}
-.submit a{
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    text-decoration: none;
-    color: #fff;
-}
-.submit a .submit_tb{
-    background-color: #2a8cfa;
-    margin: 10px auto;
-    width: 80px;
-    height: 40px;
-    border-radius: 4px;
-}
-.submit .submit_tb a:hover{
-    text-decoration: underline;
-    color: #f60;
-}
 
 .alist ul li .state ol li{
     margin: 5px 0 0 0;

@@ -1,0 +1,333 @@
+#left_side_bar
+{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:300px;
+    background-color:#f0f0f0;
+    background-image:url(../imgs/side_bg.png);
+    background-position:top right;
+    background-repeat:repeat-y;
+    font-size:14px;
+}
+#left_side_bar #side_select
+{
+    width:100%;
+    margin:0;
+    background-image:url(../imgs/downbg.png);
+    background-position: right bottom;
+    background-repeat:no-repeat;
+    display:block;
+    float:left;
+    padding:1px 0;
+}
+#left_side_bar #side_select .address{
+    height: 30px;
+    width: 100%;
+    float:left;
+}
+.address #citysear{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding-top: 8px;
+    white-space: nowrap;
+    padding-left:18px;
+}
+#left_side_bar #side_select .cat{
+    height: 30px;
+    width: 100%;
+    float:left;
+    top:30px;
+}
+#left_side_bar #side_select .time{
+    height: 70px;
+    width: 100%;
+    float:left;
+    text-align:center;
+    top:55px;
+}
+#left_side_bar #side_select .bottom{
+    top:125px;
+    text-align:center;
+    /*padding-left:120px;*/
+}
+#left_side_bar #side_select .slide-style{
+    margin:0 auto;
+    top:165px;
+    left:0;
+    right:0;
+    bottom:40px;
+    width: 100%;
+    float:left;
+}
+.slide-style .opanel{
+    overflow: hidden;
+    margin-top:10px;
+}
+.slide-style .opanel .hd{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #999;
+    position: relative;
+}
+.slide-style .opanel .hd .adEduTab{
+    width: 100%;
+    height: 31px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.opanel .hd .adEduTab .subpanel{
+    height: 31px;
+    line-height: 31px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    background-position: right -362px;
+    margin-left:20px;
+}
+.opanel .hd .adEduTab li{
+    width: 68px;
+    height: 29px;
+    line-height: 29px;
+    float: left;
+    display: inline;
+    font-size: 14px;
+    background:#d4d4d4;
+    font-weight: bold;
+    margin-right:5px;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-top:1px solid #999;
+}
+.opanel .hd .adEduTab li a{
+    color:#000;
+}
+.opanel .hd .adEduTab li a:link{
+    text-decoration:blink;
+}
+.opanel .hd .adEduTab li a:hover{
+
+
+}
+.opanel .hd .adEduTab li.select{
+    background-color:#F0F0F0;
+    height: 31px;
+    line-height: 31px;
+}
+.opanele .hd .adEduTab li a{
+    color: #488fd1;
+    text-decoration: none;
+    float:left;
+}
+.opanele .hd .adEduTab li{
+    width: 70px;
+    height: 31px;
+    line-height: 31px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    background-position: right -362px;
+}
+.opanel .hd .adEduTab li:hover{
+    text-decoration:underline;
+}
+.opanel .tab-content{
+    margin: 0 auto;
+    overflow:auto;
+    width:99%;
+    bottom:10px;
+    top:31px;
+}
+.opanel .noprint{
+    width :90%;
+    margin: 0 auto;
+}
+.opanel .noprint.hidden{
+    display:none;
+}
+.opanel .dbinfo_content{
+    margin:0;
+    padding:0 ;
+    margin-left:15px;
+    margin-right:15px;
+    padding-top:1px;
+    border-bottom:#000 1px solid;
+}
+.opanel .dbinfo{
+    width: 100%;
+    height: 42px;
+    padding : 0 9px 12px 0;
+    margin: 0;
+    float: left;
+    list-style: none;
+    background-color:#f0f0f0;
+    cursor: pointer;
+    overflow:hidden;
+}
+.opanel .dbinfo.select {
+    background-color:#6B8192;
+    color:#FFF;
+}
+.opanel .dbinfo:hover
+{
+    background-color:#AFB8C0;
+}
+.opanel .lsicon
+{
+    position:absolute;
+    top:0;
+    left:5px;
+    right:5px;
+    bottom:0;
+    float:left;
+    width:14px;
+    height:14px;
+    display:block;
+    background-repeat:no-repeat;
+    background-position:center left;
+    padding-top:30px;
+}
+.opanel .lsicon:hover
+{
+    background-position:center right;
+}
+.opanel .db_content{
+    padding-top:8px;
+    font-size: 12px;
+    border-bottom: 1px solid #999;
+}
+.opanel span{
+    text-decoration:none;
+}
+/*分页**/
+
+#pagenumber
+{
+    margin-top:325px;
+}
+#pagenumber a
+{
+    margin:0;
+    padding:3px;
+    background-color:#DDD;
+    color:Blue;
+    cursor:pointer;
+}
+#pagenumber span
+{
+    margin:0;
+    padding:4px;
+    background-color:#DDD;
+    color:Blue;
+    cursor:pointer;
+}
+
+
+#foot
+{
+    position:absolute;
+    bottom:0px;
+    height:18px;
+    /*margin:0 auto;*/
+    text-align:center;
+    width:100%;
+    font-size:12px;
+    border-top:1px solid #999;
+    z-index:100;
+    background-color:#CCC;
+}
+#foot p
+{
+    line-height:18px;
+    margin:0 auto;
+    letter-spacing: 1px;
+}
+
+/*公用*/
+.path_level_container{
+    width:100%;
+    table-layout:fixed;
+}
+.path_show_level{
+    width:auto;
+    vertical-align:middle;
+    text-align:left;
+    background-image:url(../imgs/header_bg.png);
+    color: #f0f0f0;
+    height: 30px;
+    line-height: 30px;
+}
+.path_zippy_td{
+    text-align:center;
+    vertical-align:baseline;
+    width:15px;
+    font-size:14px;
+}
+.path_zippy{
+    width:12px;
+    height:12px;
+    margin-left:4px;
+    cursor:pointer;
+    margin-top:.35em;
+}
+.path_zippy_ico{
+    margin-top:8px;
+    margin-left:5px;
+    height:14px;
+    width:14px;
+    display:block;
+    background-repeat:no-repeat;
+    background-position:top center;
+}
+.path_zippy_ico.open{
+    background-position:bottom center;
+}
+.path_show_level{
+    width:auto;
+    vertical-align:middle;
+    text-align:left;
+   /* background-image:url(../imgs/header_bg.png);*/
+    color: #f0f0f0;
+    height: 30px;
+    line-height: 30px;
+}
+.path_link{
+    font-size:18px;
+    color:#FFF;
+    text-decoration:none;
+}
+.path_link span{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight:bold;
+    color: #fff;
+}
+.path_link span:hover{
+    text-decoration:blink;
+}
+.level{
+    padding-left:15px;
+    text-align:left;
+    padding-right: 40px;
+    padding-top:5px;
+}
+.level_link{
+    cursor:default;
+    text-decoration:none;
+    line-height:1.6em;
+}
+.level_option{
+    color:#000;
+    margin:.1em .5em 0 0;
+    padding:0;
+    text-decoration:none;
+    cursor:pointer;
+}
+.level_options{
+    padding:0.25em 0;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-size:12px;
+}

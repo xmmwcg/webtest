@@ -40,7 +40,7 @@
     background-color: #fff;
 }
 .list ul li.hideble{
-    min-width: 200px;
+    min-width: 400px;
     overflow: hidden;
 }
 .list ul li input.check{
