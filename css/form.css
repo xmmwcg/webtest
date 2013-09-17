@@ -27,6 +27,13 @@
     height: 474px;
     background-color: #fbfbfb;
 }
+.alist ul li .img img{
+    border: 1px solid #cccccc;
+    margin-left: 15px;
+    margin-top: 2px;
+    width: 150px;
+    height: 150px;
+}
 .alist ul li label{
     font-weight: bold;
     width: 100px;
@@ -42,7 +49,8 @@
 }
 .alist ul li label.img_tittle{
     text-align: left;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
+    margin-left: 15px;
 }
 .alist ul li span{
     margin-right: 8px;
@@ -56,6 +64,14 @@
     line-height: 18px;
     border: 1px solid #cccccc;
     margin-right: 10px;
+}
+.alist ul li input.button{
+    text-align: center;
+    float: right;
+    margin-right: 33px;
+    width: 80px;
+    height: 22px;
+    cursor: pointer;
 }
 
 .textarea{
