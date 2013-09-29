@@ -187,7 +187,7 @@
     overflow: hidden;
 }
 .list.b .bl.open{
-    border-color: #cccccc;
+    border-color: #999999;
     height: auto;
     z-index: 30;
 }

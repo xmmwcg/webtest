@@ -8,6 +8,35 @@
     <link href="../css/page.css" rel="stylesheet" type="text/css">
     <link href="../css/form.css" type="text/css" rel="stylesheet">
     <script src="../js/frame.js"></script>
+    <script type="text/javascript">
+        function Show(){
+            var divNode = document.getElementById("tooltip");
+            var inputNode = event.srcElement;
+            if(inputNode.value == "" || inputNode.value == null){
+                divNode.className = "close"
+            }else{
+                divNode.className = "open";
+            }
+        }
+        function Tname(){
+            var temp;
+            var liNode = event.srcElement;
+            var inputNode = document.getElementsByTagName("input")[0];
+            var divNode = document.getElementById("tooltip");
+            temp = liNode.innerText;
+            inputNode.value = temp;
+            divNode.className = "close";
+        }
+    </script>
+    <style type="text/css">
+        .open{
+            height: auto;
+            display: block;
+        }
+        .close{
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <div class="width960">
@@ -15,44 +44,28 @@
 </div>
 <div class="width960">
     <div class="alist">
-        <ul style="width: 370px;margin-left: 20px">
-            <li>
-                <label class="img_tittle">设备图片：</label>
-                <input class="button" type="button" value="上传照片">
-                <div class="img">
-                    <img src="../images/pic/挖掘机.jpg">
-                    <img src="../images/pic/汽油发电机.jpg">
-                    <img src="../images/pic/柴油发电机.jpg">
-                    <img src="../images/pic/皮卡车.jpg">
-                    <img src="../images/pic/拉水车.jpg">
-                </div>
-            </li>
-        </ul>
-        <ul>
+        <ul style="margin-left: 40px">
             <li>
                 <label>设备名称：</label>
-                <input type="text">
-                <a href="#">从供应商设备中选择</a>
-                <!--<label class="note">(名称必须为汉字，且不能为空)</label>-->
+                <input type="text" onkeyup="Show()">
+                <div id="tooltip" class="close">
+                    <ul>
+                        <li class="hint" onclick="Tname()">挖掘机</li>
+                        <li class="hint" onclick="Tname()">液态挖掘机</li>
+                    </ul>
+                </div>
             </li>
             <li>
                 <label>规格型号：</label>
                 <input type="text">
-                <a href="#">从供应商设备型号中选择</a>
-                （例：ZE205E）
             </li>
-            <!--<li><label class="note">型号由字母、数字或汉字组成，且不能为空</label></li>-->
             <li>
-                <label>商品品牌：</label>
+                <label>厂商品牌：</label>
                 <input type="text">
-                <a href="#">从厂商、品牌中选择</a>
             </li>
-            <!--<li><label class="note">品牌由字母、数字或汉字组成，且不能为空</label></li>-->
             <li>
-                <label>EAN-13位码：</label>
+                <label>商品条码：</label>
                 <input type="text">
-                <label class="note">(由前缀部分、制造厂商代码、商品代码和校验码组成)</label>
-
             </li>
             <!--<li><label class="note">EAN13位码由13位字母或数字组成，且不能为空</label></li>-->
             <li>
@@ -127,8 +140,13 @@
             <li>
                 <label>资金年度：</label>
                 <select style="width: 80px">
+                    <option value="">2013年度</option>
                     <option value="">2012年度</option>
                     <option value="">2011年度</option>
+                    <option value="">2010年度</option>
+                    <option value="">2009年度</option>
+                    <option value="">2008年度</option>
+                    <option value="">2007年度</option>
                     <option value="">其他</option>
                 </select>
             </li>
@@ -147,11 +165,24 @@
                 </div>
             </li>
         </ul>
+        <ul style="width: 370px;margin-left: 20px">
+            <li>
+                <label class="img_tittle">设备图片：</label>
+                <input class="button" type="button" value="上传照片">
+                <div class="img">
+                    <img src="../images/pic/挖掘机.jpg">
+                    <img src="../images/pic/汽油发电机.jpg">
+                    <img src="../images/pic/柴油发电机.jpg">
+                    <img src="../images/pic/皮卡车.jpg">
+                    <img src="../images/pic/拉水车.jpg">
+                </div>
+            </li>
+        </ul>
         <ul style="width: 920px; margin: 0 20px">
             <li>
                 <div class="info">
                     <ol>
-                        <li><label>常用保管人信息</label></li>
+                        <li><label>常用管理员信息</label></li>
                         <div class="commom_info">
                             <li class="selected">
                                 <input type="radio" checked="checked" style="width: 30px;">
@@ -164,7 +195,7 @@
                             </li>
                         </div>
                         <li>
-                            <a class="l20" href="#">新增保管人信息</a>
+                            <a class="l20" href="#">新增管理员信息</a>
                         </li>
                     </ol>
                 </div>

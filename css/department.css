@@ -1,0 +1,112 @@
+.left_menu{
+    width: 180px;
+    height: 100%;
+    background-color: #f7f6f9;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.left_menu .menu{
+    width: 180px;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 50px;
+}
+.left_menu .menu ul li{
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-bottom: 1px solid #eee;
+}
+.left_menu .menu ul li:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.left_menu .menu ul li:visited{
+    background-color: #cccccc;
+}
+.left_menu .menu ul li a{
+    color: #333;
+    text-decoration: none;
+}
+.left_menu .menu ul li a span{
+    height: 25px;
+    line-height: 25px;
+    display: block;
+}
+.left_menu .menu ul li a img{
+    float: left;
+    margin-top: 2px;
+}
+.delete{
+    background-image: url("../images/pic/shanchu2.png");
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin: 15px 10px;
+}
+.left_menu .menu ul li a img:hover{
+    background-image: url("../images/pic/shanchu3.png");
+}
+.left_menu .group_box{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 50px;
+    width: 178px;
+    border-top: 1px dotted #cccccc;
+}
+.left_menu .group_box ul li{
+    height: 40px;
+    line-height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-bottom: 1px solid #eee;
+}
+.left_menu .group_box ul li:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.left_menu .group_box ul li a{
+    color: #333;
+    text-decoration: none;
+}
+.left_menu .group_box ul li a span.count{
+    float: right;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.content{
+    border: 1px solid #cccccc;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 185px;
+}
+.content .title{
+    background-color: #fbfcfc;
+    margin: 2px 5px 0 5px;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    padding-left: 20px;
+
+}
+.content textarea{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    resize: none;
+    border: none;
+}
