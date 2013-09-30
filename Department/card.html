@@ -9,6 +9,11 @@
     <link href="../css/searcher.css" rel="stylesheet" type="text/css">
     <link href="../css/card.css" rel="stylesheet" type="text/css">
     <link href="../css/filter.css" rel="stylesheet" type="text/css">
+    <link href="../css/list.css" rel="stylesheet" type="text/css">
+
+    <script src="http://g.tbcdn.cn/kissy/k/1.3.1/kissy-min.js"></script>
+    <script src="../js/Jquery/jquery-1.10.2.js"></script>
+    <script src="../js/frame.js"></script>
 </head>
 <body>
 <!--<div class="sub_menu">
@@ -72,6 +77,24 @@
             <div class="button orange"><span>筛选</span></div>
         </div>
     </div>
+    <div class="width960 upspace underspace leftrightspace">
+        <div id="menus" class="menus width960">
+            <div class="menu" style="display: none">
+                <ul class="clearfix">
+                    <li><em></em><span>队长</span></li>
+                    <li><em></em><span>副队长</span></li>
+                    <li><em></em><span>队员</span></li>
+                </ul>
+            </div>
+            <div class="menu" style="display: none">
+                <ul class="clearfix">
+                    <li><em></em><span>科长</span></li>
+                    <li><em></em><span>副科长</span></li>
+                    <li><em></em><span>职工</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="list" style="border-top: 1px solid #efefef;">
         <table>
             <thead>
@@ -125,5 +148,26 @@
         </table>
     </div>
 </div>
+<script>
+    //配置KISSY包路径
+    KISSY.config({
+        tag: new Date().toString(),
+        packages: {
+            Project: {
+                base: "../",
+                debug: true
+            }
+        }
+    });
+    KISSY.ready(function (S) {
+        KISSY.use("Project/UI/PopupMenu",function(S,PopupMenu){
+            var PopUpCfg = {
+                autoHideOnMouseLeave: true,
+                popupMethod: "mouseenter"
+            };
+            var PopUp = new PopupMenu("#filter li",".menus .menu",PopUpCfg);
+        })
+    })
+</script>
 </body>
 </html>

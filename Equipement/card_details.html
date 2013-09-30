@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/tab.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>查看</title>
+    <link href="../css/global.css" rel="stylesheet" type="text/css">
+    <link href="../css/clearfix.css" rel="stylesheet" type="text/css">
+    <link href="../css/page.css" rel="stylesheet" type="text/css">
+    <link href="../css/detailinfo.css" rel="stylesheet" type="text/css">
+    <link href="../css/photograph.css" rel="stylesheet" type="text/css">
+
+    <script src="../js/Jquery/jquery-1.10.2.js"></script>
+    <script src="../js/frame.js"></script>
+</head>
+<body>
+
+<script>
+    $(function(){
+        $(".tab li").click(function(){
+            var index = $(".tab li").removeClass("selected").index(this);
+            $(this).addClass("selected");
+            $(".tabc").hide().eq(index).show();
+        })
+    })
+</script>
+</body>
+</html>
