@@ -8,9 +8,10 @@
     <link href="../css/page.css" rel="stylesheet" type="text/css">
     <link href="../css/searcher.css" rel="stylesheet" type="text/css">
     <link href="../css/card.css" rel="stylesheet" type="text/css">
+    <link href="../css/filter.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="sub_menu">
+<!--<div class="sub_menu">
     <div class="menus">
         <div id="group_all">
             <a href="#">
@@ -47,7 +48,7 @@
             </a>
         </div>
     </div>
-</div>
+</div>-->
 <div class="wrapper">
     <div class="btn_bar">
         <span class="btn">新建</span>
@@ -57,7 +58,21 @@
             <a class="search_button" href="#">搜索</a>
         </span>
     </div>
-    <div class="list">
+    <div id="filter" class="filter width960bor clearfix" style="width: auto;">
+        <div class="ti"><span>筛选</span></div>
+        <ul class="clearfix">
+            <li class="clearfix">
+                <span>服务队职务</span><em class="arrowdown"></em>
+            </li>
+            <li class="clearfix">
+                <span>行政职务</span><em class="arrowdown"></em>
+            </li>
+        </ul>
+        <div class="buttons clearfix">
+            <div class="button orange"><span>筛选</span></div>
+        </div>
+    </div>
+    <div class="list" style="border-top: 1px solid #efefef;">
         <table>
             <thead>
                 <tr>
